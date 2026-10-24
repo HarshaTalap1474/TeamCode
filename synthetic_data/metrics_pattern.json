@@ -1,0 +1,136 @@
+{
+  "dataset": "/tmp/trk",
+  "n_eligible_cells": 1272,
+  "n_positive_cells": 79,
+  "n_spatial_blocks": 11,
+  "block_res": 6,
+  "folds": 5,
+  "repeats": 3,
+  "features_used": [
+    "pop_500m",
+    "pop_1km",
+    "pop_2km",
+    "age60_share",
+    "bldg_density_per_ha",
+    "residential_bldg_share",
+    "hospital_wcount_1km",
+    "clinic_wcount_1km",
+    "school_wcount_1km",
+    "market_wcount_1km",
+    "office_wcount_1km",
+    "dist_to_hospital_m",
+    "transit_stop_dist_m",
+    "transit_stop_cnt_500m",
+    "arterial_dist_m",
+    "intersection_density_km2",
+    "comp_cnt_300m",
+    "comp_cnt_400m",
+    "comp_cnt_1km",
+    "nearest_comp_m",
+    "brand_diversity_1km",
+    "pool_cnt_1km",
+    "own_nearest_m",
+    "own_cnt_1km",
+    "commercial_density",
+    "affluence_proxy",
+    "rent_pressure_proxy",
+    "centrality_m",
+    "pop_density_pctile",
+    "comp_cnt_300m_pctile"
+  ],
+  "methods": {
+    "random": {
+      "lift10": 0.6329113924050633,
+      "roc_auc": 0.4581153776778041,
+      "pr_auc": 0.05510875067452738,
+      "lift10_ci95": [
+        0.37642450142450146,
+        0.9375
+      ],
+      "bootstrap_n": 298
+    },
+    "population_only": {
+      "lift10": 6.329113924050633,
+      "roc_auc": 0.9071217120969368,
+      "pr_auc": 0.5372954292570015,
+      "lift10_ci95": [
+        4.243659420289855,
+        8.792279411764705
+      ],
+      "bootstrap_n": 298
+    },
+    "weighted_sum": {
+      "lift10": 1.5189873417721518,
+      "roc_auc": 0.8141320148121426,
+      "pr_auc": 0.16060056599540298,
+      "lift10_ci95": [
+        0.41666666666666663,
+        5.1149999999999975
+      ],
+      "bootstrap_n": 298
+    },
+    "huff_nid": {
+      "lift10": 0.5063291139240506,
+      "roc_auc": 0.7276093668763992,
+      "pr_auc": 0.102452797139182,
+      "lift10_ci95": [
+        0.0,
+        3.4109447004608286
+      ],
+      "bootstrap_n": 298
+    },
+    "hybrid_nid_plus_pattern": {
+      "lift10": 4.936708860759493,
+      "roc_auc": 0.86438295118147,
+      "pr_auc": 0.3324315958232248,
+      "lift10_ci95": [
+        1.7727272727272727,
+        7.391304347826086
+      ],
+      "bootstrap_n": 298
+    },
+    "lightgbm_pattern": {
+      "lift10": 6.455696202531645,
+      "roc_auc": 0.8913917684382526,
+      "pr_auc": 0.4071828487149642,
+      "lift10_ci95": [
+        5.249999999999999,
+        8.695652173913043
+      ],
+      "bootstrap_n": 298
+    }
+  },
+  "shap_additivity_max_error": 1.3322676295501878e-14,
+  "shap_deletion_audit": {
+    "removed_top3": [
+      "dist_to_hospital_m",
+      "centrality_m",
+      "pool_cnt_1km"
+    ],
+    "removed_random3": [
+      "own_nearest_m",
+      "residential_bldg_share",
+      "age60_share"
+    ],
+    "roc_auc_full": 0.8913917684382526,
+    "roc_auc_minus_top3": 0.8729835342840921,
+    "roc_auc_minus_random3": 0.8887073328594014
+  },
+  "K1_lift10": {
+    "value": 6.455696202531645,
+    "ci95": [
+      5.249999999999999,
+      8.695652173913043
+    ],
+    "beats_population_only": true,
+    "beats_weighted_sum": true,
+    "status": "MEASURED-met",
+    "target": ">=2.0x"
+  },
+  "K2_roc_auc": {
+    "value": 0.8913917684382526,
+    "status": "MEASURED-met",
+    "target": ">=0.75"
+  },
+  "note": "Spatial block CV with buffer; labels = branded-chain presence (revealed preference, PU). If dataset is synthetic these are NOT real-city results."
+}

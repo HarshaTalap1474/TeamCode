@@ -1,0 +1,36 @@
+{
+  "city": "kolhapur",
+  "category": "pharmacy",
+  "place_query": "Kolhapur, Maharashtra, India",
+  "h3_res": 9,
+  "buffer_km": 1.5,
+  "utm_epsg": 32643,
+  "min_population": 50,
+  "min_confidence": 0.7,
+  "fuzzy_threshold": 90,
+  "demo_chain_brand_id": "auto",
+  "pharmacy_categories": ["pharmacy", "drugstore"],
+  "groups": {
+    "hospital": ["hospital"],
+    "clinic": ["doctor", "medical_center", "clinic", "physician", "family_practice", "general_practitioner"],
+    "school": ["school"],
+    "market": ["market"],
+    "office": ["corporate_office", "government_office", "professional_services"],
+    "amenity_premium": ["cafe", "coffee", "gym", "fitness", "bank", "restaurant", "salon", "spa"]
+  },
+  "brands_note": "STARTING GUESS of chains present in Maharashtra. Run build_tables.py, read the printed top pharmacy names, then edit/add aliases. Brand ids are arbitrary.",
+  "brands": {
+    "B001": ["Apollo Pharmacy", "Apollo"],
+    "B002": ["MedPlus", "Med Plus"],
+    "B003": ["Wellness Forever"],
+    "B004": ["Jan Aushadhi", "Janaushadhi", "Pradhan Mantri Bhartiya Janaushadhi"],
+    "B005": ["Guardian Pharmacy", "Guardian Lifecare"],
+    "B006": ["Frank Ross"]
+  },
+  "huff": {"beta": 1.5, "beta_tri": [1.0, 1.5, 2.5], "lam": 1.5, "detour": 1.3, "min_dist_km": 0.2,
+           "catchment_km": 3.0, "pop_noise_sigma": 0.10, "dropout_max": 0.2, "n_draws": 100},
+  "economics_ASSUMPTIONS": {"store_area_sqft": 250, "fixed_cost_inr": 40000, "gross_margin_per_tx_inr": 40,
+                            "rent_psf_base_inr": 25, "rent_psf_slope_inr": 0.9},
+  "weights": {"demand": 0.40, "pattern": 0.30, "afford": 0.30},
+  "seed": 42
+}

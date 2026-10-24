@@ -1,0 +1,510 @@
+poi_id,name,category,brand_id,lat,lon,h3_id,overture_confidence,match_score,is_own,is_branded_pool,source
+P0001,CureWell,pharmacy,B001,16.687479,74.220685,8960ab095d3ffff,0.841,100.0,True,True,synthetic
+P0002,CureWell Pharmacy,pharmacy,B001,16.696688,74.236984,8960ab094c7ffff,0.891,90.5,True,True,synthetic
+P0003,CureWell Pharmacy,pharmacy,B001,16.697254,74.243581,8960ab549a7ffff,0.843,94.5,True,True,synthetic
+P0004,CureWell Pharmacy,pharmacy,B001,16.70331,74.245613,8960ab54933ffff,0.935,94.5,True,True,synthetic
+P0005,CureWell Pharmacy,pharmacy,B001,16.696141,74.24075,8960ab094d3ffff,0.823,90.9,True,True,synthetic
+P0006,CureWell,pharmacy,B001,16.700234,74.244487,8960ab549afffff,0.706,100.0,True,True,synthetic
+P0007,CureWell,pharmacy,B001,16.699705,74.241784,8960ab094dbffff,0.905,100.0,True,True,synthetic
+P0008,CureWell Medicals,pharmacy,B001,16.683569,74.229771,8960ab0b343ffff,0.797,93.2,True,True,synthetic
+P0009,CureWell Pharmacy,pharmacy,B001,16.683219,74.23886,8960ab0b223ffff,0.866,91.8,True,True,synthetic
+P0010,CureWell,pharmacy,B001,16.7048,74.239904,8960ab54927ffff,0.929,100.0,True,True,synthetic
+P0011,CureWell,pharmacy,B001,16.698552,74.226291,8960ab0943bffff,0.887,100.0,True,True,synthetic
+P0012,CureWell Pharmacy,pharmacy,B001,16.700955,74.228391,8960ab0940fffff,0.665,96.9,True,True,synthetic
+P0013,CureWell Pharmacy,pharmacy,B001,16.705188,74.226741,8960ab09463ffff,0.826,93.5,True,True,synthetic
+P0014,CureWell Pharmacy,pharmacy,B001,16.702872,74.25069,8960ab54917ffff,0.833,92.5,True,True,synthetic
+P0015,CureWell,pharmacy,B001,16.68631,74.223156,8960ab0b36bffff,0.854,100.0,True,True,synthetic
+P0016,CureWell Chemist,pharmacy,B001,16.685506,74.237486,8960ab0b22fffff,0.818,97.1,True,True,synthetic
+P0017,CureWell,pharmacy,B001,16.696374,74.249096,8960ab549b3ffff,0.888,100.0,True,True,synthetic
+P0018,CureWell,pharmacy,B001,16.703882,74.237674,8960ab09453ffff,0.851,100.0,True,True,synthetic
+P0019,CureWell,pharmacy,B001,16.701806,74.2487,8960ab549abffff,0.949,100.0,True,True,synthetic
+P0020,CureWell,pharmacy,B001,16.696068,74.232594,8960ab09413ffff,0.804,100.0,True,True,synthetic
+P0021,CureWell,pharmacy,B001,16.702237,74.241791,8960ab54937ffff,0.936,100.0,True,True,synthetic
+P0022,CureWell,pharmacy,B001,16.69792,74.222372,8960ab09423ffff,0.619,100.0,True,True,synthetic
+P0023,CureWell,pharmacy,B001,16.70623,74.235863,8960ab09443ffff,0.733,100.0,True,True,synthetic
+P0024,CureWell,pharmacy,B001,16.704238,74.231575,8960ab09447ffff,0.857,100.0,True,True,synthetic
+P0025,CureWell,pharmacy,B001,16.690422,74.234014,8960ab09483ffff,0.793,100.0,True,True,synthetic
+P0026,CureWell,pharmacy,B001,16.692071,74.24538,8960ab0b27bffff,0.92,100.0,True,True,synthetic
+P0027,CureWell,pharmacy,B001,16.695724,74.238293,8960ab094d7ffff,0.873,100.0,True,True,synthetic
+P0028,CureWell Chemist,pharmacy,B001,16.697885,74.246483,8960ab549a3ffff,0.871,93.4,True,True,synthetic
+P0029,CureWell,pharmacy,B001,16.698157,74.238275,8960ab094c3ffff,0.845,100.0,True,True,synthetic
+P0030,CureWell Medicals,pharmacy,B001,16.688361,74.234268,8960ab09497ffff,0.719,97.1,True,True,synthetic
+P0031,CureWell,pharmacy,B001,16.693779,74.248844,8960ab0b24fffff,0.855,100.0,True,True,synthetic
+P0032,CureWell,pharmacy,B001,16.708787,74.227822,8960ab0946bffff,0.854,100.0,True,True,synthetic
+P0033,CUREWELL,pharmacy,B001,16.694967,74.230997,8960ab09417ffff,0.779,92.1,True,True,synthetic
+P0034,CureWell,pharmacy,B001,16.702291,74.234662,8960ab09457ffff,0.876,100.0,True,True,synthetic
+P0035,LifeLine,pharmacy,B002,16.703153,74.236313,8960ab09453ffff,0.846,100.0,False,True,synthetic
+P0036,LifeLine Pharmacy,pharmacy,B002,16.707906,74.23597,8960ab0944bffff,0.755,90.1,False,True,synthetic
+P0037,LifeLine Medicals,pharmacy,B002,16.684634,74.23357,8960ab0b35bffff,0.813,97.4,False,True,synthetic
+P0038,LifeLine,pharmacy,B002,16.700933,74.252481,8960ab5498fffff,0.907,100.0,False,True,synthetic
+P0039,LifeLine,pharmacy,B002,16.699612,74.250632,8960ab549bbffff,0.863,100.0,False,True,synthetic
+P0040,LifeLine,pharmacy,B002,16.688782,74.229762,8960ab094b3ffff,0.958,100.0,False,True,synthetic
+P0041,LifeLine,pharmacy,B002,16.694924,74.238823,8960ab094d7ffff,0.844,100.0,False,True,synthetic
+P0042,LifeLine,pharmacy,B002,16.701717,74.248237,8960ab549abffff,0.819,100.0,False,True,synthetic
+P0043,LifeLine,pharmacy,B002,16.731741,74.302093,8960ab5432fffff,0.819,100.0,False,True,synthetic
+P0044,LifeLine,pharmacy,B002,16.703306,74.250684,8960ab54917ffff,0.99,100.0,False,True,synthetic
+P0045,LifeLine,pharmacy,B002,16.702686,74.24288,8960ab54937ffff,0.841,100.0,False,True,synthetic
+P0046,LIFELINE,pharmacy,B002,16.697033,74.241637,8960ab094d3ffff,0.896,97.4,False,True,synthetic
+P0047,LifeLine,pharmacy,B002,16.704286,74.245985,8960ab54933ffff,0.66,100.0,False,True,synthetic
+P0048,LifeLine Pharmacy,pharmacy,B002,16.697844,74.238588,8960ab094c3ffff,0.731,91.0,False,True,synthetic
+P0049,LifeLine,pharmacy,B002,16.704963,74.239852,8960ab54927ffff,0.846,100.0,False,True,synthetic
+P0050,LifeLine,pharmacy,B002,16.701036,74.223673,8960ab0942bffff,0.817,100.0,False,True,synthetic
+P0051,LifeLine Pharmacy,pharmacy,B002,16.699218,74.241916,8960ab094dbffff,0.961,96.0,False,True,synthetic
+P0052,LifeLine Pharmacy,pharmacy,B002,16.703446,74.252684,8960ab54913ffff,0.779,97.3,False,True,synthetic
+P0053,LifeLine Chemist,pharmacy,B002,16.70982,74.252734,8960ab5490bffff,0.859,92.2,False,True,synthetic
+P0054,LifeLine,pharmacy,B002,16.71361,74.255467,8960ab54943ffff,0.944,100.0,False,True,synthetic
+P0055,LifeLine,pharmacy,B002,16.704887,74.225803,8960ab09463ffff,0.959,100.0,False,True,synthetic
+P0056,LifeLine,pharmacy,B002,16.702002,74.255626,8960ab5498bffff,0.864,100.0,False,True,synthetic
+P0057,LifeLine,pharmacy,B002,16.70702,74.240659,8960ab5492fffff,0.906,100.0,False,True,synthetic
+P0058,LifeLine Pharmacy,pharmacy,B002,16.745744,74.242006,8960ab46557ffff,0.841,96.0,False,True,synthetic
+P0059,LifeLine Medicals,pharmacy,B002,16.703784,74.259473,8960ab549d7ffff,0.819,90.3,False,True,synthetic
+P0060,LIFELINE,pharmacy,B002,16.704511,74.249109,8960ab54907ffff,0.864,97.4,False,True,synthetic
+P0061,LIFELINE,pharmacy,B002,16.706228,74.22928,8960ab0947bffff,0.957,91.2,False,True,synthetic
+P0062,LifeLine,pharmacy,B002,16.680521,74.243761,8960ab0b2abffff,0.857,100.0,False,True,synthetic
+P0063,LifeLine Pharmacy,pharmacy,B002,16.694044,74.200988,8960ab09193ffff,0.895,97.2,False,True,synthetic
+P0064,LifeLine,pharmacy,B002,16.702916,74.234145,8960ab09457ffff,0.683,100.0,False,True,synthetic
+P0065,LifeLine Pharmacy,pharmacy,B002,16.703684,74.266795,8960ab548b7ffff,0.975,93.3,False,True,synthetic
+P0066,LifeLine Chemist,pharmacy,B002,16.7103,74.225301,8960ab090d3ffff,0.946,90.7,False,True,synthetic
+P0067,Apna Medico Pharmacy,pharmacy,B003,16.739207,74.224812,8960ab09253ffff,0.845,90.9,False,True,synthetic
+P0068,Apna Medico Chemist,pharmacy,B003,16.711816,74.244603,8960ab54967ffff,0.795,92.5,False,True,synthetic
+P0069,Apna Medico,pharmacy,B003,16.712155,74.215139,8960ab09003ffff,0.712,100.0,False,True,synthetic
+P0070,ApnaMedico,pharmacy,B003,16.705193,74.242171,8960ab54923ffff,0.974,91.9,False,True,synthetic
+P0071,Apna Medico Medicals,pharmacy,B003,16.703748,74.232136,8960ab09447ffff,0.929,96.7,False,True,synthetic
+P0072,APNA MEDICO,pharmacy,B003,16.705736,74.25216,8960ab54903ffff,0.653,94.9,False,True,synthetic
+P0073,Apna Medico Pharmacy,pharmacy,B003,16.706561,74.216559,8960ab0908fffff,0.897,94.3,False,True,synthetic
+P0074,Apna Medico Chemist,pharmacy,B003,16.702948,74.228982,8960ab09473ffff,0.926,93.1,False,True,synthetic
+P0075,Apna Medico Chemist,pharmacy,B003,16.692238,74.23783,8960ab0949bffff,0.745,90.0,False,True,synthetic
+P0076,Apna Medico Pharmacy,pharmacy,B003,16.729598,74.229148,8960ab0966fffff,0.727,90.2,False,True,synthetic
+P0077,APNA MEDICO,pharmacy,B003,16.700154,74.240966,8960ab094dbffff,0.938,95.7,False,True,synthetic
+P0078,Apna Medico,pharmacy,B003,16.702316,74.242145,8960ab54937ffff,0.924,100.0,False,True,synthetic
+P0079,APNA MEDICO,pharmacy,B003,16.710605,74.250325,8960ab54973ffff,0.656,90.2,False,True,synthetic
+P0080,APNA MEDICO,pharmacy,B003,16.722392,74.210669,8960ab0906bffff,0.795,93.8,False,True,synthetic
+P0081,Apna Medico Pharmacy,pharmacy,B003,16.706949,74.2377,8960ab0945bffff,0.874,94.9,False,True,synthetic
+P0082,Apna Medico Pharmacy,pharmacy,B003,16.70328,74.223784,8960ab09467ffff,0.686,90.2,False,True,synthetic
+P0083,Apna Medico Pharmacy,pharmacy,B003,16.680936,74.246414,8960ab0b217ffff,0.869,90.7,False,True,synthetic
+P0084,Apna Medico,pharmacy,B003,16.699258,74.247898,8960ab549a3ffff,0.949,100.0,False,True,synthetic
+P0085,Apna Medico Chemist,pharmacy,B003,16.705753,74.248238,8960ab54907ffff,0.939,93.0,False,True,synthetic
+P0086,ApnaMedico,pharmacy,B003,16.702397,74.233825,8960ab09457ffff,0.85,91.9,False,True,synthetic
+P0087,Apna Medico Pharmacy,pharmacy,B003,16.701472,74.248527,8960ab549abffff,0.815,96.3,False,True,synthetic
+P0088,Apna Medico,pharmacy,B003,16.722389,74.219439,8960ab0904bffff,0.804,100.0,False,True,synthetic
+P0089,APNA MEDICO,pharmacy,B003,16.701212,74.245771,8960ab549afffff,0.881,91.4,False,True,synthetic
+P0090,APNA MEDICO,pharmacy,B003,16.722875,74.221454,8960ab09297ffff,0.943,90.0,False,True,synthetic
+P0091,Apna Medico Pharmacy,pharmacy,B003,16.700326,74.236371,8960ab094cfffff,0.881,97.6,False,True,synthetic
+P0092,Apna Medico,pharmacy,B003,16.719372,74.21407,8960ab0907bffff,0.858,100.0,False,True,synthetic
+P0093,Apna Medico Pharmacy,pharmacy,B003,16.690642,74.221014,8960ab095dbffff,0.895,94.0,False,True,synthetic
+P0094,Apna Medico Pharmacy,pharmacy,B003,16.705209,74.234911,8960ab09443ffff,0.861,92.0,False,True,synthetic
+P0095,MediCare Plus Pharmacy,pharmacy,B004,16.676842,74.266969,8960ab0b643ffff,0.952,91.4,False,True,synthetic
+P0096,MediCare Plus,pharmacy,B004,16.718283,74.236756,8960ab09613ffff,0.892,100.0,False,True,synthetic
+P0097,MediCare Plus,pharmacy,B004,16.702071,74.25163,8960ab54917ffff,0.844,100.0,False,True,synthetic
+P0098,MediCare Plus Pharmacy,pharmacy,B004,16.701575,74.217593,8960ab09097ffff,0.733,93.7,False,True,synthetic
+P0099,MediCare Plus,pharmacy,B004,16.699437,74.257679,8960ab5499bffff,0.822,100.0,False,True,synthetic
+P0100,MediCare Plus,pharmacy,B004,16.695781,74.233526,8960ab09413ffff,0.937,100.0,False,True,synthetic
+P0101,MediCare Plus,pharmacy,B004,16.712088,74.227703,8960ab096a7ffff,0.865,100.0,False,True,synthetic
+P0102,MediCare Plus Pharmacy,pharmacy,B004,16.712982,74.226557,8960ab090dbffff,0.793,93.5,False,True,synthetic
+P0103,MediCare Plus Chemist,pharmacy,B004,16.746004,74.233881,8960ab46577ffff,0.81,91.4,False,True,synthetic
+P0104,MediCarePlus,pharmacy,B004,16.704692,74.249303,8960ab54907ffff,0.846,96.6,False,True,synthetic
+P0105,MediCare Plus,pharmacy,B004,16.69801,74.231243,8960ab09403ffff,0.864,100.0,False,True,synthetic
+P0106,MediCare Plus,pharmacy,B004,16.703609,74.258172,8960ab549d7ffff,0.838,100.0,False,True,synthetic
+P0107,MediCare Plus Chemist,pharmacy,B004,16.697923,74.244118,8960ab549a7ffff,0.667,97.2,False,True,synthetic
+P0108,MediCarePlus,pharmacy,B004,16.705715,74.24347,8960ab54923ffff,0.704,91.3,False,True,synthetic
+P0109,MediCare Plus Medicals,pharmacy,B004,16.702208,74.242241,8960ab54937ffff,0.949,93.9,False,True,synthetic
+P0110,MediCarePlus,pharmacy,B004,16.709399,74.225663,8960ab090d3ffff,0.877,96.1,False,True,synthetic
+P0111,MediCare Plus,pharmacy,B004,16.699514,74.241749,8960ab094dbffff,0.869,100.0,False,True,synthetic
+P0112,MediCare Plus Pharmacy,pharmacy,B004,16.705234,74.218213,8960ab09083ffff,0.756,92.5,False,True,synthetic
+P0113,MEDICARE PLUS,pharmacy,B004,16.703207,74.230005,8960ab09473ffff,0.769,94.2,False,True,synthetic
+P0114,MEDICARE PLUS,pharmacy,B004,16.704433,74.239706,8960ab54927ffff,0.957,92.4,False,True,synthetic
+P0115,MediCare Plus Pharmacy,pharmacy,B004,16.699619,74.250186,8960ab549bbffff,0.839,93.6,False,True,synthetic
+P0116,MediCare Plus,pharmacy,B004,16.720133,74.213096,8960ab0907bffff,0.753,100.0,False,True,synthetic
+P0117,MediCare Plus,pharmacy,B004,16.69895,74.234,8960ab0941bffff,0.963,100.0,False,True,synthetic
+P0118,MediCare Plus Pharmacy,pharmacy,B004,16.732224,74.212412,8960ab09233ffff,0.805,93.6,False,True,synthetic
+P0119,Mahalaxmi Medical Store,pharmacy,,16.697353,74.244198,8960ab549a7ffff,0.737,65.0,False,False,synthetic
+P0120,Ambabai Pharmacy,pharmacy,,16.701742,74.233612,8960ab09457ffff,0.539,36.8,False,False,synthetic
+P0121,Sai Medicals,pharmacy,,16.727443,74.247499,8960ab54b23ffff,0.81,51.8,False,False,synthetic
+P0122,Datta Medicals,pharmacy,,16.702361,74.27749,8960ab54c2fffff,0.894,57.3,False,False,synthetic
+P0123,Jyoti Medical & General,pharmacy,,16.674997,74.297335,8960ab5686bffff,0.986,36.0,False,False,synthetic
+P0124,Jyoti Medical & General,pharmacy,,16.700037,74.233676,8960ab0941bffff,0.888,38.5,False,False,synthetic
+P0125,Om Chemist,pharmacy,,16.703764,74.2374,8960ab09453ffff,0.977,37.1,False,False,synthetic
+P0126,Ambabai Pharmacy,pharmacy,,16.673978,74.258656,8960ab0b677ffff,0.888,35.9,False,False,synthetic
+P0127,Ganesh Pharmacy,pharmacy,,16.721885,74.203022,8960ab0938bffff,0.9,64.6,False,False,synthetic
+P0128,Jyoti Medical & General,pharmacy,,16.70928,74.222275,8960ab090d7ffff,0.847,37.5,False,False,synthetic
+P0129,Shree Medical,pharmacy,,16.704926,74.212568,8960ab090bbffff,0.827,38.6,False,False,synthetic
+P0130,Ganesh Pharmacy,pharmacy,,16.670837,74.263242,8960ab0b603ffff,0.77,40.8,False,False,synthetic
+P0131,Sai Medicals,pharmacy,,16.714411,74.249235,8960ab5497bffff,0.854,44.5,False,False,synthetic
+P0132,Datta Medicals,pharmacy,,16.702643,74.234102,8960ab09457ffff,0.801,58.0,False,False,synthetic
+P0133,Jyoti Medical & General,pharmacy,,16.698504,74.260355,8960ab54d67ffff,0.959,26.9,False,False,synthetic
+P0134,Om Chemist,pharmacy,,16.711814,74.258694,8960ab54953ffff,0.832,36.3,False,False,synthetic
+P0135,Om Chemist,pharmacy,,16.711023,74.220701,8960ab090c7ffff,0.785,55.4,False,False,synthetic
+P0136,Sai Medicals,pharmacy,,16.700032,74.20713,8960ab0956bffff,0.918,31.3,False,False,synthetic
+P0137,Om Chemist,pharmacy,,16.70723,74.211411,8960ab090abffff,0.697,58.3,False,False,synthetic
+P0138,Ganesh Pharmacy,pharmacy,,16.689138,74.290608,8960ab54c97ffff,0.956,64.7,False,False,synthetic
+P0139,Jyoti Medical & General,pharmacy,,16.705388,74.243182,8960ab54923ffff,0.886,58.0,False,False,synthetic
+P0140,Mahalaxmi Medical Store,pharmacy,,16.740251,74.204151,8960ab46c87ffff,0.897,30.7,False,False,synthetic
+P0141,Mahalaxmi Medical Store,pharmacy,,16.747528,74.193565,8960ab46c23ffff,0.737,60.5,False,False,synthetic
+P0142,Mahalaxmi Medical Store,pharmacy,,16.707573,74.224767,8960ab0946fffff,0.823,69.2,False,False,synthetic
+P0143,Om Chemist,pharmacy,,16.698026,74.260589,8960ab54d67ffff,0.606,32.8,False,False,synthetic
+P0144,Sai Medicals,pharmacy,,16.692135,74.268132,8960ab54d03ffff,0.657,26.5,False,False,synthetic
+P0145,Datta Medicals,pharmacy,,16.70631,74.244047,8960ab54923ffff,0.831,33.9,False,False,synthetic
+P0146,Sai Medicals,pharmacy,,16.718011,74.245436,8960ab096d3ffff,0.967,46.9,False,False,synthetic
+P0147,Jyoti Medical & General,pharmacy,,16.703476,74.214693,8960ab09087ffff,0.79,45.6,False,False,synthetic
+P0148,Om Chemist,pharmacy,,16.717591,74.215481,8960ab09047ffff,0.869,60.4,False,False,synthetic
+P0149,Mahalaxmi Medical Store,pharmacy,,16.734887,74.205551,8960ab0935bffff,0.867,69.2,False,False,synthetic
+P0150,Sai Medicals,pharmacy,,16.6501,74.247696,8960ab0b42fffff,0.93,31.0,False,False,synthetic
+P0151,Sai Medicals,pharmacy,,16.71708,74.248471,8960ab5496bffff,0.928,32.9,False,False,synthetic
+P0152,Datta Medicals,pharmacy,,16.720479,74.281318,8960ab54e27ffff,0.839,53.9,False,False,synthetic
+P0153,Datta Medicals,pharmacy,,16.696174,74.232898,8960ab09413ffff,0.84,27.5,False,False,synthetic
+P0154,Ambabai Pharmacy,pharmacy,,16.704556,74.224077,8960ab09467ffff,0.959,59.0,False,False,synthetic
+P0155,Shree Medical,pharmacy,,16.702827,74.221632,8960ab09093ffff,0.905,59.9,False,False,synthetic
+P0156,Shivneri Medical,pharmacy,,16.683256,74.282188,8960ab56b73ffff,0.753,38.6,False,False,synthetic
+P0157,Ambabai Pharmacy,pharmacy,,16.703109,74.242214,8960ab54937ffff,0.94,25.6,False,False,synthetic
+P0158,Sai Medicals,pharmacy,,16.670655,74.244669,8960ab0b04fffff,0.911,38.4,False,False,synthetic
+P0159,Ambabai Pharmacy,pharmacy,,16.682015,74.25439,8960ab0b2d7ffff,0.719,51.1,False,False,synthetic
+P0160,Rajarampuri Chemists,pharmacy,,16.678312,74.253821,8960ab0b29bffff,0.854,54.9,False,False,synthetic
+P0161,Mahalaxmi Medical Store,pharmacy,,16.70198,74.234168,8960ab09457ffff,0.933,26.6,False,False,synthetic
+P0162,Shree Medical,pharmacy,,16.699393,74.234195,8960ab0941bffff,0.879,41.5,False,False,synthetic
+P0163,Shivneri Medical,pharmacy,,16.70295,74.225566,8960ab09477ffff,0.935,61.8,False,False,synthetic
+P0164,Ganesh Pharmacy,pharmacy,,16.703633,74.236959,8960ab09453ffff,0.664,59.3,False,False,synthetic
+P0165,Ganesh Pharmacy,pharmacy,,16.679272,74.249073,8960ab0b28fffff,0.919,45.5,False,False,synthetic
+P0166,Ganesh Pharmacy,pharmacy,,16.694661,74.235579,8960ab0948bffff,0.553,67.7,False,False,synthetic
+P0167,Rajarampuri Chemists,pharmacy,,16.704523,74.253682,8960ab54913ffff,0.79,64.3,False,False,synthetic
+P0168,Mahalaxmi Medical Store,pharmacy,,16.67765,74.245859,8960ab0b2bbffff,0.887,33.5,False,False,synthetic
+P0169,Ambabai Pharmacy,pharmacy,,16.689557,74.240061,8960ab0b267ffff,0.804,41.3,False,False,synthetic
+P0170,Rajarampuri Chemists,pharmacy,,16.7172,74.288537,8960ab54eabffff,0.852,25.0,False,False,synthetic
+P0171,Datta Medicals,pharmacy,,16.689752,74.226501,8960ab094a3ffff,0.723,28.2,False,False,synthetic
+P0172,Datta Medicals,pharmacy,,16.766424,74.243519,8960ab4600bffff,0.838,33.8,False,False,synthetic
+P0173,Jyoti Medical & General,pharmacy,,16.681914,74.186863,8960ab08207ffff,0.889,41.6,False,False,synthetic
+P0174,Rajarampuri Chemists,pharmacy,,16.70766,74.253789,8960ab5491bffff,0.71,52.7,False,False,synthetic
+P0175,Rajarampuri Chemists,pharmacy,,16.687322,74.248617,8960ab0b20bffff,0.652,56.3,False,False,synthetic
+P0176,Rajarampuri Chemists,pharmacy,,16.694592,74.221867,8960ab09437ffff,0.966,67.5,False,False,synthetic
+P0177,Om Chemist,pharmacy,,16.679529,74.184087,8960ab08233ffff,0.697,45.0,False,False,synthetic
+P0178,Jyoti Medical & General,pharmacy,,16.722902,74.265448,8960ab5486fffff,0.857,36.0,False,False,synthetic
+P0179,Datta Medicals,pharmacy,,16.744461,74.232001,8960ab4652bffff,0.905,69.9,False,False,synthetic
+P0180,Sai Medicals,pharmacy,,16.749686,74.243055,8960ab46543ffff,0.884,41.7,False,False,synthetic
+P0181,Jyoti Medical & General,pharmacy,,16.726689,74.231141,8960ab09663ffff,0.903,48.0,False,False,synthetic
+P0182,Datta Medicals,pharmacy,,16.755466,74.235556,8960ab460a7ffff,0.868,41.5,False,False,synthetic
+P0183,Sai Medicals,pharmacy,,16.683064,74.252746,8960ab0b2c7ffff,0.708,42.6,False,False,synthetic
+P0184,Om Chemist,pharmacy,,16.706703,74.233013,8960ab0944fffff,0.764,22.4,False,False,synthetic
+P0185,Mahalaxmi Medical Store,pharmacy,,16.691057,74.251087,8960ab0b243ffff,0.589,52.5,False,False,synthetic
+P0186,Shivneri Medical,pharmacy,,16.686154,74.236565,8960ab0b22fffff,0.9,54.3,False,False,synthetic
+P0187,Jyoti Medical & General,pharmacy,,16.698635,74.246929,8960ab549a3ffff,0.806,33.7,False,False,synthetic
+P0188,Jyoti Medical & General,pharmacy,,16.726263,74.235952,8960ab09647ffff,0.716,40.1,False,False,synthetic
+P0189,Shivneri Medical,pharmacy,,16.724813,74.238151,8960ab09657ffff,0.903,28.2,False,False,synthetic
+P0190,Rajarampuri Chemists,pharmacy,,16.687108,74.285663,8960ab56b4fffff,0.791,22.7,False,False,synthetic
+P0191,Ambabai Pharmacy,pharmacy,,16.721002,74.259564,8960ab54b83ffff,0.875,60.2,False,False,synthetic
+P0192,Rajarampuri Chemists,pharmacy,,16.702897,74.237321,8960ab09453ffff,0.952,48.7,False,False,synthetic
+P0193,Om Chemist,pharmacy,,16.704163,74.291244,8960ab54c57ffff,0.682,22.8,False,False,synthetic
+P0194,Jyoti Medical & General,pharmacy,,16.734746,74.205161,8960ab0935bffff,0.805,50.9,False,False,synthetic
+P0195,Ganesh Pharmacy,pharmacy,,16.700462,74.244883,8960ab549afffff,0.863,27.8,False,False,synthetic
+P0196,Ambabai Pharmacy,pharmacy,,16.699745,74.23421,8960ab0941bffff,0.813,69.8,False,False,synthetic
+P0197,Shivneri Medical,pharmacy,,16.719083,74.223575,8960ab09627ffff,0.85,29.9,False,False,synthetic
+P0198,Ganesh Pharmacy,pharmacy,,16.688536,74.289175,8960ab56b4bffff,0.952,42.0,False,False,synthetic
+P0199,Mahalaxmi Medical Store,pharmacy,,16.6955,74.186811,8960ab091a7ffff,0.815,28.2,False,False,synthetic
+P0200,Sai Medicals,pharmacy,,16.701252,74.247489,8960ab549abffff,0.913,27.7,False,False,synthetic
+P0201,Shivneri Medical,pharmacy,,16.656589,74.211639,8960ab0b12fffff,0.676,48.6,False,False,synthetic
+P0202,Ambabai Pharmacy,pharmacy,,16.742687,74.221312,8960ab0924fffff,0.9,65.6,False,False,synthetic
+P0203,Datta Medicals,pharmacy,,16.721721,74.300528,8960ab54ec3ffff,0.936,51.6,False,False,synthetic
+P0204,Rajarampuri Chemists,pharmacy,,16.692541,74.246161,8960ab0b27bffff,0.876,54.2,False,False,synthetic
+P0205,Datta Medicals,pharmacy,,16.746199,74.272083,8960ab54a6bffff,0.915,46.9,False,False,synthetic
+P0206,Shree Medical,pharmacy,,16.699622,74.250136,8960ab549bbffff,0.684,22.1,False,False,synthetic
+P0207,Datta Medicals,pharmacy,,16.714478,74.211837,8960ab0900fffff,0.944,25.5,False,False,synthetic
+P0208,Om Chemist,pharmacy,,16.706122,74.238184,8960ab0945bffff,0.945,54.2,False,False,synthetic
+P0209,Shree Medical,pharmacy,,16.698368,74.239184,8960ab094c3ffff,0.919,26.3,False,False,synthetic
+P0210,Datta Medicals,pharmacy,,16.695214,74.243769,8960ab0b26bffff,0.807,51.9,False,False,synthetic
+P0211,Datta Medicals,pharmacy,,16.70114,74.209466,8960ab090b7ffff,0.751,58.3,False,False,synthetic
+P0212,Shree Medical,pharmacy,,16.699653,74.240966,8960ab094dbffff,0.78,59.9,False,False,synthetic
+P0213,Om Chemist,pharmacy,,16.701113,74.253811,8960ab5498fffff,0.703,48.0,False,False,synthetic
+P0214,Shree Medical,pharmacy,,16.695341,74.232834,8960ab09413ffff,0.887,56.7,False,False,synthetic
+P0215,Shivneri Medical,pharmacy,,16.7123,74.260034,8960ab54827ffff,0.883,63.2,False,False,synthetic
+P0216,Shree Medical,pharmacy,,16.710428,74.233091,8960ab096b3ffff,0.809,44.1,False,False,synthetic
+P0217,Ambabai Pharmacy,pharmacy,,16.702818,74.213359,8960ab090b3ffff,0.715,60.4,False,False,synthetic
+P0218,Sai Medicals,pharmacy,,16.694906,74.229565,8960ab09417ffff,0.694,28.5,False,False,synthetic
+P0219,Shivneri Medical,pharmacy,,16.722809,74.202227,8960ab0938bffff,0.902,59.5,False,False,synthetic
+P0220,Shree Medical,pharmacy,,16.675924,74.255777,8960ab0b667ffff,0.871,64.6,False,False,synthetic
+P0221,Om Chemist,pharmacy,,16.710046,74.22209,8960ab090d7ffff,0.833,55.9,False,False,synthetic
+P0222,Shivneri Medical,pharmacy,,16.697706,74.247527,8960ab549a3ffff,0.902,68.4,False,False,synthetic
+P0223,Ambabai Pharmacy,pharmacy,,16.699153,74.254988,8960ab54983ffff,0.935,20.2,False,False,synthetic
+P0224,Rajarampuri Chemists,pharmacy,,16.714859,74.220145,8960ab090cfffff,0.925,34.2,False,False,synthetic
+P0225,Datta Medicals,pharmacy,,16.73097,74.248185,8960ab54b2bffff,0.834,49.4,False,False,synthetic
+P0226,Ganesh Pharmacy,pharmacy,,16.671454,74.295249,8960ab56863ffff,0.827,24.3,False,False,synthetic
+P0227,Ganesh Pharmacy,pharmacy,,16.704706,74.218179,8960ab09083ffff,0.762,29.5,False,False,synthetic
+P0228,Jyoti Medical & General,pharmacy,,16.730579,74.286452,8960ab54e6fffff,0.82,66.8,False,False,synthetic
+P0229,Datta Medicals,pharmacy,,16.709177,74.227918,8960ab0946bffff,0.793,38.4,False,False,synthetic
+P0230,Jyoti Medical & General,pharmacy,,16.738517,74.231375,8960ab46537ffff,0.827,59.8,False,False,synthetic
+P0231,Ambabai Pharmacy,pharmacy,,16.696291,74.233067,8960ab09413ffff,0.846,56.6,False,False,synthetic
+P0232,Ganesh Pharmacy,pharmacy,,16.696259,74.257436,8960ab54993ffff,0.91,38.0,False,False,synthetic
+P0233,Datta Medicals,pharmacy,,16.701918,74.248088,8960ab549abffff,0.93,47.4,False,False,synthetic
+P0234,Datta Medicals,pharmacy,,16.679376,74.287316,8960ab56b1bffff,0.89,33.2,False,False,synthetic
+P0235,Shree Medical,pharmacy,,16.672684,74.286475,8960ab56b8fffff,0.98,64.3,False,False,synthetic
+P0236,Shivneri Medical,pharmacy,,16.71245,74.221919,8960ab090c3ffff,0.953,24.1,False,False,synthetic
+P0237,Jyoti Medical & General,pharmacy,,16.738885,74.255209,8960ab464b7ffff,0.943,61.1,False,False,synthetic
+P0238,Mahalaxmi Medical Store,pharmacy,,16.704846,74.224409,8960ab09467ffff,0.76,55.7,False,False,synthetic
+P0239,Mahalaxmi Medical Store,pharmacy,,16.728766,74.212213,8960ab092afffff,0.902,62.2,False,False,synthetic
+P0240,Rajarampuri Chemists,pharmacy,,16.697949,74.23143,8960ab09403ffff,0.901,20.5,False,False,synthetic
+P0241,Ambabai Pharmacy,pharmacy,,16.699396,74.265852,8960ab54d7bffff,0.821,27.0,False,False,synthetic
+P0242,Shree Medical,pharmacy,,16.746331,74.196837,8960ab46c33ffff,0.957,54.7,False,False,synthetic
+P0243,Datta Medicals,pharmacy,,16.708935,74.218738,8960ab0908bffff,0.837,25.9,False,False,synthetic
+P0244,Mahalaxmi Medical Store,pharmacy,,16.68825,74.28491,8960ab56b4fffff,0.85,57.1,False,False,synthetic
+P0245,Shivneri Medical,pharmacy,,16.69846,74.252349,8960ab54987ffff,0.933,21.4,False,False,synthetic
+P0246,Mahalaxmi Medical Store,pharmacy,,16.693653,74.235826,8960ab0948bffff,0.923,48.1,False,False,synthetic
+P0247,Shree Medical,pharmacy,,16.720487,74.24657,8960ab096dbffff,0.91,20.5,False,False,synthetic
+P0248,Ganesh Pharmacy,pharmacy,,16.708285,74.249512,8960ab5490fffff,0.909,39.7,False,False,synthetic
+P0249,Om Chemist,pharmacy,,16.736187,74.23793,8960ab465bbffff,0.953,66.4,False,False,synthetic
+P0250,Rajarampuri Chemists,pharmacy,,16.709792,74.231121,8960ab096b7ffff,0.897,56.0,False,False,synthetic
+P0251,Rajarampuri Chemists,pharmacy,,16.682641,74.236548,8960ab0b227ffff,0.978,62.2,False,False,synthetic
+P0252,Datta Medicals,pharmacy,,16.705319,74.218544,8960ab09083ffff,0.907,62.0,False,False,synthetic
+P0253,Mahalaxmi Medical Store,pharmacy,,16.683997,74.247232,8960ab0b203ffff,0.885,38.8,False,False,synthetic
+P0254,Datta Medicals,pharmacy,,16.698469,74.239913,8960ab094c3ffff,0.816,27.3,False,False,synthetic
+P0255,Jyoti Medical & General,pharmacy,,16.707334,74.224419,8960ab0946fffff,0.867,49.2,False,False,synthetic
+P0256,Shivneri Medical,pharmacy,,16.706082,74.226959,8960ab09463ffff,0.916,25.8,False,False,synthetic
+P0257,Mahalaxmi Medical Store,pharmacy,,16.749742,74.230152,8960ab4619bffff,0.928,42.1,False,False,synthetic
+P0258,Om Chemist,pharmacy,,16.718248,74.228485,8960ab09633ffff,0.775,56.8,False,False,synthetic
+P0259,Shree Medical,pharmacy,,16.718865,74.223468,8960ab09627ffff,0.938,57.0,False,False,synthetic
+P0260,Shree Medical,pharmacy,,16.700487,74.231678,8960ab0940bffff,0.749,21.4,False,False,synthetic
+P0261,Ganesh Pharmacy,pharmacy,,16.657389,74.282171,8960ab5691bffff,0.927,58.2,False,False,synthetic
+P0262,Rajarampuri Chemists,pharmacy,,16.703929,74.232923,8960ab09447ffff,0.7,66.5,False,False,synthetic
+P0263,Shree Medical,pharmacy,,16.699294,74.217027,8960ab0955bffff,0.813,25.6,False,False,synthetic
+P0264,Om Chemist,pharmacy,,16.697397,74.222482,8960ab09423ffff,0.869,21.2,False,False,synthetic
+P0265,Ambabai Pharmacy,pharmacy,,16.711879,74.266009,8960ab54833ffff,0.843,29.0,False,False,synthetic
+P0266,Sai Medicals,pharmacy,,16.724602,74.238938,8960ab09657ffff,0.656,63.8,False,False,synthetic
+P0267,Mahalaxmi Medical Store,pharmacy,,16.694415,74.219437,8960ab095cbffff,0.947,34.4,False,False,synthetic
+P0268,Mahalaxmi Medical Store,pharmacy,,16.704884,74.26238,8960ab549d3ffff,0.919,33.5,False,False,synthetic
+P0269,Care Hospital,hospital,,16.724603,74.230042,8960ab09677ffff,0.874,,False,False,synthetic
+P0270,Care Hospital,hospital,,16.72146,74.221656,8960ab0905bffff,0.522,,False,False,synthetic
+P0271,Lifeline Multispeciality,hospital,,16.680836,74.253814,8960ab0b2d7ffff,0.569,,False,False,synthetic
+P0272,City Hospital,hospital,,16.68964,74.283896,8960ab54cb7ffff,0.886,,False,False,synthetic
+P0273,Care Hospital,hospital,,16.699727,74.249796,8960ab549bbffff,0.587,,False,False,synthetic
+P0274,Sanjeevani Hospital,hospital,,16.695017,74.231029,8960ab09417ffff,0.618,,False,False,synthetic
+P0275,Lifeline Multispeciality,hospital,,16.744306,74.22916,8960ab4652fffff,0.697,,False,False,synthetic
+P0276,Care Hospital,hospital,,16.70396,74.23974,8960ab54927ffff,0.721,,False,False,synthetic
+P0277,City Hospital,hospital,,16.701838,74.256024,8960ab5498bffff,0.704,,False,False,synthetic
+P0278,Care Hospital,hospital,,16.704864,74.23204,8960ab09447ffff,0.694,,False,False,synthetic
+P0279,City Hospital,hospital,,16.698841,74.242161,8960ab094dbffff,0.713,,False,False,synthetic
+P0280,Lifeline Multispeciality,hospital,,16.697177,74.219198,8960ab09427ffff,0.783,,False,False,synthetic
+P0281,Shree Hospital,hospital,,16.709395,74.20563,8960ab09037ffff,0.701,,False,False,synthetic
+P0282,City Hospital,hospital,,16.675869,74.247947,8960ab0b287ffff,0.789,,False,False,synthetic
+P0283,clinic_015,clinic,,16.729382,74.199129,8960ab0930bffff,0.902,,False,False,synthetic
+P0284,clinic_016,clinic,,16.694196,74.213101,8960ab09557ffff,0.676,,False,False,synthetic
+P0285,clinic_017,clinic,,16.717792,74.259552,8960ab54b97ffff,0.589,,False,False,synthetic
+P0286,clinic_018,clinic,,16.696858,74.235459,8960ab094c7ffff,0.904,,False,False,synthetic
+P0287,clinic_019,clinic,,16.723496,74.197166,8960ab09317ffff,0.862,,False,False,synthetic
+P0288,clinic_020,clinic,,16.684845,74.241904,8960ab0b23bffff,0.615,,False,False,synthetic
+P0289,clinic_021,clinic,,16.672795,74.277465,8960ab56bafffff,0.418,,False,False,synthetic
+P0290,clinic_022,clinic,,16.6958,74.232969,8960ab09413ffff,0.4,,False,False,synthetic
+P0291,clinic_023,clinic,,16.706295,74.2453,8960ab5493bffff,0.728,,False,False,synthetic
+P0292,clinic_024,clinic,,16.698794,74.247659,8960ab549a3ffff,0.926,,False,False,synthetic
+P0293,clinic_025,clinic,,16.686648,74.214941,8960ab0958bffff,0.911,,False,False,synthetic
+P0294,clinic_026,clinic,,16.672972,74.264412,8960ab0b60bffff,0.733,,False,False,synthetic
+P0295,clinic_027,clinic,,16.727213,74.230426,8960ab09663ffff,0.733,,False,False,synthetic
+P0296,clinic_028,clinic,,16.706584,74.238161,8960ab0945bffff,0.666,,False,False,synthetic
+P0297,clinic_029,clinic,,16.720786,74.22984,8960ab0963bffff,0.726,,False,False,synthetic
+P0298,clinic_030,clinic,,16.709682,74.222202,8960ab090d7ffff,0.689,,False,False,synthetic
+P0299,clinic_031,clinic,,16.737696,74.19228,8960ab46dd3ffff,0.671,,False,False,synthetic
+P0300,clinic_032,clinic,,16.69657,74.245122,8960ab549a7ffff,0.598,,False,False,synthetic
+P0301,clinic_033,clinic,,16.690826,74.23459,8960ab09483ffff,0.917,,False,False,synthetic
+P0302,clinic_034,clinic,,16.676951,74.251746,8960ab0b283ffff,0.593,,False,False,synthetic
+P0303,clinic_035,clinic,,16.704602,74.234333,8960ab09443ffff,0.703,,False,False,synthetic
+P0304,clinic_036,clinic,,16.737803,74.214166,8960ab09277ffff,0.866,,False,False,synthetic
+P0305,clinic_037,clinic,,16.668439,74.273346,8960ab0b6d3ffff,0.671,,False,False,synthetic
+P0306,clinic_038,clinic,,16.72442,74.221736,8960ab09297ffff,0.698,,False,False,synthetic
+P0307,clinic_039,clinic,,16.712804,74.25291,8960ab54947ffff,0.708,,False,False,synthetic
+P0308,clinic_040,clinic,,16.703683,74.22401,8960ab09467ffff,0.89,,False,False,synthetic
+P0309,clinic_041,clinic,,16.699612,74.25876,8960ab5499bffff,0.813,,False,False,synthetic
+P0310,clinic_042,clinic,,16.695808,74.241321,8960ab094d3ffff,0.893,,False,False,synthetic
+P0311,clinic_043,clinic,,16.695518,74.240388,8960ab094d3ffff,0.831,,False,False,synthetic
+P0312,clinic_044,clinic,,16.70592,74.242771,8960ab54923ffff,0.657,,False,False,synthetic
+P0313,clinic_045,clinic,,16.680579,74.245536,8960ab0b217ffff,0.886,,False,False,synthetic
+P0314,clinic_046,clinic,,16.697535,74.223547,8960ab09423ffff,0.627,,False,False,synthetic
+P0315,clinic_047,clinic,,16.706964,74.259896,8960ab549c3ffff,0.531,,False,False,synthetic
+P0316,clinic_048,clinic,,16.692019,74.228649,8960ab094bbffff,0.686,,False,False,synthetic
+P0317,clinic_049,clinic,,16.701894,74.188301,8960ab09133ffff,0.626,,False,False,synthetic
+P0318,clinic_050,clinic,,16.717416,74.234417,8960ab09617ffff,0.863,,False,False,synthetic
+P0319,clinic_051,clinic,,16.678108,74.254189,8960ab0b29bffff,0.779,,False,False,synthetic
+P0320,clinic_052,clinic,,16.658626,74.263119,8960ab0b44bffff,0.731,,False,False,synthetic
+P0321,clinic_053,clinic,,16.701148,74.245592,8960ab549afffff,0.86,,False,False,synthetic
+P0322,clinic_054,clinic,,16.691275,74.242728,8960ab0b263ffff,0.753,,False,False,synthetic
+P0323,clinic_055,clinic,,16.699095,74.225412,8960ab0943bffff,0.873,,False,False,synthetic
+P0324,clinic_056,clinic,,16.706296,74.237425,8960ab0945bffff,0.727,,False,False,synthetic
+P0325,clinic_057,clinic,,16.713905,74.226287,8960ab090dbffff,0.669,,False,False,synthetic
+P0326,clinic_058,clinic,,16.70913,74.252082,8960ab5490bffff,0.845,,False,False,synthetic
+P0327,clinic_059,clinic,,16.693626,74.197736,8960ab09197ffff,0.855,,False,False,synthetic
+P0328,clinic_060,clinic,,16.678488,74.232539,8960ab0b3cfffff,0.851,,False,False,synthetic
+P0329,clinic_061,clinic,,16.6819,74.232397,8960ab0b353ffff,0.805,,False,False,synthetic
+P0330,clinic_062,clinic,,16.714502,74.252457,8960ab5494fffff,0.71,,False,False,synthetic
+P0331,clinic_063,clinic,,16.703272,74.212618,8960ab090b3ffff,0.829,,False,False,synthetic
+P0332,clinic_064,clinic,,16.698628,74.222568,8960ab09423ffff,0.775,,False,False,synthetic
+P0333,clinic_065,clinic,,16.684683,74.268661,8960ab54d87ffff,0.644,,False,False,synthetic
+P0334,clinic_066,clinic,,16.674338,74.250306,8960ab0b297ffff,0.937,,False,False,synthetic
+P0335,clinic_067,clinic,,16.711408,74.228094,8960ab096a7ffff,0.861,,False,False,synthetic
+P0336,clinic_068,clinic,,16.708051,74.253985,8960ab5491bffff,0.608,,False,False,synthetic
+P0337,clinic_069,clinic,,16.689078,74.258809,8960ab54d37ffff,0.704,,False,False,synthetic
+P0338,clinic_070,clinic,,16.706554,74.238044,8960ab0945bffff,0.735,,False,False,synthetic
+P0339,clinic_071,clinic,,16.690672,74.2618,8960ab54d33ffff,0.954,,False,False,synthetic
+P0340,clinic_072,clinic,,16.701157,74.201353,8960ab091d7ffff,0.813,,False,False,synthetic
+P0341,clinic_073,clinic,,16.685871,74.280139,8960ab56b63ffff,0.926,,False,False,synthetic
+P0342,clinic_074,clinic,,16.69862,74.230488,8960ab09403ffff,0.72,,False,False,synthetic
+P0343,clinic_075,clinic,,16.706082,74.226336,8960ab09463ffff,0.81,,False,False,synthetic
+P0344,clinic_076,clinic,,16.709994,74.222726,8960ab090d7ffff,0.651,,False,False,synthetic
+P0345,clinic_077,clinic,,16.709908,74.246594,8960ab54977ffff,0.662,,False,False,synthetic
+P0346,clinic_078,clinic,,16.670033,74.287871,8960ab56b83ffff,0.814,,False,False,synthetic
+P0347,clinic_079,clinic,,16.701797,74.225463,8960ab09477ffff,0.823,,False,False,synthetic
+P0348,clinic_080,clinic,,16.692519,74.237872,8960ab0949bffff,0.953,,False,False,synthetic
+P0349,clinic_081,clinic,,16.708451,74.227333,8960ab0946bffff,0.726,,False,False,synthetic
+P0350,clinic_082,clinic,,16.71777,74.204367,8960ab09393ffff,0.909,,False,False,synthetic
+P0351,clinic_083,clinic,,16.710371,74.254475,8960ab54957ffff,0.811,,False,False,synthetic
+P0352,clinic_084,clinic,,16.702321,74.217864,8960ab09097ffff,0.461,,False,False,synthetic
+P0353,school_085,school,,16.697617,74.244202,8960ab549a7ffff,0.883,,False,False,synthetic
+P0354,school_086,school,,16.718845,74.269573,8960ab54873ffff,0.848,,False,False,synthetic
+P0355,school_087,school,,16.682531,74.282674,8960ab56b73ffff,0.477,,False,False,synthetic
+P0356,school_088,school,,16.690587,74.218222,8960ab095c3ffff,0.893,,False,False,synthetic
+P0357,school_089,school,,16.706664,74.221598,8960ab0909bffff,0.878,,False,False,synthetic
+P0358,school_090,school,,16.676877,74.294471,8960ab56bd3ffff,0.926,,False,False,synthetic
+P0359,school_091,school,,16.741915,74.269689,8960ab54a67ffff,0.883,,False,False,synthetic
+P0360,school_092,school,,16.705146,74.235822,8960ab09443ffff,0.829,,False,False,synthetic
+P0361,school_093,school,,16.703496,74.250458,8960ab54917ffff,0.643,,False,False,synthetic
+P0362,school_094,school,,16.681417,74.178652,8960ab08227ffff,0.824,,False,False,synthetic
+P0363,school_095,school,,16.682497,74.257903,8960ab0b2d3ffff,0.651,,False,False,synthetic
+P0364,school_096,school,,16.696609,74.211779,8960ab09547ffff,0.85,,False,False,synthetic
+P0365,school_097,school,,16.69242,74.221494,8960ab095dbffff,0.59,,False,False,synthetic
+P0366,school_098,school,,16.703114,74.23758,8960ab09453ffff,0.922,,False,False,synthetic
+P0367,school_099,school,,16.70303,74.228699,8960ab09473ffff,0.724,,False,False,synthetic
+P0368,school_100,school,,16.721425,74.240352,8960ab096cfffff,0.714,,False,False,synthetic
+P0369,school_101,school,,16.70282,74.235134,8960ab09457ffff,0.892,,False,False,synthetic
+P0370,school_102,school,,16.673045,74.247557,8960ab0b04bffff,0.826,,False,False,synthetic
+P0371,school_103,school,,16.679301,74.235797,8960ab0b3cbffff,0.785,,False,False,synthetic
+P0372,school_104,school,,16.705445,74.25082,8960ab54903ffff,0.883,,False,False,synthetic
+P0373,school_105,school,,16.762927,74.257824,8960ab466a7ffff,0.646,,False,False,synthetic
+P0374,school_106,school,,16.703946,74.236809,8960ab09453ffff,0.818,,False,False,synthetic
+P0375,school_107,school,,16.704845,74.219497,8960ab09083ffff,0.745,,False,False,synthetic
+P0376,school_108,school,,16.708017,74.257006,8960ab549cfffff,0.976,,False,False,synthetic
+P0377,school_109,school,,16.696188,74.284041,8960ab54cabffff,0.874,,False,False,synthetic
+P0378,school_110,school,,16.682285,74.278637,8960ab56b77ffff,0.757,,False,False,synthetic
+P0379,school_111,school,,16.679122,74.273616,8960ab56b2fffff,0.78,,False,False,synthetic
+P0380,school_112,school,,16.665153,74.256845,8960ab0b6afffff,0.685,,False,False,synthetic
+P0381,school_113,school,,16.68672,74.269454,8960ab54d8fffff,0.835,,False,False,synthetic
+P0382,school_114,school,,16.709138,74.230301,8960ab096b7ffff,0.788,,False,False,synthetic
+P0383,school_115,school,,16.714558,74.250895,8960ab5497bffff,0.734,,False,False,synthetic
+P0384,school_116,school,,16.676885,74.275869,8960ab56b23ffff,0.855,,False,False,synthetic
+P0385,school_117,school,,16.696551,74.257996,8960ab54993ffff,0.849,,False,False,synthetic
+P0386,school_118,school,,16.713006,74.238633,8960ab09683ffff,0.777,,False,False,synthetic
+P0387,school_119,school,,16.690461,74.217788,8960ab095c3ffff,0.544,,False,False,synthetic
+P0388,school_120,school,,16.691425,74.235122,8960ab09483ffff,0.881,,False,False,synthetic
+P0389,school_121,school,,16.696282,74.216266,8960ab09553ffff,0.9,,False,False,synthetic
+P0390,school_122,school,,16.697317,74.249673,8960ab549b3ffff,0.74,,False,False,synthetic
+P0391,school_123,school,,16.718504,74.270005,8960ab54873ffff,0.696,,False,False,synthetic
+P0392,school_124,school,,16.707364,74.237787,8960ab0945bffff,0.672,,False,False,synthetic
+P0393,school_125,school,,16.705067,74.248547,8960ab54907ffff,0.918,,False,False,synthetic
+P0394,school_126,school,,16.688218,74.220747,8960ab095d3ffff,0.737,,False,False,synthetic
+P0395,school_127,school,,16.682955,74.257539,8960ab0b2d3ffff,0.919,,False,False,synthetic
+P0396,school_128,school,,16.698517,74.217359,8960ab0955bffff,0.742,,False,False,synthetic
+P0397,school_129,school,,16.695247,74.243892,8960ab0b26bffff,0.847,,False,False,synthetic
+P0398,school_130,school,,16.706799,74.25393,8960ab5491bffff,0.4,,False,False,synthetic
+P0399,school_131,school,,16.705931,74.242915,8960ab54923ffff,0.425,,False,False,synthetic
+P0400,school_132,school,,16.702396,74.241593,8960ab54937ffff,0.946,,False,False,synthetic
+P0401,market_133,market,,16.702814,74.220935,8960ab09093ffff,0.819,,False,False,synthetic
+P0402,market_134,market,,16.717954,74.215844,8960ab09047ffff,0.862,,False,False,synthetic
+P0403,market_135,market,,16.707548,74.21917,8960ab0908bffff,0.689,,False,False,synthetic
+P0404,market_136,market,,16.715195,74.223237,8960ab090cbffff,0.722,,False,False,synthetic
+P0405,market_137,market,,16.701961,74.239531,8960ab094cbffff,0.63,,False,False,synthetic
+P0406,market_138,market,,16.704122,74.245531,8960ab54933ffff,0.874,,False,False,synthetic
+P0407,market_139,market,,16.701325,74.225234,8960ab09477ffff,0.877,,False,False,synthetic
+P0408,market_140,market,,16.701706,74.238819,8960ab094cbffff,0.675,,False,False,synthetic
+P0409,market_141,market,,16.684902,74.236203,8960ab0b22fffff,0.854,,False,False,synthetic
+P0410,market_142,market,,16.706831,74.23786,8960ab0945bffff,0.702,,False,False,synthetic
+P0411,market_143,market,,16.700353,74.23703,8960ab094cfffff,0.877,,False,False,synthetic
+P0412,market_144,market,,16.692224,74.238384,8960ab0949bffff,0.964,,False,False,synthetic
+P0413,market_145,market,,16.701755,74.226298,8960ab09477ffff,0.835,,False,False,synthetic
+P0414,market_146,market,,16.691166,74.237042,8960ab0949bffff,0.691,,False,False,synthetic
+P0415,office_147,office,,16.704195,74.224108,8960ab09467ffff,0.81,,False,False,synthetic
+P0416,office_148,office,,16.689507,74.245633,8960ab0b273ffff,0.769,,False,False,synthetic
+P0417,office_149,office,,16.703036,74.251479,8960ab54917ffff,0.691,,False,False,synthetic
+P0418,office_150,office,,16.715513,74.24458,8960ab5496fffff,0.819,,False,False,synthetic
+P0419,office_151,office,,16.704979,74.218383,8960ab09083ffff,0.782,,False,False,synthetic
+P0420,office_152,office,,16.738362,74.207878,8960ab46c93ffff,0.4,,False,False,synthetic
+P0421,office_153,office,,16.7042,74.185782,8960ab09123ffff,0.668,,False,False,synthetic
+P0422,office_154,office,,16.692278,74.246104,8960ab0b27bffff,0.798,,False,False,synthetic
+P0423,office_155,office,,16.702759,74.225599,8960ab09477ffff,0.751,,False,False,synthetic
+P0424,office_156,office,,16.675309,74.240031,8960ab0b2a7ffff,0.707,,False,False,synthetic
+P0425,office_157,office,,16.695059,74.229638,8960ab09417ffff,0.613,,False,False,synthetic
+P0426,office_158,office,,16.69426,74.251491,8960ab0b24bffff,0.606,,False,False,synthetic
+P0427,office_159,office,,16.715767,74.223311,8960ab090cbffff,0.783,,False,False,synthetic
+P0428,office_160,office,,16.72274,74.206058,8960ab093d7ffff,0.822,,False,False,synthetic
+P0429,office_161,office,,16.687392,74.248028,8960ab0b20bffff,0.704,,False,False,synthetic
+P0430,office_162,office,,16.703367,74.223255,8960ab09467ffff,0.833,,False,False,synthetic
+P0431,office_163,office,,16.677089,74.251064,8960ab0b283ffff,0.777,,False,False,synthetic
+P0432,office_164,office,,16.692302,74.241418,8960ab0b26fffff,0.78,,False,False,synthetic
+P0433,office_165,office,,16.683632,74.238667,8960ab0b223ffff,0.777,,False,False,synthetic
+P0434,office_166,office,,16.653731,74.252442,8960ab0b467ffff,0.834,,False,False,synthetic
+P0435,office_167,office,,16.704773,74.249157,8960ab54907ffff,0.698,,False,False,synthetic
+P0436,office_168,office,,16.70187,74.247983,8960ab549abffff,0.42,,False,False,synthetic
+P0437,office_169,office,,16.701881,74.217378,8960ab09097ffff,0.738,,False,False,synthetic
+P0438,office_170,office,,16.709668,74.238031,8960ab09697ffff,0.819,,False,False,synthetic
+P0439,office_171,office,,16.66095,74.256013,8960ab0b6a7ffff,0.606,,False,False,synthetic
+P0440,office_172,office,,16.694213,74.230048,8960ab09417ffff,0.78,,False,False,synthetic
+P0441,office_173,office,,16.699782,74.225127,8960ab0943bffff,0.922,,False,False,synthetic
+P0442,office_174,office,,16.699819,74.225374,8960ab0943bffff,0.775,,False,False,synthetic
+P0443,office_175,office,,16.709924,74.237795,8960ab09697ffff,0.906,,False,False,synthetic
+P0444,office_176,office,,16.701979,74.225283,8960ab09477ffff,0.57,,False,False,synthetic
+P0445,office_177,office,,16.689193,74.239172,8960ab0b267ffff,0.583,,False,False,synthetic
+P0446,office_178,office,,16.682847,74.244153,8960ab0b207ffff,0.713,,False,False,synthetic
+P0447,office_179,office,,16.691148,74.243861,8960ab0b263ffff,0.57,,False,False,synthetic
+P0448,office_180,office,,16.700204,74.220647,8960ab0942fffff,0.631,,False,False,synthetic
+P0449,office_181,office,,16.750176,74.237741,8960ab4657bffff,0.85,,False,False,synthetic
+P0450,office_182,office,,16.690039,74.24046,8960ab0b267ffff,0.873,,False,False,synthetic
+P0451,office_183,office,,16.710403,74.225592,8960ab090d3ffff,0.891,,False,False,synthetic
+P0452,office_184,office,,16.699828,74.228676,8960ab0940fffff,0.827,,False,False,synthetic
+P0453,office_185,office,,16.703192,74.23709,8960ab09453ffff,0.832,,False,False,synthetic
+P0454,office_186,office,,16.699946,74.250683,8960ab549bbffff,0.6,,False,False,synthetic
+P0455,transit_stop_187,transit_stop,,16.737068,74.202441,8960ab0934bffff,0.815,,False,False,synthetic
+P0456,transit_stop_188,transit_stop,,16.739978,74.204107,8960ab46c87ffff,0.887,,False,False,synthetic
+P0457,transit_stop_189,transit_stop,,16.719372,74.213035,8960ab0907bffff,0.799,,False,False,synthetic
+P0458,transit_stop_190,transit_stop,,16.694279,74.244047,8960ab0b26bffff,0.861,,False,False,synthetic
+P0459,transit_stop_191,transit_stop,,16.70769,74.254133,8960ab5491bffff,0.938,,False,False,synthetic
+P0460,transit_stop_192,transit_stop,,16.715383,74.218604,8960ab09057ffff,0.906,,False,False,synthetic
+P0461,transit_stop_193,transit_stop,,16.703884,74.230005,8960ab09473ffff,0.845,,False,False,synthetic
+P0462,transit_stop_194,transit_stop,,16.701703,74.247415,8960ab549abffff,0.935,,False,False,synthetic
+P0463,transit_stop_195,transit_stop,,16.700531,74.223276,8960ab0942bffff,0.714,,False,False,synthetic
+P0464,transit_stop_196,transit_stop,,16.703847,74.253645,8960ab54913ffff,0.675,,False,False,synthetic
+P0465,transit_stop_197,transit_stop,,16.752324,74.244697,8960ab4654bffff,0.696,,False,False,synthetic
+P0466,transit_stop_198,transit_stop,,16.726459,74.214421,8960ab092a3ffff,0.889,,False,False,synthetic
+P0467,transit_stop_199,transit_stop,,16.70756,74.253758,8960ab5491bffff,0.636,,False,False,synthetic
+P0468,transit_stop_200,transit_stop,,16.692479,74.241506,8960ab0b26fffff,0.976,,False,False,synthetic
+P0469,transit_stop_201,transit_stop,,16.710949,74.220264,8960ab090c7ffff,0.4,,False,False,synthetic
+P0470,transit_stop_202,transit_stop,,16.737183,74.248483,8960ab54b6fffff,0.499,,False,False,synthetic
+P0471,transit_stop_203,transit_stop,,16.6821,74.249204,8960ab0b213ffff,0.841,,False,False,synthetic
+P0472,transit_stop_204,transit_stop,,16.705372,74.242794,8960ab54923ffff,0.911,,False,False,synthetic
+P0473,transit_stop_205,transit_stop,,16.700097,74.233639,8960ab0941bffff,0.692,,False,False,synthetic
+P0474,transit_stop_206,transit_stop,,16.709742,74.221852,8960ab090d7ffff,0.74,,False,False,synthetic
+P0475,transit_stop_207,transit_stop,,16.707809,74.255041,8960ab5491bffff,0.924,,False,False,synthetic
+P0476,transit_stop_208,transit_stop,,16.747941,74.20806,8960ab46cc7ffff,0.801,,False,False,synthetic
+P0477,transit_stop_209,transit_stop,,16.702562,74.234212,8960ab09457ffff,0.638,,False,False,synthetic
+P0478,transit_stop_210,transit_stop,,16.705543,74.244047,8960ab54923ffff,0.778,,False,False,synthetic
+P0479,transit_stop_211,transit_stop,,16.684665,74.241854,8960ab0b23bffff,0.962,,False,False,synthetic
+P0480,transit_stop_212,transit_stop,,16.705419,74.229027,8960ab0947bffff,0.603,,False,False,synthetic
+P0481,transit_stop_213,transit_stop,,16.702157,74.242808,8960ab54937ffff,0.788,,False,False,synthetic
+P0482,transit_stop_214,transit_stop,,16.747826,74.245033,8960ab46553ffff,0.907,,False,False,synthetic
+P0483,transit_stop_215,transit_stop,,16.691308,74.250994,8960ab0b243ffff,0.706,,False,False,synthetic
+P0484,transit_stop_216,transit_stop,,16.703489,74.24499,8960ab54933ffff,0.508,,False,False,synthetic
+P0485,transit_stop_217,transit_stop,,16.692406,74.246387,8960ab0b27bffff,0.789,,False,False,synthetic
+P0486,transit_stop_218,transit_stop,,16.730978,74.247101,8960ab54b2bffff,0.624,,False,False,synthetic
+P0487,transit_stop_219,transit_stop,,16.716644,74.247815,8960ab5496bffff,0.599,,False,False,synthetic
+P0488,transit_stop_220,transit_stop,,16.701326,74.239305,8960ab094cbffff,0.911,,False,False,synthetic
+P0489,transit_stop_221,transit_stop,,16.66058,74.247888,8960ab0b0c7ffff,0.865,,False,False,synthetic
+P0490,transit_stop_222,transit_stop,,16.722088,74.248898,8960ab54bafffff,0.713,,False,False,synthetic
+P0491,transit_stop_223,transit_stop,,16.694574,74.247495,8960ab549b7ffff,0.58,,False,False,synthetic
+P0492,transit_stop_224,transit_stop,,16.734798,74.205509,8960ab0935bffff,0.729,,False,False,synthetic
+P0493,transit_stop_225,transit_stop,,16.702652,74.234745,8960ab09457ffff,0.821,,False,False,synthetic
+P0494,transit_stop_226,transit_stop,,16.699822,74.237563,8960ab094cfffff,0.844,,False,False,synthetic
+P0495,transit_stop_227,transit_stop,,16.701998,74.247889,8960ab549abffff,0.822,,False,False,synthetic
+P0496,transit_stop_228,transit_stop,,16.70406,74.258817,8960ab549d7ffff,0.585,,False,False,synthetic
+P0497,transit_stop_229,transit_stop,,16.712916,74.247176,8960ab54963ffff,0.704,,False,False,synthetic
+P0498,transit_stop_230,transit_stop,,16.702924,74.234492,8960ab09457ffff,0.889,,False,False,synthetic
+P0499,transit_stop_231,transit_stop,,16.70057,74.245618,8960ab549afffff,0.621,,False,False,synthetic
+P0500,transit_stop_232,transit_stop,,16.715758,74.217512,8960ab09057ffff,0.79,,False,False,synthetic
+P0501,transit_stop_233,transit_stop,,16.660794,74.2401,8960ab0b007ffff,0.588,,False,False,synthetic
+P0502,transit_stop_234,transit_stop,,16.693928,74.218971,8960ab095cbffff,0.922,,False,False,synthetic
+P0503,transit_stop_235,transit_stop,,16.689734,74.245383,8960ab0b273ffff,0.766,,False,False,synthetic
+P0504,transit_stop_236,transit_stop,,16.678837,74.24879,8960ab0b28fffff,0.621,,False,False,synthetic
+P0505,transit_stop_237,transit_stop,,16.700986,74.223043,8960ab0942bffff,0.628,,False,False,synthetic
+P0506,transit_stop_238,transit_stop,,16.698727,74.229889,8960ab09403ffff,0.976,,False,False,synthetic
+P0507,transit_stop_239,transit_stop,,16.713238,74.247531,8960ab54963ffff,0.807,,False,False,synthetic
+P0508,transit_stop_240,transit_stop,,16.703114,74.22067,8960ab09093ffff,0.704,,False,False,synthetic
+P0509,transit_stop_241,transit_stop,,16.682996,74.2496,8960ab0b213ffff,0.917,,False,False,synthetic

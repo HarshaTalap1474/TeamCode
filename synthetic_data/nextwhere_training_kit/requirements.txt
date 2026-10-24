@@ -1,0 +1,15 @@
+numpy
+pandas
+geopandas
+shapely
+pyproj
+h3>=4
+rapidfuzz
+duckdb
+rasterio
+osmnx>=2
+requests
+pyarrow
+lightgbm
+shap
+scikit-learn

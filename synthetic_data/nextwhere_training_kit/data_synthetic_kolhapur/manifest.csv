@@ -1,0 +1,8 @@
+source,version,retrieval_date,row_count,sha256,licence,is_synthetic
+poi.csv,synth-kolhapur-pharmacy-v1-seed42,2026-10-24,509,f4f8243fcc937e245171b1b63c88f55be31d2182c5a985d0d2c15993d67fb63c,synthetic (no third-party data),True
+cell.csv,synth-kolhapur-pharmacy-v1-seed42,2026-10-24,1519,7077b897c75545774ab3f5894564d85a5cf8b7dcfde6692d848276768e136f85,synthetic (no third-party data),True
+features.csv,synth-kolhapur-pharmacy-v1-seed42,2026-10-24,1272,df290b5f6c70ede0b382deaf15caa92daea807e7307850f01cae8ef87072a164,synthetic (no third-party data),True
+scores.csv,synth-kolhapur-pharmacy-v1-seed42,2026-10-24,1272,a6f0e7fcfb3a58cfbddcba3b6377cebfceef807cfe99e15abe33c071684bab26,synthetic (no third-party data),True
+evidence.csv,synth-kolhapur-pharmacy-v1-seed42,2026-10-24,200,cf15afe9312d413407aeee9ae4b49e19a98ed8ea011518e9a32c735227e80263,synthetic (no third-party data),True
+rent_sample.csv,synth-kolhapur-pharmacy-v1-seed42,2026-10-24,40,8f34c6b4c3efe444fc96f381875074c3d717dd0e6af241e4c12677204e2a45c2,synthetic (no third-party data),True
+synthetic_truth.csv,synth-kolhapur-pharmacy-v1-seed42,2026-10-24,20,e127e71c985b0424b47bb4908c549b4b165369c9e744f9e945aaead85b02ad47,synthetic (no third-party data),True

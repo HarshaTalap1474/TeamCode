@@ -1,0 +1,98 @@
+table,field,dtype,description,example
+poi.csv,poi_id,str,Unique POI id,P0001
+poi.csv,name,str,Raw POI name (variants test fuzzy matching),CureWell
+poi.csv,category,str,pharmacy|hospital|clinic|school|market|office|transit_stop,pharmacy
+poi.csv,brand_id,str,Resolved chain id; blank = independent/unresolved,B001
+poi.csv,lat,float64,Latitude WGS84,16.687479
+poi.csv,lon,float64,Longitude WGS84,74.220685
+poi.csv,h3_id,str,H3 res-9 cell,8960ab095d3ffff
+poi.csv,overture_confidence,float64,Source confidence 0-1 (filter >= 0.7),0.841
+poi.csv,match_score,float64,Fuzzy brand match score 0-100 (>= 90 accepted),100.0
+poi.csv,is_own,bool,True if POI belongs to the selected chain,True
+poi.csv,is_branded_pool,bool,True if POI belongs to any resolved chain,True
+poi.csv,source,str,synthetic | overture,synthetic
+cell.csv,h3_id,str,H3 res-9 id,8960ab0804bffff
+cell.csv,lat,float64,Cell centroid lat,16.670758
+cell.csv,lon,float64,Cell centroid lon,74.190327
+cell.csv,population,int64,Residents in cell,32
+cell.csv,age60_share,float64,Share aged 60+,0.088
+cell.csv,is_candidate,bool,Passes filters,False
+cell.csv,exclusion_reason,str,water|low_population|blank,low_population
+cell.csv,has_own_store,bool,Selected chain store in cell,False
+cell.csv,has_pool_store,bool,Any branded-pool store in cell (PU positive label),False
+cell.csv,nearest_anchor,str,Nearest neighbourhood anchor (for demo narratives),Mahadwar_Ambabai
+features.csv,h3_id,str,H3 id,8960ab08207ffff
+features.csv,pop_500m,int64,Population within 500 m,412
+features.csv,pop_1km,int64,Population within 1 km,1616
+features.csv,pop_2km,int64,Population within 2 km,4263
+features.csv,age60_share,float64,Share aged 60+,0.1388
+features.csv,bldg_density_per_ha,float64,Buildings per hectare,18.5162
+features.csv,residential_bldg_share,float64,Residential share of buildings,0.8421
+features.csv,hospital_wcount_1km,float64,Distance-weighted hospital count (tau 500 m),0.0
+features.csv,clinic_wcount_1km,float64,"Same, clinics",0.0
+features.csv,school_wcount_1km,float64,"Same, schools",0.1726
+features.csv,market_wcount_1km,float64,"Same, markets",0.0
+features.csv,office_wcount_1km,float64,"Same, offices",0.0
+features.csv,dist_to_hospital_m,float64,Distance to nearest hospital (m),3721.3939
+features.csv,transit_stop_dist_m,float64,Distance to nearest transit stop (m),3707.889
+features.csv,transit_stop_cnt_500m,int64,Transit stops within 500 m,0
+features.csv,arterial_dist_m,float64,Distance to nearest arterial road (m),3930.9382
+features.csv,intersection_density_km2,int64,Intersections per km2,4
+features.csv,comp_cnt_300m,int64,Competitor pharmacies within 300 m (focal cell excluded),0
+features.csv,comp_cnt_400m,int64,Within 400 m,0
+features.csv,comp_cnt_1km,int64,Within 1 km,0
+features.csv,nearest_comp_m,float64,"Distance to nearest competitor (m, cap 5000)",1602.2888
+features.csv,brand_diversity_1km,int64,Distinct brands within 1 km (independents = 1),0
+features.csv,pool_cnt_1km,int64,Branded-pool stores within 1 km,0
+features.csv,own_nearest_m,float64,"Distance to nearest own store (m, cap 5000)",3674.7375
+features.csv,own_cnt_1km,int64,Own stores within 1 km,0
+features.csv,commercial_density,float64,Commercial intensity 0-100,0.0039
+features.csv,affluence_proxy,float64,Affluence proxy 0-100,40.2056
+features.csv,rent_pressure_proxy,float64,Unitless rent proxy 0-100,14.1907
+features.csv,centrality_m,float64,Distance to city centre (m),6574.611
+features.csv,pop_density_pctile,float64,Within-city percentile of pop_1km,14.3515
+features.csv,comp_cnt_300m_pctile,float64,Within-city percentile of comp_cnt_300m,43.9105
+features.csv,brand_in_cell_flag,int64,Reserved leakage check column (always 0),0
+scores.csv,h3_id,str,H3 id,8960ab56947ffff
+scores.csv,nid_p10,float64,NID 10th pct,1835.1278
+scores.csv,nid_p50,float64,NID median,2655.5748
+scores.csv,nid_p90,float64,NID 90th pct,4729.123
+scores.csv,nid_true,float64,"NID at true beta, no noise (K18 ground truth)",2020.8493
+scores.csv,capture_p50,float64,Capture median,2995.429
+scores.csv,cannib_pct_p50,float64,Cannibalization % median,11.1242
+scores.csv,pattern_score,float64,ORACLE pattern propensity 0-1 (replace with LightGBM output),0.5637
+scores.csv,rent_pressure,float64,Rent proxy 0-100,19.2974
+scores.csv,rent_psf_inr,float64,Synthetic rent INR/sqft/month,42.3677
+scores.csv,monthly_cost_inr,float64,Rent*area + fixed cost,50591.9129
+scores.csv,breakeven_tx,float64,Break-even monthly transactions,1264.7978
+scores.csv,coverage_ratio_p50,float64,NID_p50 / breakeven_tx,2.0996
+scores.csv,eps,float64,Expansion Priority Score 0-100,80.7233
+scores.csv,rank_p10,float64,Rank 10th pct,1.0
+scores.csv,rank_p50,float64,Rank median,1.0
+scores.csv,rank_p90,float64,Rank 90th pct,3.0
+scores.csv,top10_prob,float64,P(rank <= 10),0.95
+scores.csv,flags,str,Semicolon-separated flags,rent_proxy
+scores.csv,rent_mode,str,proxy|model,proxy
+scores.csv,eps_mode,str,standard|partial,standard
+scores.csv,run_id,str,Data/run version,synth-kolhapur-pharmacy-v1-seed42
+scores.csv,pop_only_rank,float64,Population-only baseline rank,572.0
+scores.csv,rank_eps,float64,Rank by default-weight EPS,1.0
+evidence.csv,evidence_id,str,Unique evidence id cited in Briefs,E-NID-01-P10
+evidence.csv,h3_id,str,H3 id,8960ab56947ffff
+evidence.csv,type,str,nid|cap|can|cov|rank|top10,nid
+evidence.csv,stat,str,p10|p50|p90|value,P10
+evidence.csv,value,float64,Numeric value,1835.1278
+evidence.csv,unit,str,Unit,demand_units
+evidence.csv,source_table,str,Table the value came from,scores
+evidence.csv,data_version,str,Run/data version,synth-kolhapur-pharmacy-v1-seed42
+rent_sample.csv,sample_id,str,Listing id,R001
+rent_sample.csv,h3_id,str,H3 id,8960ab54eafffff
+rent_sample.csv,lat,float64,Lat,16.716515
+rent_sample.csv,lon,float64,Lon,74.285855
+rent_sample.csv,asking_rent_psf_inr,float64,Asking rent INR/sqft/month,52.6
+rent_sample.csv,area_sqft,int64,Unit area,400
+rent_sample.csv,listing_type,str,shop,shop
+rent_sample.csv,collected_on,str,Collection date,2026-10-24
+rent_sample.csv,source_note,str,Provenance note,synthetic - replace with manually recorded public listings
+synthetic_truth.csv,parameter,str,Hidden simulator parameter,beta
+synthetic_truth.csv,value,str,Value,1.5
