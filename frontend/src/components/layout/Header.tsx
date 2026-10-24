@@ -74,8 +74,8 @@ export function Header({
             onChange={(e) => setCity(e.target.value)}
             className="bg-transparent font-medium text-slate-200 outline-none cursor-pointer"
           >
-            <option value="Pune" className="bg-slate-900 text-slate-200">Pune (Primary)</option>
-            <option value="Kolhapur" className="bg-slate-900 text-slate-200">Kolhapur</option>
+            <option value="Kolhapur" className="bg-slate-900 text-slate-200">Kolhapur (Primary)</option>
+            <option value="Pune" className="bg-slate-900 text-slate-200">Pune</option>
             <option value="Bangalore" className="bg-slate-900 text-slate-200">Bangalore</option>
             <option value="Mumbai" className="bg-slate-900 text-slate-200">Mumbai</option>
           </select>

@@ -5,7 +5,7 @@ export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
   const category = searchParams.get('category') || 'cafe';
   const brand = searchParams.get('brand') || 'Starbucks';
-  const city = searchParams.get('city') || 'Pune';
+  const city = searchParams.get('city') || 'Kolhapur';
 
   // If BACKEND_URL is set, forward to real FastAPI backend
   if (process.env.BACKEND_URL) {

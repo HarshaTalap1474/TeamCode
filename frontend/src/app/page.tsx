@@ -22,19 +22,19 @@ const DEFAULT_WEIGHTS: SimulationWeights = {
 
 // Initial state loaded synchronously from mock data so frame 1 has full content
 const initialCafeCandidates = (defaultCandidates as CandidateSite[]).filter(
-  (c) => c.category === 'cafe' && (!c.city || c.city === 'Pune')
+  (c) => c.category === 'cafe' && (!c.city || c.city === 'Kolhapur')
 );
 const initialCalculated = recalculateCandidates(initialCafeCandidates, DEFAULT_WEIGHTS);
 
 export default function DashboardPage() {
-  const [city, setCity] = useState('Pune');
+  const [city, setCity] = useState('Kolhapur');
   const [category, setCategory] = useState<RetailCategory>('cafe');
   const [brand, setBrand] = useState('Starbucks');
 
   const [rawCandidates, setRawCandidates] = useState<CandidateSite[]>(initialCafeCandidates);
   const [candidates, setCandidates] = useState<CandidateSite[]>(initialCalculated);
   const [pois, setPois] = useState<POIStore[]>(
-    (defaultPOIs as POIStore[]).filter((p) => p.category === 'cafe' && (!p.city || p.city === 'Pune'))
+    (defaultPOIs as POIStore[]).filter((p) => p.category === 'cafe' && (!p.city || p.city === 'Kolhapur'))
   );
   const [isLive, setIsLive] = useState(false);
 

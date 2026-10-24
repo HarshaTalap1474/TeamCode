@@ -22,7 +22,7 @@ export function Leaderboard({
   comparedSites,
   onToggleCompare,
   brand,
-  city = 'Pune',
+  city = 'Kolhapur',
 }: LeaderboardProps) {
   const [filters, setFilters] = useState<FilterState>({
     searchQuery: '',

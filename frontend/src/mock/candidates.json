@@ -1,437 +1,5 @@
 [
   {
-    "h3_id": "89269c1a5b7ffff",
-    "zone_name": "Baner High Street",
-    "lat": 18.559,
-    "lng": 73.7868,
-    "rank": 1,
-    "eps_score": 88.4,
-    "demand_capture": 2200,
-    "cannibalization_pct": 16.3,
-    "cannibalization_units": 360,
-    "net_incremental_demand": 1840,
-    "pattern_score": 84.2,
-    "rent_index": 7.2,
-    "coverage_ratio": 1.42,
-    "risk_level": "LOW",
-    "flags": [
-      "Tech Corridor",
-      "Low Cannibalization"
-    ],
-    "shap_drivers": [
-      {
-        "feature": "Tech Park Proximity",
-        "impact": 24.2,
-        "type": "POSITIVE"
-      },
-      {
-        "feature": "Road Intersection Density",
-        "impact": 16.5,
-        "type": "POSITIVE"
-      },
-      {
-        "feature": "Commercial Rent Pressure",
-        "impact": -12.1,
-        "type": "NEGATIVE"
-      },
-      {
-        "feature": "Competitor Within 300m",
-        "impact": -8,
-        "type": "NEGATIVE"
-      }
-    ],
-    "verdict": "Rank #1. High daytime office footfall creates strong demand with minimal cannibalization risk to existing branch.",
-    "category": "cafe",
-    "brand": "Starbucks",
-    "city": "Pune",
-    "demographics": {
-      "catchment_population": 42500,
-      "youth_student_pct": 36.5,
-      "affluence_index": 8.7
-    },
-    "competitors_within_500m": 2,
-    "nearest_competitor_dist_m": 310,
-    "nearest_own_store_dist_m": 2400,
-    "anchor_poi_summary": {
-      "tech_parks": 6,
-      "metro_transit_dist_m": 420
-    }
-  },
-  {
-    "h3_id": "89269c1a5b3ffff",
-    "zone_name": "Kothrud Depot Area",
-    "lat": 18.5074,
-    "lng": 73.8077,
-    "rank": 2,
-    "eps_score": 82.1,
-    "demand_capture": 1950,
-    "cannibalization_pct": 8.2,
-    "cannibalization_units": 160,
-    "net_incremental_demand": 1790,
-    "pattern_score": 79.5,
-    "rent_index": 5.8,
-    "coverage_ratio": 1.55,
-    "risk_level": "LOW",
-    "flags": [
-      "High Affluence",
-      "Moderate Rent"
-    ],
-    "shap_drivers": [
-      {
-        "feature": "Residential Affluence Density",
-        "impact": 21,
-        "type": "POSITIVE"
-      },
-      {
-        "feature": "Favorable Unit Economics",
-        "impact": 18.2,
-        "type": "POSITIVE"
-      },
-      {
-        "feature": "Metro Transit Distance",
-        "impact": -10.4,
-        "type": "NEGATIVE"
-      }
-    ],
-    "verdict": "Rank #2. Exceptional margin profile due to lower rental overhead and dense, loyal residential demographic.",
-    "category": "cafe",
-    "brand": "Starbucks",
-    "city": "Pune",
-    "demographics": {
-      "catchment_population": 38000,
-      "youth_student_pct": 28,
-      "affluence_index": 8.2
-    },
-    "competitors_within_500m": 1,
-    "nearest_competitor_dist_m": 580,
-    "nearest_own_store_dist_m": 3100,
-    "anchor_poi_summary": {
-      "tech_parks": 2,
-      "metro_transit_dist_m": 850
-    }
-  },
-  {
-    "h3_id": "89269c1a5b4ffff",
-    "zone_name": "Hinjewadi Phase 1 Circle",
-    "lat": 18.5913,
-    "lng": 73.7389,
-    "rank": 3,
-    "eps_score": 79.6,
-    "demand_capture": 2600,
-    "cannibalization_pct": 14.5,
-    "cannibalization_units": 377,
-    "net_incremental_demand": 2223,
-    "pattern_score": 88,
-    "rent_index": 8.1,
-    "coverage_ratio": 1.35,
-    "risk_level": "MEDIUM",
-    "flags": [
-      "Massive Daytime Footfall",
-      "Traffic Detour Risk"
-    ],
-    "shap_drivers": [
-      {
-        "feature": "IT Campus Concentration",
-        "impact": 28.5,
-        "type": "POSITIVE"
-      },
-      {
-        "feature": "Youth Demographic Share",
-        "impact": 19.1,
-        "type": "POSITIVE"
-      },
-      {
-        "feature": "Weekend Demand Dropoff",
-        "impact": -15.2,
-        "type": "NEGATIVE"
-      }
-    ],
-    "verdict": "Rank #3. Highest gross demand volume in Pune. Watch weekend footfall dip when offices close.",
-    "category": "cafe",
-    "brand": "Starbucks",
-    "city": "Pune",
-    "demographics": {
-      "catchment_population": 51000,
-      "youth_student_pct": 44.2,
-      "affluence_index": 7.9
-    },
-    "competitors_within_500m": 4,
-    "nearest_competitor_dist_m": 180,
-    "nearest_own_store_dist_m": 1850,
-    "anchor_poi_summary": {
-      "tech_parks": 12,
-      "metro_transit_dist_m": 600
-    }
-  },
-  {
-    "h3_id": "89269c1a5b6ffff",
-    "zone_name": "Koregaon Park North Main Rd",
-    "lat": 18.5362,
-    "lng": 73.894,
-    "rank": 4,
-    "eps_score": 75.3,
-    "demand_capture": 1850,
-    "cannibalization_pct": 19.8,
-    "cannibalization_units": 366,
-    "net_incremental_demand": 1484,
-    "pattern_score": 82,
-    "rent_index": 9.2,
-    "coverage_ratio": 1.1,
-    "risk_level": "MEDIUM",
-    "flags": [
-      "Premium Lifestyle",
-      "Steep Rent"
-    ],
-    "shap_drivers": [
-      {
-        "feature": "High Disposable Income",
-        "impact": 26,
-        "type": "POSITIVE"
-      },
-      {
-        "feature": "Boutique Retail Synergy",
-        "impact": 14.5,
-        "type": "POSITIVE"
-      },
-      {
-        "feature": "Premium Rental Cost",
-        "impact": -22.4,
-        "type": "NEGATIVE"
-      }
-    ],
-    "verdict": "Rank #4. Highly prestigious brand visibility with compressed margins due to real estate rates.",
-    "category": "cafe",
-    "brand": "Starbucks",
-    "city": "Pune",
-    "demographics": {
-      "catchment_population": 29000,
-      "youth_student_pct": 31,
-      "affluence_index": 9.5
-    },
-    "competitors_within_500m": 5,
-    "nearest_competitor_dist_m": 140,
-    "nearest_own_store_dist_m": 1400,
-    "anchor_poi_summary": {
-      "tech_parks": 3,
-      "metro_transit_dist_m": 1100
-    }
-  },
-  {
-    "h3_id": "89269c1a5b9ffff",
-    "zone_name": "Wakad Bridge Junction",
-    "lat": 18.5987,
-    "lng": 73.7635,
-    "rank": 5,
-    "eps_score": 72.8,
-    "demand_capture": 1780,
-    "cannibalization_pct": 11.2,
-    "cannibalization_units": 199,
-    "net_incremental_demand": 1581,
-    "pattern_score": 75,
-    "rent_index": 6.4,
-    "coverage_ratio": 1.28,
-    "risk_level": "LOW",
-    "flags": [
-      "Growing Residential",
-      "Highway Access"
-    ],
-    "shap_drivers": [
-      {
-        "feature": "Arterial Highway Junction",
-        "impact": 18,
-        "type": "POSITIVE"
-      },
-      {
-        "feature": "Residential Inflow Rate",
-        "impact": 14.2,
-        "type": "POSITIVE"
-      },
-      {
-        "feature": "Pedestrian Walkability",
-        "impact": -11.5,
-        "type": "NEGATIVE"
-      }
-    ],
-    "verdict": "Rank #5. High vehicular transit capture with rapid residential density growth.",
-    "category": "cafe",
-    "brand": "Starbucks",
-    "city": "Pune",
-    "demographics": {
-      "catchment_population": 36000,
-      "youth_student_pct": 33,
-      "affluence_index": 7.8
-    },
-    "competitors_within_500m": 2,
-    "nearest_competitor_dist_m": 420,
-    "nearest_own_store_dist_m": 2100,
-    "anchor_poi_summary": {
-      "tech_parks": 1,
-      "metro_transit_dist_m": 920
-    }
-  },
-  {
-    "h3_id": "89269c1a5b1ffff",
-    "zone_name": "Viman Nagar Central",
-    "lat": 18.5679,
-    "lng": 73.9143,
-    "rank": 14,
-    "eps_score": 54.8,
-    "demand_capture": 2400,
-    "cannibalization_pct": 43.5,
-    "cannibalization_units": 1044,
-    "net_incremental_demand": 1356,
-    "pattern_score": 86,
-    "rent_index": 8.9,
-    "coverage_ratio": 0.85,
-    "risk_level": "HIGH",
-    "flags": [
-      "High Cannibalization",
-      "Competitor Saturated"
-    ],
-    "shap_drivers": [
-      {
-        "feature": "College Campus Footfall",
-        "impact": 22,
-        "type": "POSITIVE"
-      },
-      {
-        "feature": "Mall Cluster Footfall",
-        "impact": 18.8,
-        "type": "POSITIVE"
-      },
-      {
-        "feature": "Severe Cannibalization",
-        "impact": -38.2,
-        "type": "NEGATIVE"
-      },
-      {
-        "feature": "High Mall Commercial Rent",
-        "impact": -24,
-        "type": "NEGATIVE"
-      }
-    ],
-    "verdict": "Caution. High gross footfall is deceptive: opening here cannibalizes 43.5% of your existing Phoenix Mall store's transactions.",
-    "category": "cafe",
-    "brand": "Starbucks",
-    "city": "Pune",
-    "demographics": {
-      "catchment_population": 46000,
-      "youth_student_pct": 41.5,
-      "affluence_index": 8.5
-    },
-    "competitors_within_500m": 6,
-    "nearest_competitor_dist_m": 120,
-    "nearest_own_store_dist_m": 420,
-    "anchor_poi_summary": {
-      "tech_parks": 4,
-      "metro_transit_dist_m": 350
-    }
-  },
-  {
-    "h3_id": "89269c1a5b8ffff",
-    "zone_name": "Aundh Medipark Corridor",
-    "lat": 18.562,
-    "lng": 73.808,
-    "rank": 1,
-    "eps_score": 89.2,
-    "demand_capture": 2450,
-    "cannibalization_pct": 9.5,
-    "cannibalization_units": 232,
-    "net_incremental_demand": 2218,
-    "pattern_score": 91.5,
-    "rent_index": 6.8,
-    "coverage_ratio": 1.62,
-    "risk_level": "LOW",
-    "flags": [
-      "Hospital Hub",
-      "High Senior Density"
-    ],
-    "shap_drivers": [
-      {
-        "feature": "Hospital & Clinic Cluster",
-        "impact": 31.5,
-        "type": "POSITIVE"
-      },
-      {
-        "feature": "60+ Demographic Density",
-        "impact": 22,
-        "type": "POSITIVE"
-      },
-      {
-        "feature": "Local Street Parking",
-        "impact": -8.4,
-        "type": "NEGATIVE"
-      }
-    ],
-    "verdict": "Rank #1 for Pharmacy. Clustered with 9 multi-specialty hospitals with minimal brand overlap.",
-    "category": "pharmacy",
-    "brand": "Apollo",
-    "city": "Pune",
-    "demographics": {
-      "catchment_population": 39000,
-      "senior_pct": 24.5,
-      "affluence_index": 8.4
-    },
-    "competitors_within_500m": 2,
-    "nearest_competitor_dist_m": 380,
-    "nearest_own_store_dist_m": 2600,
-    "anchor_poi_summary": {
-      "hospitals": 9,
-      "metro_transit_dist_m": 510
-    }
-  },
-  {
-    "h3_id": "89269c1a5b2ffff",
-    "zone_name": "Hadapsar Magarpatta Junction",
-    "lat": 18.5089,
-    "lng": 73.926,
-    "rank": 1,
-    "eps_score": 87.6,
-    "demand_capture": 3800,
-    "cannibalization_pct": 11,
-    "cannibalization_units": 418,
-    "net_incremental_demand": 3382,
-    "pattern_score": 89,
-    "rent_index": 6.5,
-    "coverage_ratio": 1.74,
-    "risk_level": "LOW",
-    "flags": [
-      "Mega Township",
-      "Family Density"
-    ],
-    "shap_drivers": [
-      {
-        "feature": "Family Residential Density",
-        "impact": 29,
-        "type": "POSITIVE"
-      },
-      {
-        "feature": "Parking Bay Capacity",
-        "impact": 21.4,
-        "type": "POSITIVE"
-      },
-      {
-        "feature": "Peak Hour Congestion",
-        "impact": -12,
-        "type": "NEGATIVE"
-      }
-    ],
-    "verdict": "Rank #1 for Supermarket. Enormous family catchment with massive weekly grocery demand pull.",
-    "category": "supermarket",
-    "brand": "DMart",
-    "city": "Pune",
-    "demographics": {
-      "catchment_population": 68000,
-      "affluence_index": 7.9
-    },
-    "competitors_within_500m": 1,
-    "nearest_competitor_dist_m": 920,
-    "nearest_own_store_dist_m": 3800,
-    "anchor_poi_summary": {
-      "metro_transit_dist_m": 480
-    }
-  },
-  {
     "h3_id": "896082695a7ffff",
     "zone_name": "Rajarampuri Main Road (2nd Lane)",
     "lat": 16.6975,
@@ -960,6 +528,1086 @@
     "nearest_own_store_dist_m": 2100,
     "anchor_poi_summary": {
       "metro_transit_dist_m": 700
+    }
+  },
+  {
+    "h3_id": "89269c1a5b7ffff",
+    "zone_name": "Baner High Street",
+    "lat": 18.559,
+    "lng": 73.7868,
+    "rank": 1,
+    "eps_score": 88.4,
+    "demand_capture": 2200,
+    "cannibalization_pct": 16.3,
+    "cannibalization_units": 360,
+    "net_incremental_demand": 1840,
+    "pattern_score": 84.2,
+    "rent_index": 7.2,
+    "coverage_ratio": 1.42,
+    "risk_level": "LOW",
+    "flags": [
+      "Tech Corridor",
+      "Low Cannibalization"
+    ],
+    "shap_drivers": [
+      {
+        "feature": "Tech Park Proximity",
+        "impact": 24.2,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Road Intersection Density",
+        "impact": 16.5,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Commercial Rent Pressure",
+        "impact": -12.1,
+        "type": "NEGATIVE"
+      },
+      {
+        "feature": "Competitor Within 300m",
+        "impact": -8,
+        "type": "NEGATIVE"
+      }
+    ],
+    "verdict": "Rank #1. High daytime office footfall creates strong demand with minimal cannibalization risk to existing branch.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "city": "Pune",
+    "demographics": {
+      "catchment_population": 42500,
+      "youth_student_pct": 36.5,
+      "affluence_index": 8.7
+    },
+    "competitors_within_500m": 2,
+    "nearest_competitor_dist_m": 310,
+    "nearest_own_store_dist_m": 2400,
+    "anchor_poi_summary": {
+      "tech_parks": 6,
+      "metro_transit_dist_m": 420
+    }
+  },
+  {
+    "h3_id": "89269c1a5b3ffff",
+    "zone_name": "Kothrud Depot Area",
+    "lat": 18.5074,
+    "lng": 73.8077,
+    "rank": 2,
+    "eps_score": 82.1,
+    "demand_capture": 1950,
+    "cannibalization_pct": 8.2,
+    "cannibalization_units": 160,
+    "net_incremental_demand": 1790,
+    "pattern_score": 79.5,
+    "rent_index": 5.8,
+    "coverage_ratio": 1.55,
+    "risk_level": "LOW",
+    "flags": [
+      "High Affluence",
+      "Moderate Rent"
+    ],
+    "shap_drivers": [
+      {
+        "feature": "Residential Affluence Density",
+        "impact": 21,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Favorable Unit Economics",
+        "impact": 18.2,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Metro Transit Distance",
+        "impact": -10.4,
+        "type": "NEGATIVE"
+      }
+    ],
+    "verdict": "Rank #2. Exceptional margin profile due to lower rental overhead and dense, loyal residential demographic.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "city": "Pune",
+    "demographics": {
+      "catchment_population": 38000,
+      "youth_student_pct": 28,
+      "affluence_index": 8.2
+    },
+    "competitors_within_500m": 1,
+    "nearest_competitor_dist_m": 580,
+    "nearest_own_store_dist_m": 3100,
+    "anchor_poi_summary": {
+      "tech_parks": 2,
+      "metro_transit_dist_m": 850
+    }
+  },
+  {
+    "h3_id": "89269c1a5b4ffff",
+    "zone_name": "Hinjewadi Phase 1 Circle",
+    "lat": 18.5913,
+    "lng": 73.7389,
+    "rank": 3,
+    "eps_score": 79.6,
+    "demand_capture": 2600,
+    "cannibalization_pct": 14.5,
+    "cannibalization_units": 377,
+    "net_incremental_demand": 2223,
+    "pattern_score": 88,
+    "rent_index": 8.1,
+    "coverage_ratio": 1.35,
+    "risk_level": "MEDIUM",
+    "flags": [
+      "Massive Daytime Footfall",
+      "Traffic Detour Risk"
+    ],
+    "shap_drivers": [
+      {
+        "feature": "IT Campus Concentration",
+        "impact": 28.5,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Youth Demographic Share",
+        "impact": 19.1,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Weekend Demand Dropoff",
+        "impact": -15.2,
+        "type": "NEGATIVE"
+      }
+    ],
+    "verdict": "Rank #3. Highest gross demand volume in Pune. Watch weekend footfall dip when offices close.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "city": "Pune",
+    "demographics": {
+      "catchment_population": 51000,
+      "youth_student_pct": 44.2,
+      "affluence_index": 7.9
+    },
+    "competitors_within_500m": 4,
+    "nearest_competitor_dist_m": 180,
+    "nearest_own_store_dist_m": 1850,
+    "anchor_poi_summary": {
+      "tech_parks": 12,
+      "metro_transit_dist_m": 600
+    }
+  },
+  {
+    "h3_id": "89269c1a5b6ffff",
+    "zone_name": "Koregaon Park North Main Rd",
+    "lat": 18.5362,
+    "lng": 73.894,
+    "rank": 4,
+    "eps_score": 75.3,
+    "demand_capture": 1850,
+    "cannibalization_pct": 19.8,
+    "cannibalization_units": 366,
+    "net_incremental_demand": 1484,
+    "pattern_score": 82,
+    "rent_index": 9.2,
+    "coverage_ratio": 1.1,
+    "risk_level": "MEDIUM",
+    "flags": [
+      "Premium Lifestyle",
+      "Steep Rent"
+    ],
+    "shap_drivers": [
+      {
+        "feature": "High Disposable Income",
+        "impact": 26,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Boutique Retail Synergy",
+        "impact": 14.5,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Premium Rental Cost",
+        "impact": -22.4,
+        "type": "NEGATIVE"
+      }
+    ],
+    "verdict": "Rank #4. Highly prestigious brand visibility with compressed margins due to real estate rates.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "city": "Pune",
+    "demographics": {
+      "catchment_population": 29000,
+      "youth_student_pct": 31,
+      "affluence_index": 9.5
+    },
+    "competitors_within_500m": 5,
+    "nearest_competitor_dist_m": 140,
+    "nearest_own_store_dist_m": 1400,
+    "anchor_poi_summary": {
+      "tech_parks": 3,
+      "metro_transit_dist_m": 1100
+    }
+  },
+  {
+    "h3_id": "89269c1a5b9ffff",
+    "zone_name": "Wakad Bridge Junction",
+    "lat": 18.5987,
+    "lng": 73.7635,
+    "rank": 5,
+    "eps_score": 72.8,
+    "demand_capture": 1780,
+    "cannibalization_pct": 11.2,
+    "cannibalization_units": 199,
+    "net_incremental_demand": 1581,
+    "pattern_score": 75,
+    "rent_index": 6.4,
+    "coverage_ratio": 1.28,
+    "risk_level": "LOW",
+    "flags": [
+      "Growing Residential",
+      "Highway Access"
+    ],
+    "shap_drivers": [
+      {
+        "feature": "Arterial Highway Junction",
+        "impact": 18,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Residential Inflow Rate",
+        "impact": 14.2,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Pedestrian Walkability",
+        "impact": -11.5,
+        "type": "NEGATIVE"
+      }
+    ],
+    "verdict": "Rank #5. High vehicular transit capture with rapid residential density growth.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "city": "Pune",
+    "demographics": {
+      "catchment_population": 36000,
+      "youth_student_pct": 33,
+      "affluence_index": 7.8
+    },
+    "competitors_within_500m": 2,
+    "nearest_competitor_dist_m": 420,
+    "nearest_own_store_dist_m": 2100,
+    "anchor_poi_summary": {
+      "tech_parks": 1,
+      "metro_transit_dist_m": 920
+    }
+  },
+  {
+    "h3_id": "89269c1a5b1ffff",
+    "zone_name": "Viman Nagar Central",
+    "lat": 18.5679,
+    "lng": 73.9143,
+    "rank": 14,
+    "eps_score": 54.8,
+    "demand_capture": 2400,
+    "cannibalization_pct": 43.5,
+    "cannibalization_units": 1044,
+    "net_incremental_demand": 1356,
+    "pattern_score": 86,
+    "rent_index": 8.9,
+    "coverage_ratio": 0.85,
+    "risk_level": "HIGH",
+    "flags": [
+      "High Cannibalization",
+      "Competitor Saturated"
+    ],
+    "shap_drivers": [
+      {
+        "feature": "College Campus Footfall",
+        "impact": 22,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Mall Cluster Footfall",
+        "impact": 18.8,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Severe Cannibalization",
+        "impact": -38.2,
+        "type": "NEGATIVE"
+      },
+      {
+        "feature": "High Mall Commercial Rent",
+        "impact": -24,
+        "type": "NEGATIVE"
+      }
+    ],
+    "verdict": "Caution. High gross footfall is deceptive: opening here cannibalizes 43.5% of your existing Phoenix Mall store's transactions.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "city": "Pune",
+    "demographics": {
+      "catchment_population": 46000,
+      "youth_student_pct": 41.5,
+      "affluence_index": 8.5
+    },
+    "competitors_within_500m": 6,
+    "nearest_competitor_dist_m": 120,
+    "nearest_own_store_dist_m": 420,
+    "anchor_poi_summary": {
+      "tech_parks": 4,
+      "metro_transit_dist_m": 350
+    }
+  },
+  {
+    "h3_id": "89269c1a5b8ffff",
+    "zone_name": "Aundh Medipark Corridor",
+    "lat": 18.562,
+    "lng": 73.808,
+    "rank": 1,
+    "eps_score": 89.2,
+    "demand_capture": 2450,
+    "cannibalization_pct": 9.5,
+    "cannibalization_units": 232,
+    "net_incremental_demand": 2218,
+    "pattern_score": 91.5,
+    "rent_index": 6.8,
+    "coverage_ratio": 1.62,
+    "risk_level": "LOW",
+    "flags": [
+      "Hospital Hub",
+      "High Senior Density"
+    ],
+    "shap_drivers": [
+      {
+        "feature": "Hospital & Clinic Cluster",
+        "impact": 31.5,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "60+ Demographic Density",
+        "impact": 22,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Local Street Parking",
+        "impact": -8.4,
+        "type": "NEGATIVE"
+      }
+    ],
+    "verdict": "Rank #1 for Pharmacy. Clustered with 9 multi-specialty hospitals with minimal brand overlap.",
+    "category": "pharmacy",
+    "brand": "Apollo",
+    "city": "Pune",
+    "demographics": {
+      "catchment_population": 39000,
+      "senior_pct": 24.5,
+      "affluence_index": 8.4
+    },
+    "competitors_within_500m": 2,
+    "nearest_competitor_dist_m": 380,
+    "nearest_own_store_dist_m": 2600,
+    "anchor_poi_summary": {
+      "hospitals": 9,
+      "metro_transit_dist_m": 510
+    }
+  },
+  {
+    "h3_id": "89269c1a5b2ffff",
+    "zone_name": "Hadapsar Magarpatta Junction",
+    "lat": 18.5089,
+    "lng": 73.926,
+    "rank": 1,
+    "eps_score": 87.6,
+    "demand_capture": 3800,
+    "cannibalization_pct": 11,
+    "cannibalization_units": 418,
+    "net_incremental_demand": 3382,
+    "pattern_score": 89,
+    "rent_index": 6.5,
+    "coverage_ratio": 1.74,
+    "risk_level": "LOW",
+    "flags": [
+      "Mega Township",
+      "Family Density"
+    ],
+    "shap_drivers": [
+      {
+        "feature": "Family Residential Density",
+        "impact": 29,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Parking Bay Capacity",
+        "impact": 21.4,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Peak Hour Congestion",
+        "impact": -12,
+        "type": "NEGATIVE"
+      }
+    ],
+    "verdict": "Rank #1 for Supermarket. Enormous family catchment with massive weekly grocery demand pull.",
+    "category": "supermarket",
+    "brand": "DMart",
+    "city": "Pune",
+    "demographics": {
+      "catchment_population": 68000,
+      "affluence_index": 7.9
+    },
+    "competitors_within_500m": 1,
+    "nearest_competitor_dist_m": 920,
+    "nearest_own_store_dist_m": 3800,
+    "anchor_poi_summary": {
+      "metro_transit_dist_m": 480
+    }
+  },
+  {
+    "h3_id": "896189283a7ffff",
+    "zone_name": "Bandra West (Linking Road & Pali Hill)",
+    "lat": 19.0607,
+    "lng": 72.8362,
+    "rank": 1,
+    "eps_score": 92.4,
+    "demand_capture": 3400,
+    "cannibalization_pct": 12.5,
+    "cannibalization_units": 425,
+    "net_incremental_demand": 2975,
+    "pattern_score": 93.8,
+    "rent_index": 9.6,
+    "coverage_ratio": 1.58,
+    "risk_level": "LOW",
+    "flags": [
+      "Celebrity Corridor",
+      "Ultra-High Affluence",
+      "Flagship Halo"
+    ],
+    "shap_drivers": [
+      {
+        "feature": "High-Net-Worth Household Density",
+        "impact": 32.5,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Fashion & Lifestyle Footfall",
+        "impact": 24,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Steep Commercial Rental Index",
+        "impact": -24.5,
+        "type": "NEGATIVE"
+      },
+      {
+        "feature": "Tight Parking Space Deficit",
+        "impact": -14,
+        "type": "NEGATIVE"
+      }
+    ],
+    "verdict": "Rank #1 for Mumbai. Supreme prestige and lifestyle spending velocity. High rental overhead is heavily counterbalanced by unmatched ticket sizes.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "city": "Mumbai",
+    "demographics": {
+      "catchment_population": 48000,
+      "youth_student_pct": 35,
+      "affluence_index": 9.8
+    },
+    "competitors_within_500m": 4,
+    "nearest_competitor_dist_m": 140,
+    "nearest_own_store_dist_m": 1200,
+    "anchor_poi_summary": {
+      "tech_parks": 2,
+      "metro_transit_dist_m": 450
+    }
+  },
+  {
+    "h3_id": "896189283a3ffff",
+    "zone_name": "Bandra Kurla Complex (BKC G-Block)",
+    "lat": 19.0662,
+    "lng": 72.8687,
+    "rank": 2,
+    "eps_score": 89.8,
+    "demand_capture": 3850,
+    "cannibalization_pct": 15.2,
+    "cannibalization_units": 585,
+    "net_incremental_demand": 3265,
+    "pattern_score": 91,
+    "rent_index": 9.8,
+    "coverage_ratio": 1.62,
+    "risk_level": "LOW",
+    "flags": [
+      "Financial Capital Hub",
+      "Corporate Expense Accounts"
+    ],
+    "shap_drivers": [
+      {
+        "feature": "Fortune 500 HQ Density",
+        "impact": 35,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Business Lunch & Meeting Inflow",
+        "impact": 22,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Weekend Demand Downturn",
+        "impact": -18.5,
+        "type": "NEGATIVE"
+      }
+    ],
+    "verdict": "Rank #2. Relentless Monday-to-Friday high-margin executive traffic. Essential to optimize for delivery & corporate bulk catering.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "city": "Mumbai",
+    "demographics": {
+      "catchment_population": 52000,
+      "youth_student_pct": 22,
+      "affluence_index": 9.7
+    },
+    "competitors_within_500m": 3,
+    "nearest_competitor_dist_m": 210,
+    "nearest_own_store_dist_m": 850,
+    "anchor_poi_summary": {
+      "tech_parks": 8,
+      "metro_transit_dist_m": 380
+    }
+  },
+  {
+    "h3_id": "896189283a1ffff",
+    "zone_name": "Lower Parel (High Street Phoenix & Palladium)",
+    "lat": 18.995,
+    "lng": 72.825,
+    "rank": 3,
+    "eps_score": 87.2,
+    "demand_capture": 3600,
+    "cannibalization_pct": 18,
+    "cannibalization_units": 648,
+    "net_incremental_demand": 2952,
+    "pattern_score": 88.5,
+    "rent_index": 9.4,
+    "coverage_ratio": 1.48,
+    "risk_level": "LOW",
+    "flags": [
+      "Luxury Retail Anchor",
+      "Grade-A Office Towers"
+    ],
+    "shap_drivers": [
+      {
+        "feature": "Luxury Shopping Footfall Pull",
+        "impact": 28.5,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Mill Compound Corporate Capture",
+        "impact": 21,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Heavy Peak-Hour Traffic Chokepoint",
+        "impact": -15,
+        "type": "NEGATIVE"
+      }
+    ],
+    "verdict": "Rank #3. Convergence of ultra-luxury shoppers and banking professionals. High all-day consistency from 9 AM to 11 PM.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "city": "Mumbai",
+    "demographics": {
+      "catchment_population": 44000,
+      "youth_student_pct": 31,
+      "affluence_index": 9.5
+    },
+    "competitors_within_500m": 5,
+    "nearest_competitor_dist_m": 110,
+    "nearest_own_store_dist_m": 950,
+    "anchor_poi_summary": {
+      "tech_parks": 5,
+      "metro_transit_dist_m": 320
+    }
+  },
+  {
+    "h3_id": "896189283a5ffff",
+    "zone_name": "Powai (Hiranandani Central Avenue)",
+    "lat": 19.1176,
+    "lng": 72.906,
+    "rank": 4,
+    "eps_score": 84.5,
+    "demand_capture": 2800,
+    "cannibalization_pct": 8.5,
+    "cannibalization_units": 238,
+    "net_incremental_demand": 2562,
+    "pattern_score": 85,
+    "rent_index": 7.9,
+    "coverage_ratio": 1.54,
+    "risk_level": "LOW",
+    "flags": [
+      "Planned European Township",
+      "Tech & Student Pull"
+    ],
+    "shap_drivers": [
+      {
+        "feature": "Township Walkability Index",
+        "impact": 27,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "IIT Bombay & Tech Park Demographics",
+        "impact": 19.5,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Suburban Transit Ingress Delay",
+        "impact": -12,
+        "type": "NEGATIVE"
+      }
+    ],
+    "verdict": "Rank #4. Highly loyal residential and tech catchment. Strong blend of daytime work sessions and evening family outings.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "city": "Mumbai",
+    "demographics": {
+      "catchment_population": 41000,
+      "youth_student_pct": 38,
+      "affluence_index": 8.9
+    },
+    "competitors_within_500m": 2,
+    "nearest_competitor_dist_m": 340,
+    "nearest_own_store_dist_m": 1900,
+    "anchor_poi_summary": {
+      "tech_parks": 4,
+      "metro_transit_dist_m": 780
+    }
+  },
+  {
+    "h3_id": "896189283a9ffff",
+    "zone_name": "Andheri West (Lokhandwala Complex)",
+    "lat": 19.139,
+    "lng": 72.826,
+    "rank": 5,
+    "eps_score": 81,
+    "demand_capture": 2950,
+    "cannibalization_pct": 16.5,
+    "cannibalization_units": 486,
+    "net_incremental_demand": 2464,
+    "pattern_score": 82.5,
+    "rent_index": 8.4,
+    "coverage_ratio": 1.4,
+    "risk_level": "LOW",
+    "flags": [
+      "Suburban Epicenter",
+      "Creator & Media Footfall"
+    ],
+    "shap_drivers": [
+      {
+        "feature": "High-Density Residential Market",
+        "impact": 24.5,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Late-Night Dining Preference",
+        "impact": 18,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Intense Competitor Proximity",
+        "impact": -17.5,
+        "type": "NEGATIVE"
+      }
+    ],
+    "verdict": "Rank #5. Bustling suburban high street. Extends operational profitability via strong late-evening beverage sales.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "city": "Mumbai",
+    "demographics": {
+      "catchment_population": 58000,
+      "youth_student_pct": 34,
+      "affluence_index": 8.5
+    },
+    "competitors_within_500m": 5,
+    "nearest_competitor_dist_m": 130,
+    "nearest_own_store_dist_m": 1750,
+    "anchor_poi_summary": {
+      "tech_parks": 2,
+      "metro_transit_dist_m": 620
+    }
+  },
+  {
+    "h3_id": "896189283abffff",
+    "zone_name": "Colaba Causeway & Fort",
+    "lat": 18.922,
+    "lng": 72.832,
+    "rank": 6,
+    "eps_score": 78.5,
+    "demand_capture": 2650,
+    "cannibalization_pct": 11,
+    "cannibalization_units": 291,
+    "net_incremental_demand": 2359,
+    "pattern_score": 80,
+    "rent_index": 8.8,
+    "coverage_ratio": 1.34,
+    "risk_level": "LOW",
+    "flags": [
+      "Heritage Tourism",
+      "High Foreign Traveler Share"
+    ],
+    "shap_drivers": [
+      {
+        "feature": "International Tourist & Heritage Pull",
+        "impact": 28,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Iconic South Bombay Brand Synergy",
+        "impact": 17.5,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Aging Commercial Infrastructure",
+        "impact": -16,
+        "type": "NEGATIVE"
+      }
+    ],
+    "verdict": "Rank #6. South Mumbai flagship visibility. High tourist turnover offsets limited suburban regular commuter capture.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "city": "Mumbai",
+    "demographics": {
+      "catchment_population": 32000,
+      "youth_student_pct": 26,
+      "affluence_index": 9.3
+    },
+    "competitors_within_500m": 3,
+    "nearest_competitor_dist_m": 240,
+    "nearest_own_store_dist_m": 1400,
+    "anchor_poi_summary": {
+      "tech_parks": 1,
+      "metro_transit_dist_m": 500
+    }
+  },
+  {
+    "h3_id": "896082691a7ffff",
+    "zone_name": "Indiranagar (100ft Road & 12th Main)",
+    "lat": 12.9784,
+    "lng": 77.6408,
+    "rank": 1,
+    "eps_score": 91.8,
+    "demand_capture": 3500,
+    "cannibalization_pct": 11.2,
+    "cannibalization_units": 392,
+    "net_incremental_demand": 3108,
+    "pattern_score": 93.5,
+    "rent_index": 8.7,
+    "coverage_ratio": 1.66,
+    "risk_level": "LOW",
+    "flags": [
+      "Startup Elite",
+      "Specialty Coffee Capital",
+      "High Disposable Spend"
+    ],
+    "shap_drivers": [
+      {
+        "feature": "Tech Founder & Professional Inflow",
+        "impact": 33,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "High-Density Boutique Retail Spine",
+        "impact": 23.5,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Competitive Coffee Cluster Density",
+        "impact": -16,
+        "type": "NEGATIVE"
+      },
+      {
+        "feature": "Peak Weekend Table Turnover Delay",
+        "impact": -11,
+        "type": "NEGATIVE"
+      }
+    ],
+    "verdict": "Rank #1 for Bangalore. The highest concentration of specialty coffee consumers in India. High basket size driven by experiential dining.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "city": "Bangalore",
+    "demographics": {
+      "catchment_population": 46000,
+      "youth_student_pct": 39.5,
+      "affluence_index": 9.6
+    },
+    "competitors_within_500m": 4,
+    "nearest_competitor_dist_m": 160,
+    "nearest_own_store_dist_m": 1800,
+    "anchor_poi_summary": {
+      "tech_parks": 4,
+      "metro_transit_dist_m": 380
+    }
+  },
+  {
+    "h3_id": "896082691a3ffff",
+    "zone_name": "Koramangala (4th & 5th Block)",
+    "lat": 12.9352,
+    "lng": 77.6245,
+    "rank": 2,
+    "eps_score": 88.6,
+    "demand_capture": 3300,
+    "cannibalization_pct": 13,
+    "cannibalization_units": 429,
+    "net_incremental_demand": 2871,
+    "pattern_score": 89,
+    "rent_index": 8.2,
+    "coverage_ratio": 1.58,
+    "risk_level": "LOW",
+    "flags": [
+      "Unicorn Alley",
+      "Casual Meeting Nexus"
+    ],
+    "shap_drivers": [
+      {
+        "feature": "Startup Office & Co-Working Density",
+        "impact": 31,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Young Demographics & Student Population",
+        "impact": 21,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Street Congestion & Ingress Slowdown",
+        "impact": -14.5,
+        "type": "NEGATIVE"
+      }
+    ],
+    "verdict": "Rank #2. Legendary meeting place for tech founders, investors, and remote workers. Exceptionally high beverage orders per square foot.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "city": "Bangalore",
+    "demographics": {
+      "catchment_population": 52000,
+      "youth_student_pct": 45,
+      "affluence_index": 9.1
+    },
+    "competitors_within_500m": 5,
+    "nearest_competitor_dist_m": 120,
+    "nearest_own_store_dist_m": 1100,
+    "anchor_poi_summary": {
+      "tech_parks": 3,
+      "metro_transit_dist_m": 750
+    }
+  },
+  {
+    "h3_id": "896082691a1ffff",
+    "zone_name": "HSR Layout (27th Main High Street)",
+    "lat": 12.9121,
+    "lng": 77.6446,
+    "rank": 3,
+    "eps_score": 86,
+    "demand_capture": 3050,
+    "cannibalization_pct": 9,
+    "cannibalization_units": 274,
+    "net_incremental_demand": 2776,
+    "pattern_score": 87.5,
+    "rent_index": 7.5,
+    "coverage_ratio": 1.62,
+    "risk_level": "LOW",
+    "flags": [
+      "Tech Residential Corridor",
+      "Family Inflow"
+    ],
+    "shap_drivers": [
+      {
+        "feature": "Rapid Residential Affluence Growth",
+        "impact": 28,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Wide Boulevard Walkability",
+        "impact": 19,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Cannibalization Potential from Outer Ring Rd",
+        "impact": -12.5,
+        "type": "NEGATIVE"
+      }
+    ],
+    "verdict": "Rank #3. Thriving residential tech corridor with broad street access and balanced weekend family footfall.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "city": "Bangalore",
+    "demographics": {
+      "catchment_population": 49000,
+      "youth_student_pct": 36,
+      "affluence_index": 8.8
+    },
+    "competitors_within_500m": 3,
+    "nearest_competitor_dist_m": 230,
+    "nearest_own_store_dist_m": 2100,
+    "anchor_poi_summary": {
+      "tech_parks": 2,
+      "metro_transit_dist_m": 900
+    }
+  },
+  {
+    "h3_id": "896082691a5ffff",
+    "zone_name": "Whitefield (ITPB Main Road & ECC)",
+    "lat": 12.986,
+    "lng": 77.733,
+    "rank": 4,
+    "eps_score": 83.2,
+    "demand_capture": 3200,
+    "cannibalization_pct": 12,
+    "cannibalization_units": 384,
+    "net_incremental_demand": 2816,
+    "pattern_score": 84.5,
+    "rent_index": 7.8,
+    "coverage_ratio": 1.45,
+    "risk_level": "LOW",
+    "flags": [
+      "Major Tech SEZ",
+      "Metro Purple Line Connected"
+    ],
+    "shap_drivers": [
+      {
+        "feature": "ITPB Campus Captive Workforce",
+        "impact": 32,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Direct Metro Station Proximity",
+        "impact": 18,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Weekend Office Dwell Drop",
+        "impact": -19,
+        "type": "NEGATIVE"
+      }
+    ],
+    "verdict": "Rank #4. Massive daytime tech workforce capture. Metro station connection ensures strong weekday takeaway breakfast and lunch volume.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "city": "Bangalore",
+    "demographics": {
+      "catchment_population": 58000,
+      "youth_student_pct": 32,
+      "affluence_index": 8.4
+    },
+    "competitors_within_500m": 2,
+    "nearest_competitor_dist_m": 280,
+    "nearest_own_store_dist_m": 1650,
+    "anchor_poi_summary": {
+      "tech_parks": 14,
+      "metro_transit_dist_m": 210
+    }
+  },
+  {
+    "h3_id": "896082691a9ffff",
+    "zone_name": "MG Road & Church Street",
+    "lat": 12.975,
+    "lng": 77.605,
+    "rank": 5,
+    "eps_score": 80.5,
+    "demand_capture": 3450,
+    "cannibalization_pct": 17.5,
+    "cannibalization_units": 603,
+    "net_incremental_demand": 2847,
+    "pattern_score": 82,
+    "rent_index": 9,
+    "coverage_ratio": 1.38,
+    "risk_level": "LOW",
+    "flags": [
+      "City Center Transit",
+      "Pedestrian Promenade"
+    ],
+    "shap_drivers": [
+      {
+        "feature": "Pedestrianized Leisure Promenade",
+        "impact": 27.5,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Central Metro Interchange Transfer",
+        "impact": 21,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Existing CBD Brand Store Proximity",
+        "impact": -21,
+        "type": "NEGATIVE"
+      }
+    ],
+    "verdict": "Rank #5. Iconic central promenade with steady youth and tourist footfall. Keep eye on cannibalization with existing Church Street outlet.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "city": "Bangalore",
+    "demographics": {
+      "catchment_population": 43000,
+      "youth_student_pct": 42,
+      "affluence_index": 9
+    },
+    "competitors_within_500m": 5,
+    "nearest_competitor_dist_m": 110,
+    "nearest_own_store_dist_m": 680,
+    "anchor_poi_summary": {
+      "tech_parks": 2,
+      "metro_transit_dist_m": 180
+    }
+  },
+  {
+    "h3_id": "896082691abffff",
+    "zone_name": "Jayanagar (4th Block Complex)",
+    "lat": 12.929,
+    "lng": 77.583,
+    "rank": 6,
+    "eps_score": 77,
+    "demand_capture": 2500,
+    "cannibalization_pct": 7.5,
+    "cannibalization_units": 187,
+    "net_incremental_demand": 2313,
+    "pattern_score": 78.5,
+    "rent_index": 6.8,
+    "coverage_ratio": 1.48,
+    "risk_level": "LOW",
+    "flags": [
+      "Traditional Wealth",
+      "Stable Family Catchment"
+    ],
+    "shap_drivers": [
+      {
+        "feature": "Multi-Generational Wealth Density",
+        "impact": 25,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "High Customer Lifetime Loyalty",
+        "impact": 18,
+        "type": "POSITIVE"
+      },
+      {
+        "feature": "Lower Propensity for Western Specialty Coffee",
+        "impact": -17,
+        "type": "NEGATIVE"
+      }
+    ],
+    "verdict": "Rank #6. South Bangalore heritage neighborhood. High recurring family visits; localized snack offerings recommended.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "city": "Bangalore",
+    "demographics": {
+      "catchment_population": 39000,
+      "senior_pct": 28,
+      "affluence_index": 8.6
+    },
+    "competitors_within_500m": 2,
+    "nearest_competitor_dist_m": 350,
+    "nearest_own_store_dist_m": 2600,
+    "anchor_poi_summary": {
+      "tech_parks": 0,
+      "metro_transit_dist_m": 400
     }
   }
 ]

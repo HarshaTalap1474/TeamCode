@@ -8,7 +8,7 @@ import mockPOIs from '../mock/pois.json';
 export async function fetchCandidates(
   category: RetailCategory = 'cafe',
   brand = 'Starbucks',
-  city = 'Pune'
+  city = 'Kolhapur'
 ): Promise<{ data: CandidateSite[]; isLive: boolean }> {
   try {
     const res = await fetch(`/api/v1/candidates?category=${category}&brand=${brand}&city=${city}`);
@@ -34,7 +34,7 @@ export async function fetchCandidates(
  */
 export async function fetchPOIs(
   category: RetailCategory = 'cafe',
-  city = 'Pune'
+  city = 'Kolhapur'
 ): Promise<POIStore[]> {
   try {
     const res = await fetch(`/api/v1/pois?category=${category}&city=${city}`);

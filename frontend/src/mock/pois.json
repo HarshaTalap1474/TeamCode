@@ -1,95 +1,5 @@
 [
   {
-    "id": "POI-OWN-01",
-    "name": "Starbucks Aundh Road",
-    "brand": "Starbucks",
-    "type": "OWN",
-    "lat": 18.5615,
-    "lng": 73.8055,
-    "category": "cafe",
-    "city": "Pune"
-  },
-  {
-    "id": "POI-OWN-02",
-    "name": "Starbucks Phoenix Marketcity",
-    "brand": "Starbucks",
-    "type": "OWN",
-    "lat": 18.5685,
-    "lng": 73.918,
-    "category": "cafe",
-    "city": "Pune"
-  },
-  {
-    "id": "POI-OWN-03",
-    "name": "Starbucks FC Road",
-    "brand": "Starbucks",
-    "type": "OWN",
-    "lat": 18.5285,
-    "lng": 73.842,
-    "category": "cafe",
-    "city": "Pune"
-  },
-  {
-    "id": "POI-COMP-01",
-    "name": "Blue Tokai Coffee Baner",
-    "brand": "Blue Tokai",
-    "type": "COMPETITOR",
-    "lat": 18.5602,
-    "lng": 73.7845,
-    "category": "cafe",
-    "city": "Pune"
-  },
-  {
-    "id": "POI-COMP-02",
-    "name": "Third Wave Coffee Baner",
-    "brand": "Third Wave",
-    "type": "COMPETITOR",
-    "lat": 18.5582,
-    "lng": 73.789,
-    "category": "cafe",
-    "city": "Pune"
-  },
-  {
-    "id": "POI-COMP-03",
-    "name": "Cafe Coffee Day Kothrud",
-    "brand": "CCD",
-    "type": "COMPETITOR",
-    "lat": 18.5085,
-    "lng": 73.8115,
-    "category": "cafe",
-    "city": "Pune"
-  },
-  {
-    "id": "POI-COMP-04",
-    "name": "Third Wave Hinjewadi Phase 1",
-    "brand": "Third Wave",
-    "type": "COMPETITOR",
-    "lat": 18.5925,
-    "lng": 73.737,
-    "category": "cafe",
-    "city": "Pune"
-  },
-  {
-    "id": "POI-COMP-05",
-    "name": "Blue Tokai Koregaon Park",
-    "brand": "Blue Tokai",
-    "type": "COMPETITOR",
-    "lat": 18.5375,
-    "lng": 73.8925,
-    "category": "cafe",
-    "city": "Pune"
-  },
-  {
-    "id": "POI-COMP-06",
-    "name": "Subko Coffee Viman Nagar",
-    "brand": "Subko",
-    "type": "COMPETITOR",
-    "lat": 18.5668,
-    "lng": 73.913,
-    "category": "cafe",
-    "city": "Pune"
-  },
-  {
     "id": "POI-KLP-OWN-01",
     "name": "Starbucks DYP City Mall",
     "brand": "Starbucks",
@@ -178,5 +88,315 @@
     "lng": 74.2335,
     "category": "fashion",
     "city": "Kolhapur"
+  },
+  {
+    "id": "POI-PUN-OWN-01",
+    "name": "Starbucks Aundh Road",
+    "brand": "Starbucks",
+    "type": "OWN",
+    "lat": 18.5615,
+    "lng": 73.8055,
+    "category": "cafe",
+    "city": "Pune"
+  },
+  {
+    "id": "POI-PUN-OWN-02",
+    "name": "Starbucks Phoenix Marketcity",
+    "brand": "Starbucks",
+    "type": "OWN",
+    "lat": 18.5685,
+    "lng": 73.918,
+    "category": "cafe",
+    "city": "Pune"
+  },
+  {
+    "id": "POI-PUN-OWN-03",
+    "name": "Starbucks FC Road",
+    "brand": "Starbucks",
+    "type": "OWN",
+    "lat": 18.5285,
+    "lng": 73.842,
+    "category": "cafe",
+    "city": "Pune"
+  },
+  {
+    "id": "POI-PUN-COMP-01",
+    "name": "Blue Tokai Coffee Baner",
+    "brand": "Blue Tokai",
+    "type": "COMPETITOR",
+    "lat": 18.5602,
+    "lng": 73.7845,
+    "category": "cafe",
+    "city": "Pune"
+  },
+  {
+    "id": "POI-PUN-COMP-02",
+    "name": "Third Wave Coffee Baner",
+    "brand": "Third Wave",
+    "type": "COMPETITOR",
+    "lat": 18.5582,
+    "lng": 73.789,
+    "category": "cafe",
+    "city": "Pune"
+  },
+  {
+    "id": "POI-PUN-COMP-03",
+    "name": "Cafe Coffee Day Kothrud",
+    "brand": "CCD",
+    "type": "COMPETITOR",
+    "lat": 18.5085,
+    "lng": 73.8115,
+    "category": "cafe",
+    "city": "Pune"
+  },
+  {
+    "id": "POI-PUN-COMP-04",
+    "name": "Third Wave Hinjewadi Phase 1",
+    "brand": "Third Wave",
+    "type": "COMPETITOR",
+    "lat": 18.5925,
+    "lng": 73.737,
+    "category": "cafe",
+    "city": "Pune"
+  },
+  {
+    "id": "POI-PUN-COMP-05",
+    "name": "Blue Tokai Koregaon Park",
+    "brand": "Blue Tokai",
+    "type": "COMPETITOR",
+    "lat": 18.5375,
+    "lng": 73.8925,
+    "category": "cafe",
+    "city": "Pune"
+  },
+  {
+    "id": "POI-PUN-COMP-06",
+    "name": "Subko Coffee Viman Nagar",
+    "brand": "Subko",
+    "type": "COMPETITOR",
+    "lat": 18.5668,
+    "lng": 73.913,
+    "category": "cafe",
+    "city": "Pune"
+  },
+  {
+    "id": "POI-MUM-OWN-01",
+    "name": "Starbucks Bandra Turner Road",
+    "brand": "Starbucks",
+    "type": "OWN",
+    "lat": 19.059,
+    "lng": 72.831,
+    "category": "cafe",
+    "city": "Mumbai"
+  },
+  {
+    "id": "POI-MUM-OWN-02",
+    "name": "Starbucks BKC Capital Building",
+    "brand": "Starbucks",
+    "type": "OWN",
+    "lat": 19.0665,
+    "lng": 72.869,
+    "category": "cafe",
+    "city": "Mumbai"
+  },
+  {
+    "id": "POI-MUM-OWN-03",
+    "name": "Starbucks Reserve Horniman Circle Fort",
+    "brand": "Starbucks",
+    "type": "OWN",
+    "lat": 18.932,
+    "lng": 72.8335,
+    "category": "cafe",
+    "city": "Mumbai"
+  },
+  {
+    "id": "POI-MUM-COMP-01",
+    "name": "Blue Tokai Coffee Bandra Pali Hill",
+    "brand": "Blue Tokai",
+    "type": "COMPETITOR",
+    "lat": 19.0615,
+    "lng": 72.835,
+    "category": "cafe",
+    "city": "Mumbai"
+  },
+  {
+    "id": "POI-MUM-COMP-02",
+    "name": "Subko Specialty Coffee Bandra",
+    "brand": "Subko",
+    "type": "COMPETITOR",
+    "lat": 19.058,
+    "lng": 72.829,
+    "category": "cafe",
+    "city": "Mumbai"
+  },
+  {
+    "id": "POI-MUM-COMP-03",
+    "name": "Third Wave Coffee BKC",
+    "brand": "Third Wave",
+    "type": "COMPETITOR",
+    "lat": 19.065,
+    "lng": 72.867,
+    "category": "cafe",
+    "city": "Mumbai"
+  },
+  {
+    "id": "POI-MUM-COMP-04",
+    "name": "Third Wave Coffee Palladium Lower Parel",
+    "brand": "Third Wave",
+    "type": "COMPETITOR",
+    "lat": 18.994,
+    "lng": 72.826,
+    "category": "cafe",
+    "city": "Mumbai"
+  },
+  {
+    "id": "POI-MUM-COMP-05",
+    "name": "Apollo Pharmacy Mahim West",
+    "brand": "Apollo",
+    "type": "COMPETITOR",
+    "lat": 19.034,
+    "lng": 72.839,
+    "category": "pharmacy",
+    "city": "Mumbai"
+  },
+  {
+    "id": "POI-MUM-COMP-06",
+    "name": "Nature's Basket Bandra West",
+    "brand": "Nature's Basket",
+    "type": "COMPETITOR",
+    "lat": 19.061,
+    "lng": 72.834,
+    "category": "supermarket",
+    "city": "Mumbai"
+  },
+  {
+    "id": "POI-MUM-COMP-07",
+    "name": "McDonald's Linking Road Bandra",
+    "brand": "McDonald's",
+    "type": "COMPETITOR",
+    "lat": 19.06,
+    "lng": 72.836,
+    "category": "qsr",
+    "city": "Mumbai"
+  },
+  {
+    "id": "POI-MUM-COMP-08",
+    "name": "Zudio Lokhandwala Andheri",
+    "brand": "Zudio",
+    "type": "COMPETITOR",
+    "lat": 19.1385,
+    "lng": 72.8255,
+    "category": "fashion",
+    "city": "Mumbai"
+  },
+  {
+    "id": "POI-BLR-OWN-01",
+    "name": "Starbucks Indiranagar 100ft Road",
+    "brand": "Starbucks",
+    "type": "OWN",
+    "lat": 12.978,
+    "lng": 77.641,
+    "category": "cafe",
+    "city": "Bangalore"
+  },
+  {
+    "id": "POI-BLR-OWN-02",
+    "name": "Starbucks Koramangala 80ft Road",
+    "brand": "Starbucks",
+    "type": "OWN",
+    "lat": 12.935,
+    "lng": 77.623,
+    "category": "cafe",
+    "city": "Bangalore"
+  },
+  {
+    "id": "POI-BLR-OWN-03",
+    "name": "Starbucks Church Street Central",
+    "brand": "Starbucks",
+    "type": "OWN",
+    "lat": 12.9745,
+    "lng": 77.6045,
+    "category": "cafe",
+    "city": "Bangalore"
+  },
+  {
+    "id": "POI-BLR-COMP-01",
+    "name": "Third Wave Coffee Indiranagar 12th Main",
+    "brand": "Third Wave",
+    "type": "COMPETITOR",
+    "lat": 12.972,
+    "lng": 77.643,
+    "category": "cafe",
+    "city": "Bangalore"
+  },
+  {
+    "id": "POI-BLR-COMP-02",
+    "name": "Blue Tokai Koramangala 5th Block",
+    "brand": "Blue Tokai",
+    "type": "COMPETITOR",
+    "lat": 12.934,
+    "lng": 77.625,
+    "category": "cafe",
+    "city": "Bangalore"
+  },
+  {
+    "id": "POI-BLR-COMP-03",
+    "name": "Third Wave Coffee HSR 27th Main",
+    "brand": "Third Wave",
+    "type": "COMPETITOR",
+    "lat": 12.9115,
+    "lng": 77.645,
+    "category": "cafe",
+    "city": "Bangalore"
+  },
+  {
+    "id": "POI-BLR-COMP-04",
+    "name": "Araku Coffee Indiranagar 12th Main",
+    "brand": "Araku",
+    "type": "COMPETITOR",
+    "lat": 12.971,
+    "lng": 77.644,
+    "category": "cafe",
+    "city": "Bangalore"
+  },
+  {
+    "id": "POI-BLR-COMP-05",
+    "name": "Apollo Pharmacy Indiranagar",
+    "brand": "Apollo",
+    "type": "COMPETITOR",
+    "lat": 12.979,
+    "lng": 77.64,
+    "category": "pharmacy",
+    "city": "Bangalore"
+  },
+  {
+    "id": "POI-BLR-COMP-06",
+    "name": "Nature's Basket Koramangala",
+    "brand": "Nature's Basket",
+    "type": "COMPETITOR",
+    "lat": 12.936,
+    "lng": 77.622,
+    "category": "supermarket",
+    "city": "Bangalore"
+  },
+  {
+    "id": "POI-BLR-COMP-07",
+    "name": "McDonald's Church Street",
+    "brand": "McDonald's",
+    "type": "COMPETITOR",
+    "lat": 12.9755,
+    "lng": 77.606,
+    "category": "qsr",
+    "city": "Bangalore"
+  },
+  {
+    "id": "POI-BLR-COMP-08",
+    "name": "Westside Commercial Street",
+    "brand": "Westside",
+    "type": "COMPETITOR",
+    "lat": 12.9815,
+    "lng": 77.6095,
+    "category": "fashion",
+    "city": "Bangalore"
   }
 ]

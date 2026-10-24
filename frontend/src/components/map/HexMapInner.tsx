@@ -36,6 +36,15 @@ function getHexVertices(lat: number, lng: number, radiusKm = 0.55): [number, num
   return vertices;
 }
 
+// Modular Basemap Tile Provider Configuration - ready for custom map swapping
+export const BASEMAP_CONFIG = {
+  url: 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',
+  options: {
+    maxZoom: 18,
+    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
+  },
+};
+
 export default function HexMapInner({
   candidates,
   pois,
@@ -57,7 +66,7 @@ export default function HexMapInner({
   useEffect(() => {
     if (!mapContainerRef.current || mapInstanceRef.current) return;
 
-    const initialCenter = CITY_COORDINATES[city] || [18.5204, 73.8567];
+    const initialCenter = CITY_COORDINATES[city] || CITY_COORDINATES['Kolhapur'] || [16.7050, 74.2433];
 
     const map = L.map(mapContainerRef.current, {
       center: initialCenter,
@@ -66,14 +75,8 @@ export default function HexMapInner({
       attributionControl: false,
     });
 
-    // ESRI World Dark Gray Canvas: ZERO API KEY REQUIRED, ZERO WATERMARKS, ultra-crisp dark standard
-    L.tileLayer(
-      'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',
-      {
-        maxZoom: 16,
-        attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
-      }
-    ).addTo(map);
+    // Basemap Layer
+    L.tileLayer(BASEMAP_CONFIG.url, BASEMAP_CONFIG.options).addTo(map);
 
     polygonLayerGroupRef.current = L.layerGroup().addTo(map);
     poiLayerGroupRef.current = L.layerGroup().addTo(map);
@@ -209,7 +212,7 @@ export default function HexMapInner({
   return (
     <div className="relative w-full h-full min-h-[450px] bg-[#080C14]" style={{ height: '100%', minHeight: '100%' }}>
       {/* Map Canvas */}
-      <div ref={mapContainerRef} className="w-full h-full" style={{ height: '100%', minHeight: '100%', width: '100%' }} />
+      <div ref={mapContainerRef} id="map" className="w-full h-full" style={{ height: '100%', minHeight: '100%', width: '100%' }} />
 
       {/* Layer Controls Floating Widget (Top Left) */}
       <div className="absolute top-4 left-4 z-[400] bg-slate-900/90 backdrop-blur-md border border-slate-800 p-2.5 rounded-lg text-xs shadow-xl flex flex-col gap-2">
