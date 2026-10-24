@@ -1,0 +1,83 @@
+[
+  {
+    "id": "POI-OWN-01",
+    "name": "Starbucks Aundh Road",
+    "brand": "Starbucks",
+    "type": "OWN",
+    "lat": 18.5615,
+    "lng": 73.8055,
+    "category": "cafe"
+  },
+  {
+    "id": "POI-OWN-02",
+    "name": "Starbucks Phoenix Marketcity",
+    "brand": "Starbucks",
+    "type": "OWN",
+    "lat": 18.5685,
+    "lng": 73.9180,
+    "category": "cafe"
+  },
+  {
+    "id": "POI-OWN-03",
+    "name": "Starbucks FC Road",
+    "brand": "Starbucks",
+    "type": "OWN",
+    "lat": 18.5285,
+    "lng": 73.8420,
+    "category": "cafe"
+  },
+  {
+    "id": "POI-COMP-01",
+    "name": "Blue Tokai Coffee Baner",
+    "brand": "Blue Tokai",
+    "type": "COMPETITOR",
+    "lat": 18.5602,
+    "lng": 73.7845,
+    "category": "cafe"
+  },
+  {
+    "id": "POI-COMP-02",
+    "name": "Third Wave Coffee Baner",
+    "brand": "Third Wave",
+    "type": "COMPETITOR",
+    "lat": 18.5582,
+    "lng": 73.7890,
+    "category": "cafe"
+  },
+  {
+    "id": "POI-COMP-03",
+    "name": "Cafe Coffee Day Kothrud",
+    "brand": "CCD",
+    "type": "COMPETITOR",
+    "lat": 18.5085,
+    "lng": 73.8115,
+    "category": "cafe"
+  },
+  {
+    "id": "POI-COMP-04",
+    "name": "Third Wave Hinjewadi Phase 1",
+    "brand": "Third Wave",
+    "type": "COMPETITOR",
+    "lat": 18.5925,
+    "lng": 73.7370,
+    "category": "cafe"
+  },
+  {
+    "id": "POI-COMP-05",
+    "name": "Blue Tokai Koregaon Park",
+    "brand": "Blue Tokai",
+    "type": "COMPETITOR",
+    "lat": 18.5375,
+    "lng": 73.8925,
+    "category": "cafe"
+  },
+  {
+    "id": "POI-COMP-06",
+    "name": "Subko Coffee Viman Nagar",
+    "brand": "Subko",
+    "type": "COMPETITOR",
+    "lat": 18.5668,
+    "lng": 73.9130,
+    "category": "cafe"
+  }
+]

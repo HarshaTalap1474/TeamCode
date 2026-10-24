@@ -95,7 +95,7 @@
       { "feature": "Youth Demographic Share", "impact": 19.1, "type": "POSITIVE" },
       { "feature": "Weekend Demand Dropoff", "impact": -15.2, "type": "NEGATIVE" }
     ],
-    "verdict": "Rank #3. Highest gross demand volume in Pune. Watch weekend footfall dip when tech parks close.",
+    "verdict": "Rank #3. Highest gross demand volume in Pune. Watch weekend footfall dip when offices close.",
     "category": "cafe",
     "brand": "Starbucks",
     "demographics": {
@@ -132,7 +132,7 @@
       { "feature": "Boutique Retail Synergy", "impact": 14.5, "type": "POSITIVE" },
       { "feature": "Premium Rental Cost", "impact": -22.4, "type": "NEGATIVE" }
     ],
-    "verdict": "Rank #4. Highly prestigious brand visibility. Margins will be compressed by premium real estate asking rates.",
+    "verdict": "Rank #4. Highly prestigious brand visibility with compressed margins due to real estate rates.",
     "category": "cafe",
     "brand": "Starbucks",
     "demographics": {
@@ -146,6 +146,43 @@
     "anchor_poi_summary": {
       "tech_parks": 3,
       "metro_transit_dist_m": 1100
+    }
+  },
+  {
+    "h3_id": "89269c1a5b9ffff",
+    "zone_name": "Wakad Bridge Junction",
+    "lat": 18.5987,
+    "lng": 73.7635,
+    "rank": 5,
+    "eps_score": 72.8,
+    "demand_capture": 1780,
+    "cannibalization_pct": 11.2,
+    "cannibalization_units": 199,
+    "net_incremental_demand": 1581,
+    "pattern_score": 75.0,
+    "rent_index": 6.4,
+    "coverage_ratio": 1.28,
+    "risk_level": "LOW",
+    "flags": ["Growing Residential", "Highway Access"],
+    "shap_drivers": [
+      { "feature": "Arterial Highway Junction", "impact": 18.0, "type": "POSITIVE" },
+      { "feature": "Residential Inflow Rate", "impact": 14.2, "type": "POSITIVE" },
+      { "feature": "Pedestrian Walkability", "impact": -11.5, "type": "NEGATIVE" }
+    ],
+    "verdict": "Rank #5. High vehicular transit capture with rapid residential density growth.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "demographics": {
+      "catchment_population": 36000,
+      "youth_student_pct": 33.0,
+      "affluence_index": 7.8
+    },
+    "competitors_within_500m": 2,
+    "nearest_competitor_dist_m": 420,
+    "nearest_own_store_dist_m": 2100,
+    "anchor_poi_summary": {
+      "tech_parks": 1,
+      "metro_transit_dist_m": 920
     }
   },
   {
@@ -184,6 +221,78 @@
     "anchor_poi_summary": {
       "tech_parks": 4,
       "metro_transit_dist_m": 350
+    }
+  },
+  {
+    "h3_id": "89269c1a5b8ffff",
+    "zone_name": "Aundh Medipark Corridor",
+    "lat": 18.5620,
+    "lng": 73.8080,
+    "rank": 1,
+    "eps_score": 89.2,
+    "demand_capture": 2450,
+    "cannibalization_pct": 9.5,
+    "cannibalization_units": 232,
+    "net_incremental_demand": 2218,
+    "pattern_score": 91.5,
+    "rent_index": 6.8,
+    "coverage_ratio": 1.62,
+    "risk_level": "LOW",
+    "flags": ["Hospital Hub", "High Senior Density"],
+    "shap_drivers": [
+      { "feature": "Hospital & Clinic Cluster", "impact": 31.5, "type": "POSITIVE" },
+      { "feature": "60+ Demographic Density", "impact": 22.0, "type": "POSITIVE" },
+      { "feature": "Local Street Parking", "impact": -8.4, "type": "NEGATIVE" }
+    ],
+    "verdict": "Rank #1 for Pharmacy. Clustered with 9 multi-specialty hospitals with minimal brand overlap.",
+    "category": "pharmacy",
+    "brand": "Apollo",
+    "demographics": {
+      "catchment_population": 39000,
+      "senior_pct": 24.5,
+      "affluence_index": 8.4
+    },
+    "competitors_within_500m": 2,
+    "nearest_competitor_dist_m": 380,
+    "nearest_own_store_dist_m": 2600,
+    "anchor_poi_summary": {
+      "hospitals": 9,
+      "metro_transit_dist_m": 510
+    }
+  },
+  {
+    "h3_id": "89269c1a5b2ffff",
+    "zone_name": "Hadapsar Magarpatta Junction",
+    "lat": 18.5089,
+    "lng": 73.9260,
+    "rank": 1,
+    "eps_score": 87.6,
+    "demand_capture": 3800,
+    "cannibalization_pct": 11.0,
+    "cannibalization_units": 418,
+    "net_incremental_demand": 3382,
+    "pattern_score": 89.0,
+    "rent_index": 6.5,
+    "coverage_ratio": 1.74,
+    "risk_level": "LOW",
+    "flags": ["Mega Township", "Family Density"],
+    "shap_drivers": [
+      { "feature": "Family Residential Density", "impact": 29.0, "type": "POSITIVE" },
+      { "feature": "Parking Bay Capacity", "impact": 21.4, "type": "POSITIVE" },
+      { "feature": "Peak Hour Congestion", "impact": -12.0, "type": "NEGATIVE" }
+    ],
+    "verdict": "Rank #1 for Supermarket. Enormous family catchment with massive weekly grocery demand pull.",
+    "category": "supermarket",
+    "brand": "DMart",
+    "demographics": {
+      "catchment_population": 68000,
+      "affluence_index": 7.9
+    },
+    "competitors_within_500m": 1,
+    "nearest_competitor_dist_m": 920,
+    "nearest_own_store_dist_m": 3800,
+    "anchor_poi_summary": {
+      "metro_transit_dist_m": 480
     }
   }
 ]
