@@ -65,6 +65,23 @@
   color: #F8FAFC !important;
 }
 
+.leaflet-control-attribution {
+  background: rgba(14, 20, 36, 0.85) !important;
+  color: #94A3B8 !important;
+  font-size: 10px !important;
+  padding: 3px 8px !important;
+  border-radius: 4px !important;
+  backdrop-filter: blur(8px);
+  margin-right: 8px !important;
+  margin-bottom: 8px !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+.leaflet-control-attribution a {
+  color: #38BDF8 !important;
+  text-decoration: none;
+}
+
 .leaflet-popup-content-wrapper {
   background: rgba(14, 20, 36, 0.95) !important;
   backdrop-filter: blur(12px);

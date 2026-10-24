@@ -3,7 +3,7 @@
 import React, { useEffect, useRef } from 'react';
 import L from 'leaflet';
 import { CandidateSite, POIStore } from '@/lib/types';
-import { Layers, Eye, EyeOff } from 'lucide-react';
+import { Layers, Eye, EyeOff, Compass } from 'lucide-react';
 
 interface HexMapInnerProps {
   candidates: CandidateSite[];
@@ -36,12 +36,50 @@ function getHexVertices(lat: number, lng: number, radiusKm = 0.55): [number, num
   return vertices;
 }
 
-// Modular Basemap Tile Provider Configuration - ready for custom map swapping
-export const BASEMAP_CONFIG = {
-  url: 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',
-  options: {
-    maxZoom: 18,
-    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
+// Modular Basemap Tile Provider Configurations - Free & Zero API Key
+export type BasemapKey = 'googleHybrid' | 'googleRoadmap' | 'darkCanvas';
+
+export const BASEMAP_PROVIDERS: Record<
+  BasemapKey,
+  {
+    name: string;
+    label: string;
+    icon: string;
+    url: string;
+    options: L.TileLayerOptions;
+  }
+> = {
+  googleHybrid: {
+    name: 'Google Satellite Hybrid',
+    label: 'Satellite',
+    icon: '🛰️',
+    url: 'https://{s}.google.com/vt/lyrs=y&x={x}&y={y}&z={z}',
+    options: {
+      maxZoom: 20,
+      subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+      attribution: '&copy; Google Maps',
+    },
+  },
+  googleRoadmap: {
+    name: 'Google Streets',
+    label: 'Streets',
+    icon: '🗺️',
+    url: 'https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
+    options: {
+      maxZoom: 20,
+      subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+      attribution: '&copy; Google Maps',
+    },
+  },
+  darkCanvas: {
+    name: 'Dark Gray Canvas',
+    label: 'Dark',
+    icon: '🌑',
+    url: 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',
+    options: {
+      maxZoom: 18,
+      attribution: '&copy; Esri',
+    },
   },
 };
 
@@ -55,14 +93,16 @@ export default function HexMapInner({
 }: HexMapInnerProps) {
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<L.Map | null>(null);
+  const tileLayerRef = useRef<L.TileLayer | null>(null);
   const polygonLayerGroupRef = useRef<L.LayerGroup | null>(null);
   const poiLayerGroupRef = useRef<L.LayerGroup | null>(null);
 
+  const [currentBasemap, setCurrentBasemap] = React.useState<BasemapKey>('googleHybrid');
   const [showHexagons, setShowHexagons] = React.useState(true);
   const [showCompetitors, setShowCompetitors] = React.useState(true);
   const [showOwnStores, setShowOwnStores] = React.useState(true);
 
-  // Initialize Map with 100% Free, Zero-API-Key ESRI Dark Gray Canvas
+  // Initialize Map with Google Satellite Hybrid & Bottom-Right Controls
   useEffect(() => {
     if (!mapContainerRef.current || mapInstanceRef.current) return;
 
@@ -71,12 +111,17 @@ export default function HexMapInner({
     const map = L.map(mapContainerRef.current, {
       center: initialCenter,
       zoom: 13,
-      zoomControl: true,
-      attributionControl: false,
+      zoomControl: false, // Positioned at bottomright below
+      attributionControl: true, // Displays 'Leaflet | © Google Maps' as in reference
     });
 
-    // Basemap Layer
-    L.tileLayer(BASEMAP_CONFIG.url, BASEMAP_CONFIG.options).addTo(map);
+    // Custom positioned Zoom Control (bottom-right matching screenshot)
+    L.control.zoom({ position: 'bottomright' }).addTo(map);
+
+    // Initial Base Tile Layer
+    const provider = BASEMAP_PROVIDERS[currentBasemap];
+    const initialTiles = L.tileLayer(provider.url, provider.options).addTo(map);
+    tileLayerRef.current = initialTiles;
 
     polygonLayerGroupRef.current = L.layerGroup().addTo(map);
     poiLayerGroupRef.current = L.layerGroup().addTo(map);
@@ -94,6 +139,20 @@ export default function HexMapInner({
       mapInstanceRef.current = null;
     };
   }, []);
+
+  // Update Tile Layer dynamically when user switches basemap
+  useEffect(() => {
+    if (!mapInstanceRef.current) return;
+
+    if (tileLayerRef.current) {
+      mapInstanceRef.current.removeLayer(tileLayerRef.current);
+    }
+
+    const provider = BASEMAP_PROVIDERS[currentBasemap];
+    const newTiles = L.tileLayer(provider.url, provider.options).addTo(mapInstanceRef.current);
+    newTiles.bringToBack();
+    tileLayerRef.current = newTiles;
+  }, [currentBasemap]);
 
   // Smoothly fly to city center when selected city changes
   useEffect(() => {
@@ -215,50 +274,82 @@ export default function HexMapInner({
       <div ref={mapContainerRef} id="map" className="w-full h-full" style={{ height: '100%', minHeight: '100%', width: '100%' }} />
 
       {/* Layer Controls Floating Widget (Top Left) */}
-      <div className="absolute top-4 left-4 z-[400] bg-slate-900/90 backdrop-blur-md border border-slate-800 p-2.5 rounded-lg text-xs shadow-xl flex flex-col gap-2">
-        <div className="flex items-center gap-1.5 text-slate-400 font-semibold uppercase text-[10px] tracking-wider border-b border-slate-800 pb-1.5">
-          <Layers className="w-3.5 h-3.5 text-blue-400" />
-          <span>Spatial Layers</span>
+      <div className="absolute top-4 left-4 z-[400] bg-slate-900/95 backdrop-blur-md border border-slate-800 p-2.5 rounded-xl text-xs shadow-2xl flex flex-col gap-2.5 w-56">
+        {/* Basemap Selection */}
+        <div>
+          <div className="flex items-center gap-1.5 text-slate-400 font-semibold uppercase text-[10px] tracking-wider mb-1.5">
+            <Compass className="w-3.5 h-3.5 text-blue-400" />
+            <span>Map Style</span>
+          </div>
+          <div className="grid grid-cols-3 gap-1 bg-slate-950/60 p-1 rounded-lg border border-slate-800/80">
+            {(Object.keys(BASEMAP_PROVIDERS) as BasemapKey[]).map((key) => {
+              const b = BASEMAP_PROVIDERS[key];
+              const isActive = currentBasemap === key;
+              return (
+                <button
+                  key={key}
+                  onClick={() => setCurrentBasemap(key)}
+                  className={`px-1.5 py-1 rounded text-[10px] font-semibold transition text-center flex flex-col items-center gap-0.5 ${
+                    isActive
+                      ? 'bg-blue-600/30 text-blue-300 border border-blue-500/50 shadow-sm'
+                      : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60 border border-transparent'
+                  }`}
+                  title={b.name}
+                >
+                  <span className="text-xs">{b.icon}</span>
+                  <span className="truncate">{b.label}</span>
+                </button>
+              );
+            })}
+          </div>
         </div>
 
-        <button
-          onClick={() => setShowHexagons(!showHexagons)}
-          className={`flex items-center justify-between gap-3 px-2 py-1 rounded transition text-left ${
-            showHexagons ? 'bg-slate-800 text-slate-200' : 'text-slate-500 hover:text-slate-300'
-          }`}
-        >
-          <div className="flex items-center gap-2">
-            <span className="w-2.5 h-2.5 rounded-sm bg-emerald-400" />
-            <span>H3 Hexagon Zones</span>
+        {/* Feature Overlays */}
+        <div className="border-t border-slate-800/80 pt-2 flex flex-col gap-1.5">
+          <div className="flex items-center gap-1.5 text-slate-400 font-semibold uppercase text-[10px] tracking-wider mb-0.5">
+            <Layers className="w-3.5 h-3.5 text-emerald-400" />
+            <span>Overlays</span>
           </div>
-          {showHexagons ? <Eye className="w-3.5 h-3.5" /> : <EyeOff className="w-3.5 h-3.5" />}
-        </button>
 
-        <button
-          onClick={() => setShowOwnStores(!showOwnStores)}
-          className={`flex items-center justify-between gap-3 px-2 py-1 rounded transition text-left ${
-            showOwnStores ? 'bg-slate-800 text-slate-200' : 'text-slate-500 hover:text-slate-300'
-          }`}
-        >
-          <div className="flex items-center gap-2">
-            <span className="w-2.5 h-2.5 rounded-full bg-blue-500" />
-            <span>{brand} Stores (Own)</span>
-          </div>
-          {showOwnStores ? <Eye className="w-3.5 h-3.5" /> : <EyeOff className="w-3.5 h-3.5" />}
-        </button>
+          <button
+            onClick={() => setShowHexagons(!showHexagons)}
+            className={`flex items-center justify-between gap-3 px-2 py-1 rounded transition text-left text-xs ${
+              showHexagons ? 'bg-slate-800/80 text-slate-200' : 'text-slate-500 hover:text-slate-300'
+            }`}
+          >
+            <div className="flex items-center gap-2">
+              <span className="w-2.5 h-2.5 rounded-sm bg-emerald-400" />
+              <span>H3 Hexagon Grid</span>
+            </div>
+            {showHexagons ? <Eye className="w-3.5 h-3.5 text-emerald-400" /> : <EyeOff className="w-3.5 h-3.5" />}
+          </button>
 
-        <button
-          onClick={() => setShowCompetitors(!showCompetitors)}
-          className={`flex items-center justify-between gap-3 px-2 py-1 rounded transition text-left ${
-            showCompetitors ? 'bg-slate-800 text-slate-200' : 'text-slate-500 hover:text-slate-300'
-          }`}
-        >
-          <div className="flex items-center gap-2">
-            <span className="w-2.5 h-2.5 rounded-full bg-red-500" />
-            <span>Rival Competitors</span>
-          </div>
-          {showCompetitors ? <Eye className="w-3.5 h-3.5" /> : <EyeOff className="w-3.5 h-3.5" />}
-        </button>
+          <button
+            onClick={() => setShowOwnStores(!showOwnStores)}
+            className={`flex items-center justify-between gap-3 px-2 py-1 rounded transition text-left text-xs ${
+              showOwnStores ? 'bg-slate-800/80 text-slate-200' : 'text-slate-500 hover:text-slate-300'
+            }`}
+          >
+            <div className="flex items-center gap-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
+              <span>{brand} Stores (Own)</span>
+            </div>
+            {showOwnStores ? <Eye className="w-3.5 h-3.5 text-blue-400" /> : <EyeOff className="w-3.5 h-3.5" />}
+          </button>
+
+          <button
+            onClick={() => setShowCompetitors(!showCompetitors)}
+            className={`flex items-center justify-between gap-3 px-2 py-1 rounded transition text-left text-xs ${
+              showCompetitors ? 'bg-slate-800/80 text-slate-200' : 'text-slate-500 hover:text-slate-300'
+            }`}
+          >
+            <div className="flex items-center gap-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.8)]" />
+              <span>Rival Competitors</span>
+            </div>
+            {showCompetitors ? <Eye className="w-3.5 h-3.5 text-red-400" /> : <EyeOff className="w-3.5 h-3.5" />}
+          </button>
+        </div>
       </div>
 
       {/* Map Legend (Bottom Left with safe margin) */}
