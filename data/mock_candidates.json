@@ -1,0 +1,189 @@
+[
+  {
+    "h3_id": "89269c1a5b7ffff",
+    "zone_name": "Baner High Street",
+    "lat": 18.5590,
+    "lng": 73.7868,
+    "rank": 1,
+    "eps_score": 88.4,
+    "demand_capture": 2200,
+    "cannibalization_pct": 16.3,
+    "cannibalization_units": 360,
+    "net_incremental_demand": 1840,
+    "pattern_score": 84.2,
+    "rent_index": 7.2,
+    "coverage_ratio": 1.42,
+    "risk_level": "LOW",
+    "flags": ["Tech Corridor", "Low Cannibalization"],
+    "shap_drivers": [
+      { "feature": "Tech Park Proximity", "impact": 24.2, "type": "POSITIVE" },
+      { "feature": "Road Intersection Density", "impact": 16.5, "type": "POSITIVE" },
+      { "feature": "Commercial Rent Pressure", "impact": -12.1, "type": "NEGATIVE" },
+      { "feature": "Competitor Within 300m", "impact": -8.0, "type": "NEGATIVE" }
+    ],
+    "verdict": "Rank #1. High daytime office footfall creates strong demand with minimal cannibalization risk to existing branch.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "demographics": {
+      "catchment_population": 42500,
+      "youth_student_pct": 36.5,
+      "affluence_index": 8.7
+    },
+    "competitors_within_500m": 2,
+    "nearest_competitor_dist_m": 310,
+    "nearest_own_store_dist_m": 2400,
+    "anchor_poi_summary": {
+      "tech_parks": 6,
+      "metro_transit_dist_m": 420
+    }
+  },
+  {
+    "h3_id": "89269c1a5b3ffff",
+    "zone_name": "Kothrud Depot Area",
+    "lat": 18.5074,
+    "lng": 73.8077,
+    "rank": 2,
+    "eps_score": 82.1,
+    "demand_capture": 1950,
+    "cannibalization_pct": 8.2,
+    "cannibalization_units": 160,
+    "net_incremental_demand": 1790,
+    "pattern_score": 79.5,
+    "rent_index": 5.8,
+    "coverage_ratio": 1.55,
+    "risk_level": "LOW",
+    "flags": ["High Affluence", "Moderate Rent"],
+    "shap_drivers": [
+      { "feature": "Residential Affluence Density", "impact": 21.0, "type": "POSITIVE" },
+      { "feature": "Favorable Unit Economics", "impact": 18.2, "type": "POSITIVE" },
+      { "feature": "Metro Transit Distance", "impact": -10.4, "type": "NEGATIVE" }
+    ],
+    "verdict": "Rank #2. Exceptional margin profile due to lower rental overhead and dense, loyal residential demographic.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "demographics": {
+      "catchment_population": 38000,
+      "youth_student_pct": 28.0,
+      "affluence_index": 8.2
+    },
+    "competitors_within_500m": 1,
+    "nearest_competitor_dist_m": 580,
+    "nearest_own_store_dist_m": 3100,
+    "anchor_poi_summary": {
+      "tech_parks": 2,
+      "metro_transit_dist_m": 850
+    }
+  },
+  {
+    "h3_id": "89269c1a5b4ffff",
+    "zone_name": "Hinjewadi Phase 1 Circle",
+    "lat": 18.5913,
+    "lng": 73.7389,
+    "rank": 3,
+    "eps_score": 79.6,
+    "demand_capture": 2600,
+    "cannibalization_pct": 14.5,
+    "cannibalization_units": 377,
+    "net_incremental_demand": 2223,
+    "pattern_score": 88.0,
+    "rent_index": 8.1,
+    "coverage_ratio": 1.35,
+    "risk_level": "MEDIUM",
+    "flags": ["Massive Daytime Footfall", "Traffic Detour Risk"],
+    "shap_drivers": [
+      { "feature": "IT Campus Concentration", "impact": 28.5, "type": "POSITIVE" },
+      { "feature": "Youth Demographic Share", "impact": 19.1, "type": "POSITIVE" },
+      { "feature": "Weekend Demand Dropoff", "impact": -15.2, "type": "NEGATIVE" }
+    ],
+    "verdict": "Rank #3. Highest gross demand volume in Pune. Watch weekend footfall dip when tech parks close.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "demographics": {
+      "catchment_population": 51000,
+      "youth_student_pct": 44.2,
+      "affluence_index": 7.9
+    },
+    "competitors_within_500m": 4,
+    "nearest_competitor_dist_m": 180,
+    "nearest_own_store_dist_m": 1850,
+    "anchor_poi_summary": {
+      "tech_parks": 12,
+      "metro_transit_dist_m": 600
+    }
+  },
+  {
+    "h3_id": "89269c1a5b6ffff",
+    "zone_name": "Koregaon Park North Main Rd",
+    "lat": 18.5362,
+    "lng": 73.8940,
+    "rank": 4,
+    "eps_score": 75.3,
+    "demand_capture": 1850,
+    "cannibalization_pct": 19.8,
+    "cannibalization_units": 366,
+    "net_incremental_demand": 1484,
+    "pattern_score": 82.0,
+    "rent_index": 9.2,
+    "coverage_ratio": 1.10,
+    "risk_level": "MEDIUM",
+    "flags": ["Premium Lifestyle", "Steep Rent"],
+    "shap_drivers": [
+      { "feature": "High Disposable Income", "impact": 26.0, "type": "POSITIVE" },
+      { "feature": "Boutique Retail Synergy", "impact": 14.5, "type": "POSITIVE" },
+      { "feature": "Premium Rental Cost", "impact": -22.4, "type": "NEGATIVE" }
+    ],
+    "verdict": "Rank #4. Highly prestigious brand visibility. Margins will be compressed by premium real estate asking rates.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "demographics": {
+      "catchment_population": 29000,
+      "youth_student_pct": 31.0,
+      "affluence_index": 9.5
+    },
+    "competitors_within_500m": 5,
+    "nearest_competitor_dist_m": 140,
+    "nearest_own_store_dist_m": 1400,
+    "anchor_poi_summary": {
+      "tech_parks": 3,
+      "metro_transit_dist_m": 1100
+    }
+  },
+  {
+    "h3_id": "89269c1a5b1ffff",
+    "zone_name": "Viman Nagar Central",
+    "lat": 18.5679,
+    "lng": 73.9143,
+    "rank": 14,
+    "eps_score": 54.8,
+    "demand_capture": 2400,
+    "cannibalization_pct": 43.5,
+    "cannibalization_units": 1044,
+    "net_incremental_demand": 1356,
+    "pattern_score": 86.0,
+    "rent_index": 8.9,
+    "coverage_ratio": 0.85,
+    "risk_level": "HIGH",
+    "flags": ["High Cannibalization", "Competitor Saturated"],
+    "shap_drivers": [
+      { "feature": "College Campus Footfall", "impact": 22.0, "type": "POSITIVE" },
+      { "feature": "Mall Cluster Footfall", "impact": 18.8, "type": "POSITIVE" },
+      { "feature": "Severe Cannibalization", "impact": -38.2, "type": "NEGATIVE" },
+      { "feature": "High Mall Commercial Rent", "impact": -24.0, "type": "NEGATIVE" }
+    ],
+    "verdict": "Caution. High gross footfall is deceptive: opening here cannibalizes 43.5% of your existing Phoenix Mall store's transactions.",
+    "category": "cafe",
+    "brand": "Starbucks",
+    "demographics": {
+      "catchment_population": 46000,
+      "youth_student_pct": 41.5,
+      "affluence_index": 8.5
+    },
+    "competitors_within_500m": 6,
+    "nearest_competitor_dist_m": 120,
+    "nearest_own_store_dist_m": 420,
+    "anchor_poi_summary": {
+      "tech_parks": 4,
+      "metro_transit_dist_m": 350
+    }
+  }
+]
