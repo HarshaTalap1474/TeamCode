@@ -11,6 +11,7 @@ interface HexMapProps {
   selectedSite: CandidateSite | null;
   onSelectSite: (site: CandidateSite) => void;
   brand: string;
+  city: string;
 }
 
 // Dynamically import Leaflet with ssr: false to prevent Next.js server crash

@@ -22,7 +22,7 @@ const DEFAULT_WEIGHTS: SimulationWeights = {
 
 // Initial state loaded synchronously from mock data so frame 1 has full content
 const initialCafeCandidates = (defaultCandidates as CandidateSite[]).filter(
-  (c) => c.category === 'cafe'
+  (c) => c.category === 'cafe' && (!c.city || c.city === 'Pune')
 );
 const initialCalculated = recalculateCandidates(initialCafeCandidates, DEFAULT_WEIGHTS);
 
@@ -33,25 +33,28 @@ export default function DashboardPage() {
 
   const [rawCandidates, setRawCandidates] = useState<CandidateSite[]>(initialCafeCandidates);
   const [candidates, setCandidates] = useState<CandidateSite[]>(initialCalculated);
-  const [pois, setPois] = useState<POIStore[]>((defaultPOIs as POIStore[]).filter((p) => p.category === 'cafe'));
+  const [pois, setPois] = useState<POIStore[]>(
+    (defaultPOIs as POIStore[]).filter((p) => p.category === 'cafe' && (!p.city || p.city === 'Pune'))
+  );
   const [isLive, setIsLive] = useState(false);
 
   const [selectedSite, setSelectedSite] = useState<CandidateSite | null>(
     initialCalculated.length > 0 ? initialCalculated[0] : null
   );
+  const [rightPanelMode, setRightPanelMode] = useState<'leaderboard' | 'brief'>('leaderboard');
   const [comparedSites, setComparedSites] = useState<CandidateSite[]>([]);
   const [weights, setWeights] = useState<SimulationWeights>(DEFAULT_WEIGHTS);
 
   const [isDataCardOpen, setIsDataCardOpen] = useState(false);
   const [isCompareModalOpen, setIsCompareModalOpen] = useState(false);
 
-  // Load data on category or brand change
+  // Load data on category, brand, or city change
   useEffect(() => {
     let isMounted = true;
 
     async function loadData() {
-      const candidatesResult = await fetchCandidates(category, brand);
-      const poiData = await fetchPOIs(category);
+      const candidatesResult = await fetchCandidates(category, brand, city);
+      const poiData = await fetchPOIs(category, city);
 
       if (!isMounted) return;
 
@@ -63,7 +66,7 @@ export default function DashboardPage() {
       const calculated = recalculateCandidates(candidatesResult.data, weights);
       setCandidates(calculated);
 
-      // Auto-select rank #1 on category change
+      // Select rank #1 on filter or city change
       if (calculated.length > 0) {
         setSelectedSite(calculated[0]);
       } else {
@@ -76,7 +79,7 @@ export default function DashboardPage() {
     return () => {
       isMounted = false;
     };
-  }, [category, brand]);
+  }, [category, brand, city]);
 
   // Handle simulation weight updates
   const handleWeightsChange = useCallback(
@@ -114,6 +117,11 @@ export default function DashboardPage() {
     });
   };
 
+  const handleSelectSite = (site: CandidateSite) => {
+    setSelectedSite(site);
+    setRightPanelMode('brief');
+  };
+
   return (
     <div className="flex flex-col h-screen w-screen overflow-hidden bg-[#080C14]">
       {/* Platform Navigation Header */}
@@ -130,7 +138,7 @@ export default function DashboardPage() {
         compareCount={comparedSites.length}
       />
 
-      {/* Main Workspace (Map + Leaderboard) */}
+      {/* Main Workspace (Map + Sidebar) */}
       <main className="flex-1 flex relative overflow-hidden" style={{ height: 'calc(100vh - 64px)' }}>
         {/* Geospatial Interactive Map */}
         <div className="flex-1 h-full relative" style={{ height: '100%', minHeight: '100%' }}>
@@ -138,8 +146,9 @@ export default function DashboardPage() {
             candidates={candidates}
             pois={pois}
             selectedSite={selectedSite}
-            onSelectSite={(site) => setSelectedSite(site)}
+            onSelectSite={handleSelectSite}
             brand={brand}
+            city={city}
           />
 
           {/* Floating What-If Sensitivity Simulator Dock */}
@@ -150,24 +159,78 @@ export default function DashboardPage() {
           />
         </div>
 
-        {/* Candidate Leaderboard Sidebar */}
-        <Leaderboard
-          candidates={candidates}
-          selectedSite={selectedSite}
-          onSelectSite={(site) => setSelectedSite(site)}
-          comparedSites={comparedSites}
-          onToggleCompare={handleToggleCompare}
-          brand={brand}
-        />
+        {/* Unified Right Intelligence Sidebar */}
+        <aside className="w-[440px] flex-shrink-0 h-full flex flex-col bg-[#0B0F19] border-l border-slate-800 z-10 overflow-hidden">
+          {/* Top Mode Navigation Tabs */}
+          <div className="h-12 border-b border-slate-800 bg-slate-900/60 px-3 flex items-center justify-between flex-shrink-0">
+            <div className="flex items-center gap-1.5">
+              <button
+                onClick={() => setRightPanelMode('leaderboard')}
+                className={`px-3 py-1.5 rounded-md text-xs font-semibold flex items-center gap-1.5 transition ${
+                  rightPanelMode === 'leaderboard'
+                    ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30 shadow-sm'
+                    : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
+                }`}
+              >
+                <span>Rankings</span>
+                <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">
+                  {candidates.length}
+                </span>
+              </button>
 
-        {/* Slide-over Explainable AI Site Brief Drawer */}
-        {selectedSite && (
-          <SiteBriefDrawer
-            site={selectedSite}
-            onClose={() => setSelectedSite(null)}
-            brand={brand}
-          />
-        )}
+              <button
+                onClick={() => selectedSite && setRightPanelMode('brief')}
+                disabled={!selectedSite}
+                className={`px-3 py-1.5 rounded-md text-xs font-semibold flex items-center gap-1.5 transition ${
+                  rightPanelMode === 'brief'
+                    ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30 shadow-sm'
+                    : selectedSite
+                    ? 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
+                    : 'text-slate-600 cursor-not-allowed'
+                }`}
+              >
+                <span>Site Intelligence</span>
+                {selectedSite && (
+                  <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                    #{selectedSite.rank}
+                  </span>
+                )}
+              </button>
+            </div>
+
+            {rightPanelMode === 'brief' && (
+              <button
+                onClick={() => setRightPanelMode('leaderboard')}
+                className="text-xs text-slate-400 hover:text-slate-200 transition"
+              >
+                ← Back
+              </button>
+            )}
+          </div>
+
+          {/* Sidebar Body */}
+          <div className="flex-1 overflow-hidden">
+            {rightPanelMode === 'leaderboard' ? (
+              <Leaderboard
+                candidates={candidates}
+                selectedSite={selectedSite}
+                onSelectSite={handleSelectSite}
+                comparedSites={comparedSites}
+                onToggleCompare={handleToggleCompare}
+                brand={brand}
+                city={city}
+              />
+            ) : (
+              selectedSite && (
+                <SiteBriefDrawer
+                  site={selectedSite}
+                  onClose={() => setRightPanelMode('leaderboard')}
+                  brand={brand}
+                />
+              )
+            )}
+          </div>
+        </aside>
       </main>
 
       {/* Side-by-Side Site Comparison Modal */}

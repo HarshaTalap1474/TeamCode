@@ -6,7 +6,8 @@
     "type": "OWN",
     "lat": 18.5615,
     "lng": 73.8055,
-    "category": "cafe"
+    "category": "cafe",
+    "city": "Pune"
   },
   {
     "id": "POI-OWN-02",
@@ -14,8 +15,9 @@
     "brand": "Starbucks",
     "type": "OWN",
     "lat": 18.5685,
-    "lng": 73.9180,
-    "category": "cafe"
+    "lng": 73.918,
+    "category": "cafe",
+    "city": "Pune"
   },
   {
     "id": "POI-OWN-03",
@@ -23,8 +25,9 @@
     "brand": "Starbucks",
     "type": "OWN",
     "lat": 18.5285,
-    "lng": 73.8420,
-    "category": "cafe"
+    "lng": 73.842,
+    "category": "cafe",
+    "city": "Pune"
   },
   {
     "id": "POI-COMP-01",
@@ -33,7 +36,8 @@
     "type": "COMPETITOR",
     "lat": 18.5602,
     "lng": 73.7845,
-    "category": "cafe"
+    "category": "cafe",
+    "city": "Pune"
   },
   {
     "id": "POI-COMP-02",
@@ -41,8 +45,9 @@
     "brand": "Third Wave",
     "type": "COMPETITOR",
     "lat": 18.5582,
-    "lng": 73.7890,
-    "category": "cafe"
+    "lng": 73.789,
+    "category": "cafe",
+    "city": "Pune"
   },
   {
     "id": "POI-COMP-03",
@@ -51,7 +56,8 @@
     "type": "COMPETITOR",
     "lat": 18.5085,
     "lng": 73.8115,
-    "category": "cafe"
+    "category": "cafe",
+    "city": "Pune"
   },
   {
     "id": "POI-COMP-04",
@@ -59,8 +65,9 @@
     "brand": "Third Wave",
     "type": "COMPETITOR",
     "lat": 18.5925,
-    "lng": 73.7370,
-    "category": "cafe"
+    "lng": 73.737,
+    "category": "cafe",
+    "city": "Pune"
   },
   {
     "id": "POI-COMP-05",
@@ -69,7 +76,8 @@
     "type": "COMPETITOR",
     "lat": 18.5375,
     "lng": 73.8925,
-    "category": "cafe"
+    "category": "cafe",
+    "city": "Pune"
   },
   {
     "id": "POI-COMP-06",
@@ -77,7 +85,98 @@
     "brand": "Subko",
     "type": "COMPETITOR",
     "lat": 18.5668,
-    "lng": 73.9130,
-    "category": "cafe"
+    "lng": 73.913,
+    "category": "cafe",
+    "city": "Pune"
+  },
+  {
+    "id": "POI-KLP-OWN-01",
+    "name": "Starbucks DYP City Mall",
+    "brand": "Starbucks",
+    "type": "OWN",
+    "lat": 16.7015,
+    "lng": 74.249,
+    "category": "cafe",
+    "city": "Kolhapur"
+  },
+  {
+    "id": "POI-KLP-COMP-01",
+    "name": "Cafe Coffee Day Rajarampuri 3rd Lane",
+    "brand": "CCD",
+    "type": "COMPETITOR",
+    "lat": 16.698,
+    "lng": 74.246,
+    "category": "cafe",
+    "city": "Kolhapur"
+  },
+  {
+    "id": "POI-KLP-COMP-02",
+    "name": "Third Wave Coffee Tarabai Park",
+    "brand": "Third Wave",
+    "type": "COMPETITOR",
+    "lat": 16.712,
+    "lng": 74.238,
+    "category": "cafe",
+    "city": "Kolhapur"
+  },
+  {
+    "id": "POI-KLP-COMP-03",
+    "name": "Rankala Viewpoint Cafe",
+    "brand": "Independent",
+    "type": "COMPETITOR",
+    "lat": 16.6895,
+    "lng": 74.219,
+    "category": "cafe",
+    "city": "Kolhapur"
+  },
+  {
+    "id": "POI-KLP-COMP-04",
+    "name": "Apollo Pharmacy Shahupuri",
+    "brand": "Apollo",
+    "type": "COMPETITOR",
+    "lat": 16.7025,
+    "lng": 74.24,
+    "category": "pharmacy",
+    "city": "Kolhapur"
+  },
+  {
+    "id": "POI-KLP-COMP-05",
+    "name": "Wellness Forever Dasara Chowk",
+    "brand": "Wellness Forever",
+    "type": "COMPETITOR",
+    "lat": 16.7038,
+    "lng": 74.2332,
+    "category": "pharmacy",
+    "city": "Kolhapur"
+  },
+  {
+    "id": "POI-KLP-COMP-06",
+    "name": "Reliance Smart Superstore Tarabai Park",
+    "brand": "Reliance Smart",
+    "type": "COMPETITOR",
+    "lat": 16.711,
+    "lng": 74.2375,
+    "category": "supermarket",
+    "city": "Kolhapur"
+  },
+  {
+    "id": "POI-KLP-COMP-07",
+    "name": "McDonald's DYP Mall",
+    "brand": "McDonald's",
+    "type": "COMPETITOR",
+    "lat": 16.7012,
+    "lng": 74.2488,
+    "category": "qsr",
+    "city": "Kolhapur"
+  },
+  {
+    "id": "POI-KLP-COMP-08",
+    "name": "Zudio Station Road",
+    "brand": "Zudio",
+    "type": "COMPETITOR",
+    "lat": 16.7042,
+    "lng": 74.2335,
+    "category": "fashion",
+    "city": "Kolhapur"
   }
 ]

@@ -12,6 +12,7 @@ interface LeaderboardProps {
   comparedSites: CandidateSite[];
   onToggleCompare: (site: CandidateSite) => void;
   brand: string;
+  city?: string;
 }
 
 export function Leaderboard({
@@ -21,6 +22,7 @@ export function Leaderboard({
   comparedSites,
   onToggleCompare,
   brand,
+  city = 'Pune',
 }: LeaderboardProps) {
   const [filters, setFilters] = useState<FilterState>({
     searchQuery: '',
@@ -58,9 +60,9 @@ export function Leaderboard({
   }, [candidates, filters]);
 
   return (
-    <aside className="w-96 h-full flex flex-col bg-[#0B0F19] border-l border-slate-800 z-10">
+    <div className="w-full h-full flex flex-col bg-[#0B0F19] overflow-hidden">
       {/* Header & Search */}
-      <div className="p-4 border-b border-slate-800 bg-slate-900/50">
+      <div className="p-4 border-b border-slate-800/80 bg-slate-900/40">
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-2">
             <Sparkles className="w-4 h-4 text-emerald-400" />
@@ -76,7 +78,7 @@ export function Leaderboard({
           <Search className="w-4 h-4 text-slate-400 absolute left-3 pointer-events-none" />
           <input
             type="text"
-            placeholder="Search Pune zone or cell ID..."
+            placeholder={`Search ${city} zone or cell ID...`}
             value={filters.searchQuery}
             onChange={(e) => setFilters({ ...filters, searchQuery: e.target.value })}
             className="w-full bg-slate-950/80 border border-slate-800 rounded-md pl-9 pr-8 py-1.5 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500 transition"
@@ -167,6 +169,6 @@ export function Leaderboard({
           ))
         )}
       </div>
-    </aside>
+    </div>
   );
 }

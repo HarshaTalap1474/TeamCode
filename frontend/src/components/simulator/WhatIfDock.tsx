@@ -14,7 +14,7 @@ export function WhatIfDock({ weights, onWeightsChange, onReset }: WhatIfDockProp
   const [isExpanded, setIsExpanded] = useState(true);
 
   return (
-    <div className="absolute bottom-5 right-6 z-[1000] w-[460px] max-w-[90vw] bg-slate-900/95 backdrop-blur-xl border border-slate-800 rounded-xl shadow-[0_10px_35px_rgba(0,0,0,0.8)] transition-all">
+    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-[400] w-[440px] max-w-[calc(100%-2rem)] bg-slate-900/95 backdrop-blur-xl border border-slate-800/90 rounded-xl shadow-[0_10px_35px_rgba(0,0,0,0.8)] transition-all">
       {/* Dock Bar Header */}
       <div className="p-3 border-b border-slate-800 flex items-center justify-between">
         <div className="flex items-center gap-2">

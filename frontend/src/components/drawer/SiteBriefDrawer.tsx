@@ -14,6 +14,7 @@ import {
   DollarSign,
   MapPin,
   CheckCircle,
+  ChevronLeft,
 } from 'lucide-react';
 
 interface SiteBriefDrawerProps {
@@ -28,9 +29,9 @@ export function SiteBriefDrawer({ site, onClose, brand }: SiteBriefDrawerProps) 
   const isHighRisk = site.cannibalization_pct > 30 || site.risk_level === 'HIGH';
 
   return (
-    <div className="fixed inset-y-0 right-0 w-[420px] max-w-full bg-[#0E1424] border-l border-slate-800 shadow-2xl z-50 flex flex-col animate-in slide-in-from-right duration-300">
-      {/* Drawer Header */}
-      <div className="p-4 border-b border-slate-800 flex items-start justify-between bg-slate-900/60">
+    <div className="w-full h-full bg-[#0B0F19] flex flex-col overflow-hidden">
+      {/* Drawer Sub-Header */}
+      <div className="p-4 border-b border-slate-800/80 flex items-start justify-between bg-slate-900/40 flex-shrink-0">
         <div>
           <div className="flex items-center gap-2 mb-1">
             <span className="text-[10px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-blue-500/15 text-blue-400 border border-blue-500/30">
@@ -40,18 +41,20 @@ export function SiteBriefDrawer({ site, onClose, brand }: SiteBriefDrawerProps) 
               {site.h3_id.slice(0, 12)}
             </span>
           </div>
-          <h2 className="text-lg font-bold text-slate-100">{site.zone_name}</h2>
+          <h2 className="text-base font-bold text-slate-100">{site.zone_name}</h2>
           <p className="text-xs text-slate-400 flex items-center gap-1 mt-0.5">
             <MapPin className="w-3 h-3 text-slate-500" />
-            <span>Targeting {brand} Chain Expansion</span>
+            <span>Targeting {brand} • {site.city || 'Regional'}</span>
           </p>
         </div>
 
         <button
           onClick={onClose}
-          className="p-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-400 hover:text-slate-100 transition"
+          className="flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-medium text-slate-300 hover:text-white bg-slate-800/70 hover:bg-slate-700 transition border border-slate-700/50"
+          title="Return to Leaderboard"
         >
-          <X className="w-4 h-4" />
+          <ChevronLeft className="w-3.5 h-3.5" />
+          <span>List</span>
         </button>
       </div>
 

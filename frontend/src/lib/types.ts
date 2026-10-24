@@ -30,6 +30,7 @@ export interface CandidateSite {
   verdict: string;
   category: RetailCategory;
   brand: string;
+  city?: string;
   demographics: {
     catchment_population: number;
     senior_pct?: number;
@@ -54,6 +55,7 @@ export interface POIStore {
   lat: number;
   lng: number;
   category: RetailCategory;
+  city?: string;
 }
 
 export interface SimulationWeights {
