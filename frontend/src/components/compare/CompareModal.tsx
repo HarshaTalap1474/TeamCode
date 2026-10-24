@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { CandidateSite } from '@/lib/types';
-import { X, ArrowRight, TrendingUp, AlertTriangle, CheckCircle, DollarSign } from 'lucide-react';
+import { X } from 'lucide-react';
 
 interface CompareModalProps {
   sites: CandidateSite[];
@@ -18,133 +18,133 @@ export function CompareModal({ sites, isOpen, onClose, brand }: CompareModalProp
 
   return (
     <div className="fixed inset-0 z-[2000] bg-black/75 backdrop-blur-sm flex items-center justify-center p-4">
-      <div className="bg-[#0E1424] border border-slate-800 rounded-xl max-w-3xl w-full shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
-        {/* Modal Header */}
-        <div className="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-900/60">
+      <div className="bg-[#111925] border border-[#263244] rounded-lg max-w-3xl w-full shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+        {/* Header */}
+        <div className="p-3.5 border-b border-[#263244] flex items-center justify-between bg-[#0E1520]">
           <div>
-            <h3 className="text-base font-bold text-slate-100 flex items-center gap-2">
-              <span>Site Comparison Matrix</span>
-              <span className="text-xs px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20 font-mono">
+            <div className="flex items-center gap-2">
+              <h3 className="text-sm font-semibold text-[#E5EAF1]">Site Comparison Matrix</h3>
+              <span className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-[#151F2D] text-[#4C8DFF] border border-[#263244]">
                 {brand}
               </span>
-            </h3>
-            <p className="text-xs text-slate-400 mt-0.5">
-              Side-by-side contrastive analysis of candidate expansion locations
+            </div>
+            <p className="text-[11px] text-[#98A6B8] mt-0.5">
+              Side-by-side comparative evaluation of shortlisted candidate locations
             </p>
           </div>
           <button
             onClick={onClose}
-            className="p-1.5 rounded-lg bg-slate-800 text-slate-400 hover:text-slate-100 transition"
+            className="p-1 rounded bg-[#151F2D] text-[#98A6B8] hover:text-[#E5EAF1] border border-[#263244] transition"
           >
-            <X className="w-4 h-4" />
+            <X className="w-3.5 h-3.5" />
           </button>
         </div>
 
-        {/* Modal Body */}
-        <div className="p-5 overflow-y-auto space-y-4">
+        {/* Body */}
+        <div className="p-4 overflow-y-auto space-y-4">
           {sites.length < 2 ? (
-            <div className="text-center py-10 text-slate-400 text-xs">
-              <p>Please select 2 candidate sites from the leaderboard to run a side-by-side comparison.</p>
+            <div className="text-center py-10 text-[#64748B] text-xs">
+              <p>Please select 2 candidate sites from the ranking list to run a side-by-side comparison.</p>
             </div>
           ) : (
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-3">
               {/* Site A Card */}
-              <div className="p-4 rounded-lg bg-slate-900/80 border border-slate-800 space-y-3">
+              <div className="p-3.5 rounded bg-[#151F2D] border border-[#263244] space-y-3">
                 <div className="flex items-start justify-between">
                   <div>
-                    <span className="text-[10px] font-mono text-blue-400 font-bold uppercase tracking-wider">
+                    <span className="text-[10px] font-mono text-[#4C8DFF] font-semibold uppercase tracking-wider">
                       Option A (Rank #{siteA.rank})
                     </span>
-                    <h4 className="text-base font-bold text-slate-100 mt-0.5">{siteA.zone_name}</h4>
+                    <h4 className="text-xs font-semibold text-[#E5EAF1] mt-0.5">{siteA.zone_name}</h4>
                   </div>
-                  <div className="px-2 py-1 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20 font-mono font-bold text-xs">
+                  <div className="px-2 py-0.5 rounded bg-[#1C2A3D] text-[#E5EAF1] border border-[#263244] font-mono font-bold text-xs tabular-nums">
                     EPS {siteA.eps_score}
                   </div>
                 </div>
 
-                <div className="space-y-2 text-xs border-y border-slate-800 py-3">
-                  <div className="flex justify-between text-slate-300">
-                    <span>Net Incremental Demand:</span>
-                    <span className="font-mono font-bold text-emerald-400">
-                      {siteA.net_incremental_demand.toLocaleString()} units
+                <div className="space-y-1.5 text-xs border-y border-[#263244] py-2.5 font-mono">
+                  <div className="flex justify-between text-[#98A6B8]">
+                    <span className="font-sans">Net Incremental Demand:</span>
+                    <span className="font-bold tabular-nums text-[#22C55E]">
+                      +{siteA.net_incremental_demand.toLocaleString()} u
                     </span>
                   </div>
-                  <div className="flex justify-between text-slate-300">
-                    <span>Gross Capture:</span>
-                    <span className="font-mono">{siteA.demand_capture.toLocaleString()} u</span>
+                  <div className="flex justify-between text-[#98A6B8]">
+                    <span className="font-sans">Gross Capture:</span>
+                    <span className="tabular-nums text-[#E5EAF1]">{siteA.demand_capture.toLocaleString()} u</span>
                   </div>
-                  <div className="flex justify-between text-slate-300">
-                    <span>Cannibalization:</span>
-                    <span className={`font-mono ${siteA.cannibalization_pct > 25 ? 'text-red-400 font-bold' : ''}`}>
-                      {siteA.cannibalization_pct}% ({siteA.cannibalization_units} u)
+                  <div className="flex justify-between text-[#98A6B8]">
+                    <span className="font-sans">Cannibalization:</span>
+                    <span className={`tabular-nums ${siteA.cannibalization_pct > 25 ? 'text-[#EF4444] font-semibold' : 'text-[#98A6B8]'}`}>
+                      {siteA.cannibalization_pct}% (-{siteA.cannibalization_units} u)
                     </span>
                   </div>
-                  <div className="flex justify-between text-slate-300">
-                    <span>Rent Pressure Index:</span>
-                    <span className="font-mono">{siteA.rent_index}/10</span>
+                  <div className="flex justify-between text-[#98A6B8]">
+                    <span className="font-sans">Rent Pressure Index:</span>
+                    <span className="tabular-nums text-[#E5EAF1]">{siteA.rent_index}/10</span>
                   </div>
-                  <div className="flex justify-between text-slate-300">
-                    <span>Coverage Ratio:</span>
-                    <span className="font-mono">{siteA.coverage_ratio}x</span>
+                  <div className="flex justify-between text-[#98A6B8]">
+                    <span className="font-sans">Coverage Ratio:</span>
+                    <span className="tabular-nums text-[#E5EAF1]">{siteA.coverage_ratio}x</span>
                   </div>
                 </div>
 
                 <div>
-                  <span className="text-[10px] uppercase tracking-wider text-slate-400 block font-semibold mb-1">
-                    Top Positive Driver
+                  <span className="text-[10px] uppercase tracking-wider text-[#98A6B8] block font-mono mb-1">
+                    Primary Driver
                   </span>
-                  <div className="text-xs text-emerald-400 font-medium bg-emerald-500/10 p-2 rounded border border-emerald-500/20">
+                  <div className="text-xs text-[#4C8DFF] font-medium bg-[#111925] p-2 rounded border border-[#263244]">
                     {siteA.shap_drivers[0]?.feature || 'High Demand Density'}
                   </div>
                 </div>
               </div>
 
               {/* Site B Card */}
-              <div className="p-4 rounded-lg bg-slate-900/80 border border-slate-800 space-y-3">
+              <div className="p-3.5 rounded bg-[#151F2D] border border-[#263244] space-y-3">
                 <div className="flex items-start justify-between">
                   <div>
-                    <span className="text-[10px] font-mono text-purple-400 font-bold uppercase tracking-wider">
+                    <span className="text-[10px] font-mono text-[#98A6B8] font-semibold uppercase tracking-wider">
                       Option B (Rank #{siteB.rank})
                     </span>
-                    <h4 className="text-base font-bold text-slate-100 mt-0.5">{siteB.zone_name}</h4>
+                    <h4 className="text-xs font-semibold text-[#E5EAF1] mt-0.5">{siteB.zone_name}</h4>
                   </div>
-                  <div className="px-2 py-1 rounded bg-purple-500/10 text-purple-400 border border-purple-500/20 font-mono font-bold text-xs">
+                  <div className="px-2 py-0.5 rounded bg-[#1C2A3D] text-[#E5EAF1] border border-[#263244] font-mono font-bold text-xs tabular-nums">
                     EPS {siteB.eps_score}
                   </div>
                 </div>
 
-                <div className="space-y-2 text-xs border-y border-slate-800 py-3">
-                  <div className="flex justify-between text-slate-300">
-                    <span>Net Incremental Demand:</span>
-                    <span className="font-mono font-bold text-emerald-400">
-                      {siteB.net_incremental_demand.toLocaleString()} units
+                <div className="space-y-1.5 text-xs border-y border-[#263244] py-2.5 font-mono">
+                  <div className="flex justify-between text-[#98A6B8]">
+                    <span className="font-sans">Net Incremental Demand:</span>
+                    <span className="font-bold tabular-nums text-[#22C55E]">
+                      +{siteB.net_incremental_demand.toLocaleString()} u
                     </span>
                   </div>
-                  <div className="flex justify-between text-slate-300">
-                    <span>Gross Capture:</span>
-                    <span className="font-mono">{siteB.demand_capture.toLocaleString()} u</span>
+                  <div className="flex justify-between text-[#98A6B8]">
+                    <span className="font-sans">Gross Capture:</span>
+                    <span className="tabular-nums text-[#E5EAF1]">{siteB.demand_capture.toLocaleString()} u</span>
                   </div>
-                  <div className="flex justify-between text-slate-300">
-                    <span>Cannibalization:</span>
-                    <span className={`font-mono ${siteB.cannibalization_pct > 25 ? 'text-red-400 font-bold' : ''}`}>
-                      {siteB.cannibalization_pct}% ({siteB.cannibalization_units} u)
+                  <div className="flex justify-between text-[#98A6B8]">
+                    <span className="font-sans">Cannibalization:</span>
+                    <span className={`tabular-nums ${siteB.cannibalization_pct > 25 ? 'text-[#EF4444] font-semibold' : 'text-[#98A6B8]'}`}>
+                      {siteB.cannibalization_pct}% (-{siteB.cannibalization_units} u)
                     </span>
                   </div>
-                  <div className="flex justify-between text-slate-300">
-                    <span>Rent Pressure Index:</span>
-                    <span className="font-mono">{siteB.rent_index}/10</span>
+                  <div className="flex justify-between text-[#98A6B8]">
+                    <span className="font-sans">Rent Pressure Index:</span>
+                    <span className="tabular-nums text-[#E5EAF1]">{siteB.rent_index}/10</span>
                   </div>
-                  <div className="flex justify-between text-slate-300">
-                    <span>Coverage Ratio:</span>
-                    <span className="font-mono">{siteB.coverage_ratio}x</span>
+                  <div className="flex justify-between text-[#98A6B8]">
+                    <span className="font-sans">Coverage Ratio:</span>
+                    <span className="tabular-nums text-[#E5EAF1]">{siteB.coverage_ratio}x</span>
                   </div>
                 </div>
 
                 <div>
-                  <span className="text-[10px] uppercase tracking-wider text-slate-400 block font-semibold mb-1">
-                    Top Positive Driver
+                  <span className="text-[10px] uppercase tracking-wider text-[#98A6B8] block font-mono mb-1">
+                    Primary Driver
                   </span>
-                  <div className="text-xs text-purple-400 font-medium bg-purple-500/10 p-2 rounded border border-purple-500/20">
+                  <div className="text-xs text-[#4C8DFF] font-medium bg-[#111925] p-2 rounded border border-[#263244]">
                     {siteB.shap_drivers[0]?.feature || 'Favorable Demographics'}
                   </div>
                 </div>
@@ -153,16 +153,17 @@ export function CompareModal({ sites, isOpen, onClose, brand }: CompareModalProp
           )}
         </div>
 
-        {/* Modal Footer */}
-        <div className="p-4 border-t border-slate-800 bg-slate-900/60 flex justify-end">
+        {/* Footer */}
+        <div className="p-3 border-t border-[#263244] bg-[#0E1520] flex justify-end">
           <button
             onClick={onClose}
-            className="px-4 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold transition"
+            className="px-3 py-1 rounded bg-[#151F2D] hover:bg-[#1C2A3D] text-[#E5EAF1] text-xs font-medium border border-[#263244] transition"
           >
-            Close Comparison
+            Close Matrix
           </button>
         </div>
       </div>
     </div>
   );
 }
+

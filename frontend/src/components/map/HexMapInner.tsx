@@ -174,23 +174,23 @@ export default function HexMapInner({
       const vertices = getHexVertices(site.lat, site.lng);
 
       // Determine color based on EPS and Cannibalization
-      let strokeColor = '#10B981'; // Opportunity Emerald
-      let fillColor = '#10B981';
-      let fillOpacity = 0.4;
+      let strokeColor = '#22C55E'; // Opportunity Green
+      let fillColor = '#22C55E';
+      let fillOpacity = 0.30;
 
-      if (site.cannibalization_pct > 30 || site.risk_level === 'HIGH') {
+      if (site.cannibalization_pct > 25 || site.risk_level === 'HIGH') {
         strokeColor = '#EF4444'; // Red
         fillColor = '#EF4444';
-        fillOpacity = 0.5;
+        fillOpacity = 0.35;
       } else if (site.eps_score < 75 || site.risk_level === 'MEDIUM') {
         strokeColor = '#F59E0B'; // Amber
         fillColor = '#F59E0B';
-        fillOpacity = 0.4;
+        fillOpacity = 0.30;
       }
 
       if (isSelected) {
-        strokeColor = '#38BDF8'; // Cyan border for active selection
-        fillOpacity = 0.7;
+        strokeColor = '#4C8DFF'; // Enterprise Action Blue
+        fillOpacity = 0.45;
       }
 
       const polygon = L.polygon(vertices, {
@@ -202,18 +202,18 @@ export default function HexMapInner({
 
       // Tooltip on hover
       const tooltipContent = `
-        <div style="font-family: inherit; font-size: 12px; line-height: 1.4;">
-          <div style="font-weight: 700; color: #F8FAFC;">${site.zone_name}</div>
-          <div style="display: flex; gap: 8px; margin-top: 4px;">
-            <span style="color: ${strokeColor}; font-weight: 600;">EPS: ${site.eps_score}/100</span>
-            <span style="color: #94A3B8;">Rank #${site.rank}</span>
+        <div style="font-family: inherit; font-size: 11px; line-height: 1.4; color: #E5EAF1;">
+          <div style="font-weight: 600; color: #E5EAF1;">${site.zone_name}</div>
+          <div style="display: flex; gap: 8px; margin-top: 3px; font-family: monospace;">
+            <span style="color: ${strokeColor}; font-weight: 700;">EPS: ${site.eps_score}/100</span>
+            <span style="color: #98A6B8;">Rank #${site.rank}</span>
           </div>
-          <div style="color: #94A3B8; font-size: 11px; margin-top: 2px;">
-            Net Demand: <strong style="color: #F8FAFC;">${site.net_incremental_demand.toLocaleString()} units</strong>
+          <div style="color: #98A6B8; font-size: 10px; margin-top: 2px;">
+            Net Demand: <strong style="color: #22C55E; font-family: monospace;">+${site.net_incremental_demand.toLocaleString()} u</strong>
           </div>
           ${
             site.cannibalization_pct > 20
-              ? `<div style="color: #EF4444; font-weight: 600; font-size: 10px; margin-top: 3px;">⚠️ ${site.cannibalization_pct}% Cannibalization</div>`
+              ? `<div style="color: #EF4444; font-weight: 600; font-size: 10px; margin-top: 2px; font-family: monospace;">${site.cannibalization_pct}% Cannibalization</div>`
               : ''
           }
         </div>
@@ -269,19 +269,19 @@ export default function HexMapInner({
   }, [pois, showOwnStores, showCompetitors]);
 
   return (
-    <div className="relative w-full h-full min-h-[450px] bg-[#080C14]" style={{ height: '100%', minHeight: '100%' }}>
+    <div className="relative w-full h-full min-h-[450px] bg-[#0B1018]" style={{ height: '100%', minHeight: '100%' }}>
       {/* Map Canvas */}
       <div ref={mapContainerRef} id="map" className="w-full h-full" style={{ height: '100%', minHeight: '100%', width: '100%' }} />
 
       {/* Layer Controls Floating Widget (Top Left) */}
-      <div className="absolute top-4 left-4 z-[400] bg-slate-900/95 backdrop-blur-md border border-slate-800 p-2.5 rounded-xl text-xs shadow-2xl flex flex-col gap-2.5 w-56">
+      <div className="absolute top-3 left-3 z-[400] bg-[#111925]/95 backdrop-blur-md border border-[#263244] p-2.5 rounded text-xs shadow-xl flex flex-col gap-2 w-52">
         {/* Basemap Selection */}
         <div>
-          <div className="flex items-center gap-1.5 text-slate-400 font-semibold uppercase text-[10px] tracking-wider mb-1.5">
-            <Compass className="w-3.5 h-3.5 text-blue-400" />
+          <div className="flex items-center gap-1.5 text-[#98A6B8] font-mono uppercase text-[10px] tracking-wider mb-1">
+            <Compass className="w-3 h-3 text-[#4C8DFF]" />
             <span>Map Style</span>
           </div>
-          <div className="grid grid-cols-3 gap-1 bg-slate-950/60 p-1 rounded-lg border border-slate-800/80">
+          <div className="grid grid-cols-3 gap-1 bg-[#151F2D] p-1 rounded border border-[#263244]">
             {(Object.keys(BASEMAP_PROVIDERS) as BasemapKey[]).map((key) => {
               const b = BASEMAP_PROVIDERS[key];
               const isActive = currentBasemap === key;
@@ -289,14 +289,14 @@ export default function HexMapInner({
                 <button
                   key={key}
                   onClick={() => setCurrentBasemap(key)}
-                  className={`px-1.5 py-1 rounded text-[10px] font-semibold transition text-center flex flex-col items-center gap-0.5 ${
+                  className={`px-1 py-1 rounded text-[10px] font-medium transition text-center flex flex-col items-center gap-0.5 ${
                     isActive
-                      ? 'bg-blue-600/30 text-blue-300 border border-blue-500/50 shadow-sm'
-                      : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60 border border-transparent'
+                      ? 'bg-[#1C2A3D] text-[#E5EAF1] border border-[#4C8DFF]/40'
+                      : 'text-[#98A6B8] hover:text-[#E5EAF1] hover:bg-[#1C2A3D]/50 border border-transparent'
                   }`}
                   title={b.name}
                 >
-                  <span className="text-xs">{b.icon}</span>
+                  <span className="text-[11px]">{b.icon}</span>
                   <span className="truncate">{b.label}</span>
                 </button>
               );
@@ -305,67 +305,69 @@ export default function HexMapInner({
         </div>
 
         {/* Feature Overlays */}
-        <div className="border-t border-slate-800/80 pt-2 flex flex-col gap-1.5">
-          <div className="flex items-center gap-1.5 text-slate-400 font-semibold uppercase text-[10px] tracking-wider mb-0.5">
-            <Layers className="w-3.5 h-3.5 text-emerald-400" />
+        <div className="border-t border-[#263244] pt-2 flex flex-col gap-1">
+          <div className="flex items-center gap-1.5 text-[#98A6B8] font-mono uppercase text-[10px] tracking-wider mb-0.5">
+            <Layers className="w-3 h-3 text-[#22C55E]" />
             <span>Overlays</span>
           </div>
 
           <button
             onClick={() => setShowHexagons(!showHexagons)}
-            className={`flex items-center justify-between gap-3 px-2 py-1 rounded transition text-left text-xs ${
-              showHexagons ? 'bg-slate-800/80 text-slate-200' : 'text-slate-500 hover:text-slate-300'
+            className={`flex items-center justify-between gap-2 px-1.5 py-1 rounded transition text-left text-[11px] ${
+              showHexagons ? 'bg-[#151F2D] text-[#E5EAF1]' : 'text-[#64748B] hover:text-[#98A6B8]'
             }`}
           >
-            <div className="flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded-sm bg-emerald-400" />
+            <div className="flex items-center gap-1.5">
+              <span className="w-2 h-2 rounded-sm bg-[#22C55E]" />
               <span>H3 Hexagon Grid</span>
             </div>
-            {showHexagons ? <Eye className="w-3.5 h-3.5 text-emerald-400" /> : <EyeOff className="w-3.5 h-3.5" />}
+            {showHexagons ? <Eye className="w-3 h-3 text-[#22C55E]" /> : <EyeOff className="w-3 h-3 text-[#64748B]" />}
           </button>
 
           <button
             onClick={() => setShowOwnStores(!showOwnStores)}
-            className={`flex items-center justify-between gap-3 px-2 py-1 rounded transition text-left text-xs ${
-              showOwnStores ? 'bg-slate-800/80 text-slate-200' : 'text-slate-500 hover:text-slate-300'
+            className={`flex items-center justify-between gap-2 px-1.5 py-1 rounded transition text-left text-[11px] ${
+              showOwnStores ? 'bg-[#151F2D] text-[#E5EAF1]' : 'text-[#64748B] hover:text-[#98A6B8]'
             }`}
           >
-            <div className="flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
+            <div className="flex items-center gap-1.5">
+              <span className="w-2 h-2 rounded-full bg-[#3B82F6]" />
               <span>{brand} Stores (Own)</span>
             </div>
-            {showOwnStores ? <Eye className="w-3.5 h-3.5 text-blue-400" /> : <EyeOff className="w-3.5 h-3.5" />}
+            {showOwnStores ? <Eye className="w-3 h-3 text-[#4C8DFF]" /> : <EyeOff className="w-3 h-3 text-[#64748B]" />}
           </button>
 
           <button
             onClick={() => setShowCompetitors(!showCompetitors)}
-            className={`flex items-center justify-between gap-3 px-2 py-1 rounded transition text-left text-xs ${
-              showCompetitors ? 'bg-slate-800/80 text-slate-200' : 'text-slate-500 hover:text-slate-300'
+            className={`flex items-center justify-between gap-2 px-1.5 py-1 rounded transition text-left text-[11px] ${
+              showCompetitors ? 'bg-[#151F2D] text-[#E5EAF1]' : 'text-[#64748B] hover:text-[#98A6B8]'
             }`}
           >
-            <div className="flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.8)]" />
+            <div className="flex items-center gap-1.5">
+              <span className="w-2 h-2 rounded-full bg-[#EF4444]" />
               <span>Rival Competitors</span>
             </div>
-            {showCompetitors ? <Eye className="w-3.5 h-3.5 text-red-400" /> : <EyeOff className="w-3.5 h-3.5" />}
+            {showCompetitors ? <Eye className="w-3 h-3 text-[#EF4444]" /> : <EyeOff className="w-3 h-3 text-[#64748B]" />}
           </button>
         </div>
-      </div>
 
-      {/* Map Legend (Bottom Left with safe margin) */}
-      <div className="absolute bottom-4 left-4 z-[400] bg-slate-900/95 backdrop-blur-md border border-slate-800 px-3.5 py-2 rounded-lg text-[11px] shadow-lg flex items-center gap-3.5 text-slate-300 whitespace-nowrap">
-        <span className="text-slate-500 font-bold uppercase text-[10px]">EPS Tier:</span>
-        <div className="flex items-center gap-1.5">
-          <span className="w-3 h-3 rounded-sm bg-emerald-500/60 border border-emerald-400" />
-          <span>High Opportunity (&gt;75)</span>
-        </div>
-        <div className="flex items-center gap-1.5">
-          <span className="w-3 h-3 rounded-sm bg-amber-500/60 border border-amber-400" />
-          <span>Moderate (50-75)</span>
-        </div>
-        <div className="flex items-center gap-1.5">
-          <span className="w-3 h-3 rounded-sm bg-red-500/60 border border-red-400" />
-          <span>High Risk / Cannibalization</span>
+        {/* EPS Tier Legend */}
+        <div className="border-t border-[#263244] pt-2 flex flex-col gap-1 font-mono text-[10px]">
+          <span className="text-[#98A6B8] uppercase tracking-wider text-[9px]">EPS Opportunity Tier</span>
+          <div className="flex items-center justify-between text-[#98A6B8] pt-0.5">
+            <div className="flex items-center gap-1">
+              <span className="w-2 h-2 rounded-sm bg-[#22C55E]/40 border border-[#22C55E]" />
+              <span>&gt;75</span>
+            </div>
+            <div className="flex items-center gap-1">
+              <span className="w-2 h-2 rounded-sm bg-[#F59E0B]/40 border border-[#F59E0B]" />
+              <span>50-75</span>
+            </div>
+            <div className="flex items-center gap-1">
+              <span className="w-2 h-2 rounded-sm bg-[#EF4444]/40 border border-[#EF4444]" />
+              <span>Risk</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

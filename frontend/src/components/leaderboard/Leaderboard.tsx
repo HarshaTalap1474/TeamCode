@@ -3,7 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import { CandidateSite, FilterState } from '@/lib/types';
 import { CandidateCard } from './CandidateCard';
-import { Search, Sliders, Filter, Sparkles } from 'lucide-react';
+import { Search, Filter } from 'lucide-react';
 
 interface LeaderboardProps {
   candidates: CandidateSite[];
@@ -60,50 +60,49 @@ export function Leaderboard({
   }, [candidates, filters]);
 
   return (
-    <div className="w-full h-full flex flex-col bg-[#0B0F19] overflow-hidden">
+    <div className="w-full h-full flex flex-col bg-[#111925] overflow-hidden">
       {/* Header & Search */}
-      <div className="p-4 border-b border-slate-800/80 bg-slate-900/40">
-        <div className="flex items-center justify-between mb-3">
-          <div className="flex items-center gap-2">
-            <Sparkles className="w-4 h-4 text-emerald-400" />
-            <h3 className="text-sm font-bold text-slate-100 tracking-tight">Candidate Leaderboard</h3>
-          </div>
-          <span className="text-[11px] font-mono font-medium text-slate-400 px-2 py-0.5 rounded bg-slate-800 border border-slate-700/60">
-            {filteredCandidates.length} of {candidates.length} Sites
+      <div className="p-3 border-b border-[#263244] bg-[#0E1520]">
+        <div className="flex items-center justify-between mb-2">
+          <span className="text-[11px] font-semibold uppercase tracking-wider text-[#98A6B8]">
+            Candidate Ranking Matrix
+          </span>
+          <span className="text-[10px] font-mono text-[#98A6B8] px-1.5 py-0.2 rounded bg-[#151F2D] border border-[#263244]">
+            {filteredCandidates.length} / {candidates.length} Zones
           </span>
         </div>
 
         {/* Search Input Bar */}
         <div className="relative flex items-center">
-          <Search className="w-4 h-4 text-slate-400 absolute left-3 pointer-events-none" />
+          <Search className="w-3.5 h-3.5 text-[#64748B] absolute left-2.5 pointer-events-none" />
           <input
             type="text"
-            placeholder={`Search ${city} zone or cell ID...`}
+            placeholder={`Filter ${city} zones or cell...`}
             value={filters.searchQuery}
             onChange={(e) => setFilters({ ...filters, searchQuery: e.target.value })}
-            className="w-full bg-slate-950/80 border border-slate-800 rounded-md pl-9 pr-8 py-1.5 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500 transition"
+            className="w-full bg-[#151F2D] border border-[#263244] rounded pl-8 pr-7 py-1 text-xs text-[#E5EAF1] placeholder-[#64748B] focus:outline-none focus:border-[#4C8DFF] transition"
           />
           <button
             onClick={() => setShowFilters(!showFilters)}
-            className={`absolute right-2 p-1 rounded hover:bg-slate-800 transition ${
+            className={`absolute right-1.5 p-1 rounded hover:bg-[#1C2A3D] transition ${
               showFilters || filters.maxRentIndex < 10 || filters.excludeHighCannibalization
-                ? 'text-blue-400'
-                : 'text-slate-400'
+                ? 'text-[#4C8DFF]'
+                : 'text-[#64748B]'
             }`}
             title="Toggle constraint filters"
           >
-            <Filter className="w-3.5 h-3.5" />
+            <Filter className="w-3 h-3" />
           </button>
         </div>
 
         {/* Expandable Constraint Filters */}
         {showFilters && (
-          <div className="mt-3 pt-3 border-t border-slate-800/80 space-y-2.5 text-xs text-slate-300">
+          <div className="mt-2.5 pt-2.5 border-t border-[#263244] space-y-2 text-xs text-[#98A6B8]">
             {/* Rent Index Ceiling Slider */}
             <div>
-              <div className="flex justify-between text-[11px] text-slate-400 mb-1">
+              <div className="flex justify-between text-[10px] text-[#98A6B8] mb-1">
                 <span>Max Rent Ceiling</span>
-                <span className="font-mono text-slate-200">{filters.maxRentIndex}/10</span>
+                <span className="font-mono text-[#E5EAF1]">{filters.maxRentIndex}/10</span>
               </div>
               <input
                 type="range"
@@ -114,31 +113,40 @@ export function Leaderboard({
                 onChange={(e) =>
                   setFilters({ ...filters, maxRentIndex: parseFloat(e.target.value) })
                 }
-                className="w-full h-1 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                className="w-full h-1 bg-[#1C2A3D] rounded appearance-none cursor-pointer accent-[#4C8DFF]"
               />
             </div>
 
             {/* Cannibalization Filter Toggle */}
-            <label className="flex items-center gap-2 cursor-pointer pt-1 text-[11px]">
+            <label className="flex items-center gap-2 cursor-pointer pt-0.5 text-[11px]">
               <input
                 type="checkbox"
                 checked={filters.excludeHighCannibalization}
                 onChange={(e) =>
                   setFilters({ ...filters, excludeHighCannibalization: e.target.checked })
                 }
-                className="rounded border-slate-700 bg-slate-900 text-blue-500 focus:ring-0 w-3.5 h-3.5"
+                className="rounded border-[#263244] bg-[#151F2D] text-[#4C8DFF] focus:ring-0 w-3.5 h-3.5"
               />
-              <span className="text-slate-300">Exclude High Cannibalization (&gt;25%)</span>
+              <span className="text-[#98A6B8]">Exclude high cannibalization (&gt;25%)</span>
             </label>
           </div>
         )}
       </div>
 
-      {/* Candidate Cards Scrollable Feed */}
-      <div className="flex-1 overflow-y-auto p-3.5 space-y-2.5">
+      {/* Column Headers */}
+      <div className="flex items-center justify-between px-3 py-1 bg-[#0E1520] border-b border-[#1E293B] text-[10px] font-mono uppercase tracking-wider text-[#64748B]">
+        <span>Rank & Zone</span>
+        <div className="flex items-center gap-6">
+          <span>Net Demand</span>
+          <span className="w-12 text-center">Score</span>
+        </div>
+      </div>
+
+      {/* Candidate Feed */}
+      <div className="flex-1 overflow-y-auto">
         {filteredCandidates.length === 0 ? (
-          <div className="text-center py-12 text-slate-500 text-xs">
-            <p>No candidates match your current filter parameters.</p>
+          <div className="text-center py-12 text-[#64748B] text-xs">
+            <p>No candidate sites match the filter criteria.</p>
             <button
               onClick={() =>
                 setFilters({
@@ -148,9 +156,9 @@ export function Leaderboard({
                   excludeHighCannibalization: false,
                 })
               }
-              className="mt-3 text-blue-400 hover:underline"
+              className="mt-2 text-xs text-[#4C8DFF] hover:underline"
             >
-              Reset Filters
+              Reset filters
             </button>
           </div>
         ) : (
@@ -172,3 +180,4 @@ export function Leaderboard({
     </div>
   );
 }
+

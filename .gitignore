@@ -55,3 +55,7 @@ Thumbs.db
 .coverage
 htmlcov/
 .pytest_cache/
+
+# Scratch & Temporary Verification Files
+scratch/
+

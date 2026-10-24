@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { X, Database, ShieldCheck, Info, FileCode2, Scale } from 'lucide-react';
+import { X, Database, ShieldCheck, Info, Scale } from 'lucide-react';
 
 interface DataCardModalProps {
   isOpen: boolean;
@@ -12,60 +12,60 @@ export function DataCardModal({ isOpen, onClose }: DataCardModalProps) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[2000] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-      <div className="bg-[#0E1424] border border-slate-800 rounded-xl max-w-2xl w-full shadow-2xl overflow-hidden flex flex-col max-h-[85vh]">
+    <div className="fixed inset-0 z-[2000] bg-black/75 backdrop-blur-sm flex items-center justify-center p-4">
+      <div className="bg-[#111925] border border-[#263244] rounded-lg max-w-2xl w-full shadow-2xl overflow-hidden flex flex-col max-h-[85vh]">
         {/* Header */}
-        <div className="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-900/60">
+        <div className="p-3.5 border-b border-[#263244] flex items-center justify-between bg-[#0E1520]">
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-lg bg-blue-600/15 border border-blue-500/30 flex items-center justify-center text-blue-400">
-              <Database className="w-4 h-4" />
+            <div className="w-7 h-7 rounded bg-[#151F2D] border border-[#263244] flex items-center justify-center text-[#4C8DFF]">
+              <Database className="w-3.5 h-3.5" />
             </div>
             <div>
-              <h3 className="text-sm font-bold text-slate-100">Data Card & Provenance Register</h3>
-              <p className="text-xs text-slate-400">Open Data Sources, Methodology, and Stated Assumptions</p>
+              <h3 className="text-sm font-semibold text-[#E5EAF1]">Data Card & Model Provenance</h3>
+              <p className="text-[11px] text-[#98A6B8]">Open Data Inputs, Methodology, and Analytical Parameters</p>
             </div>
           </div>
           <button
             onClick={onClose}
-            className="p-1.5 rounded-lg bg-slate-800 text-slate-400 hover:text-slate-100 transition"
+            className="p-1 rounded bg-[#151F2D] text-[#98A6B8] hover:text-[#E5EAF1] border border-[#263244] transition"
           >
-            <X className="w-4 h-4" />
+            <X className="w-3.5 h-3.5" />
           </button>
         </div>
 
         {/* Content */}
-        <div className="p-5 overflow-y-auto space-y-4 text-xs text-slate-300 leading-relaxed">
+        <div className="p-4 overflow-y-auto space-y-3.5 text-xs text-[#98A6B8] leading-relaxed">
           {/* Data Sources Table */}
-          <div className="space-y-2">
-            <span className="font-bold text-slate-100 uppercase tracking-wider text-[11px] block flex items-center gap-1.5">
-              <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Permissive Open Data Inputs</span>
+          <div className="space-y-1.5">
+            <span className="font-mono text-[10px] uppercase tracking-wider text-[#98A6B8] block flex items-center gap-1.5">
+              <ShieldCheck className="w-3.5 h-3.5 text-[#22C55E]" />
+              <span>Ingested Data Sources</span>
             </span>
 
-            <div className="rounded-lg border border-slate-800 overflow-hidden">
+            <div className="rounded border border-[#263244] overflow-hidden">
               <table className="w-full text-left text-[11px]">
-                <thead className="bg-slate-900 text-slate-400 font-semibold border-b border-slate-800">
+                <thead className="bg-[#0E1520] text-[#98A6B8] font-medium border-b border-[#263244]">
                   <tr>
-                    <th className="p-2.5">Source</th>
-                    <th className="p-2.5">Data Ingested</th>
-                    <th className="p-2.5">Licensing</th>
+                    <th className="p-2">Source</th>
+                    <th className="p-2">Data Ingested</th>
+                    <th className="p-2">Licensing</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-800 bg-slate-950/40">
+                <tbody className="divide-y divide-[#1E293B] bg-[#151F2D]">
                   <tr>
-                    <td className="p-2.5 font-semibold text-slate-200">Overture Maps Places</td>
-                    <td className="p-2.5">Competitor POIs, existing brand stores, transit</td>
-                    <td className="p-2.5 font-mono text-emerald-400">CDLA-Permissive-2.0</td>
+                    <td className="p-2 font-medium text-[#E5EAF1]">Overture Maps Places</td>
+                    <td className="p-2">Competitor POIs, existing brand stores, transit</td>
+                    <td className="p-2 font-mono text-[#22C55E]">CDLA-Permissive-2.0</td>
                   </tr>
                   <tr>
-                    <td className="p-2.5 font-semibold text-slate-200">WorldPop Project</td>
-                    <td className="p-2.5">100m residential population & age structures</td>
-                    <td className="p-2.5 font-mono text-emerald-400">CC BY 4.0</td>
+                    <td className="p-2 font-medium text-[#E5EAF1]">WorldPop Project</td>
+                    <td className="p-2">100m residential population & age structures</td>
+                    <td className="p-2 font-mono text-[#22C55E]">CC BY 4.0</td>
                   </tr>
                   <tr>
-                    <td className="p-2.5 font-semibold text-slate-200">OpenStreetMap (OSM)</td>
-                    <td className="p-2.5">Road networks, arterial frontage, intersections</td>
-                    <td className="p-2.5 font-mono text-emerald-400">ODbL</td>
+                    <td className="p-2 font-medium text-[#E5EAF1]">OpenStreetMap (OSM)</td>
+                    <td className="p-2">Road networks, arterial frontage, intersections</td>
+                    <td className="p-2 font-mono text-[#22C55E]">ODbL</td>
                   </tr>
                 </tbody>
               </table>
@@ -73,28 +73,28 @@ export function DataCardModal({ isOpen, onClose }: DataCardModalProps) {
           </div>
 
           {/* Stated Assumptions */}
-          <div className="space-y-1.5 p-3 rounded-lg bg-slate-900/60 border border-slate-800">
-            <span className="font-bold text-slate-100 uppercase tracking-wider text-[11px] flex items-center gap-1.5">
-              <Info className="w-3.5 h-3.5 text-blue-400" />
-              <span>Key Analytical Assumptions</span>
+          <div className="space-y-1.5 p-3 rounded bg-[#151F2D] border border-[#263244]">
+            <span className="font-mono text-[10px] uppercase tracking-wider text-[#98A6B8] flex items-center gap-1.5">
+              <Info className="w-3 h-3 text-[#4C8DFF]" />
+              <span>Analytical Assumptions & Constants</span>
             </span>
-            <ul className="list-disc pl-4 space-y-1 text-slate-400 text-[11px]">
+            <ul className="list-disc pl-4 space-y-1 text-[#98A6B8] text-[11px]">
               <li>
-                <strong className="text-slate-300">Huff Gravity Decay:</strong> Consumer willingness to travel decays with distance exponent $\beta = 1.8$ with a 200m minimum threshold.
+                <strong className="text-[#E5EAF1]">Huff Gravity Decay:</strong> Consumer willingness to travel decays with distance exponent $\beta = 1.8$ with a 200m minimum threshold.
               </li>
               <li>
-                <strong className="text-slate-300">Cannibalization Catchment:</strong> Stores within 800m of an existing branch incur severe sales cannibalization up to 50%.
+                <strong className="text-[#E5EAF1]">Cannibalization Catchment:</strong> Stores within 800m of an existing branch incur severe sales cannibalization up to 50%.
               </li>
               <li>
-                <strong className="text-slate-300">Commercial Rent Proxy:</strong> In absence of private lease data, rent pressure is estimated (1 to 10 scale) using road intersection density and commercial cluster proxies.
+                <strong className="text-[#E5EAF1]">Commercial Rent Proxy:</strong> In absence of private lease data, rent pressure is estimated (1 to 10 scale) using road intersection density and commercial cluster proxies.
               </li>
             </ul>
           </div>
 
           {/* Limitations */}
-          <div className="space-y-1.5 p-3 rounded-lg bg-amber-950/20 border border-amber-800/40 text-amber-300/90 text-[11px]">
-            <span className="font-bold uppercase tracking-wider text-[11px] flex items-center gap-1.5 text-amber-400">
-              <Scale className="w-3.5 h-3.5" />
+          <div className="space-y-1.5 p-3 rounded bg-[#151F2D] border border-[#263244] text-[11px]">
+            <span className="font-mono text-[10px] uppercase tracking-wider text-[#98A6B8] flex items-center gap-1.5">
+              <Scale className="w-3 h-3 text-[#F59E0B]" />
               <span>Platform Limitations</span>
             </span>
             <p>
@@ -104,10 +104,10 @@ export function DataCardModal({ isOpen, onClose }: DataCardModalProps) {
         </div>
 
         {/* Footer */}
-        <div className="p-4 border-t border-slate-800 bg-slate-900/60 flex justify-end">
+        <div className="p-3 border-t border-[#263244] bg-[#0E1520] flex justify-end">
           <button
             onClick={onClose}
-            className="px-4 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold transition"
+            className="px-3 py-1 rounded bg-[#151F2D] hover:bg-[#1C2A3D] text-[#E5EAF1] text-xs font-medium border border-[#263244] transition"
           >
             Acknowledge & Close
           </button>
@@ -116,3 +116,4 @@ export function DataCardModal({ isOpen, onClose }: DataCardModalProps) {
     </div>
   );
 }
+

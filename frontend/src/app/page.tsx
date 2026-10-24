@@ -123,7 +123,7 @@ export default function DashboardPage() {
   };
 
   return (
-    <div className="flex flex-col h-screen w-screen overflow-hidden bg-[#080C14]">
+    <div className="flex flex-col h-screen w-screen overflow-hidden bg-[#0B1018]">
       {/* Platform Navigation Header */}
       <Header
         category={category}
@@ -139,7 +139,7 @@ export default function DashboardPage() {
       />
 
       {/* Main Workspace (Map + Sidebar) */}
-      <main className="flex-1 flex relative overflow-hidden" style={{ height: 'calc(100vh - 64px)' }}>
+      <main className="flex-1 flex relative overflow-hidden h-[calc(100vh-48px)]">
         {/* Geospatial Interactive Map */}
         <div className="flex-1 h-full relative" style={{ height: '100%', minHeight: '100%' }}>
           <HexMap
@@ -160,20 +160,20 @@ export default function DashboardPage() {
         </div>
 
         {/* Unified Right Intelligence Sidebar */}
-        <aside className="w-[440px] flex-shrink-0 h-full flex flex-col bg-[#0B0F19] border-l border-slate-800 z-10 overflow-hidden">
+        <aside className="w-[420px] flex-shrink-0 h-full flex flex-col bg-[#111925] border-l border-[#263244] z-10 overflow-hidden">
           {/* Top Mode Navigation Tabs */}
-          <div className="h-12 border-b border-slate-800 bg-slate-900/60 px-3 flex items-center justify-between flex-shrink-0">
+          <div className="h-10 border-b border-[#263244] bg-[#0E1520] px-3 flex items-center justify-between flex-shrink-0">
             <div className="flex items-center gap-1.5">
               <button
                 onClick={() => setRightPanelMode('leaderboard')}
-                className={`px-3 py-1.5 rounded-md text-xs font-semibold flex items-center gap-1.5 transition ${
+                className={`px-2.5 py-1 rounded text-xs font-medium flex items-center gap-1.5 transition ${
                   rightPanelMode === 'leaderboard'
-                    ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30 shadow-sm'
-                    : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
+                    ? 'bg-[#151F2D] text-[#E5EAF1] border border-[#263244]'
+                    : 'text-[#98A6B8] hover:text-[#E5EAF1]'
                 }`}
               >
                 <span>Rankings</span>
-                <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">
+                <span className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-[#1C2A3D] text-[#98A6B8]">
                   {candidates.length}
                 </span>
               </button>
@@ -181,17 +181,17 @@ export default function DashboardPage() {
               <button
                 onClick={() => selectedSite && setRightPanelMode('brief')}
                 disabled={!selectedSite}
-                className={`px-3 py-1.5 rounded-md text-xs font-semibold flex items-center gap-1.5 transition ${
+                className={`px-2.5 py-1 rounded text-xs font-medium flex items-center gap-1.5 transition ${
                   rightPanelMode === 'brief'
-                    ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30 shadow-sm'
+                    ? 'bg-[#151F2D] text-[#E5EAF1] border border-[#263244]'
                     : selectedSite
-                    ? 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
-                    : 'text-slate-600 cursor-not-allowed'
+                    ? 'text-[#98A6B8] hover:text-[#E5EAF1]'
+                    : 'text-[#64748B] cursor-not-allowed opacity-50'
                 }`}
               >
                 <span>Site Intelligence</span>
                 {selectedSite && (
-                  <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                  <span className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-[#4C8DFF]/15 text-[#4C8DFF] border border-[#4C8DFF]/30">
                     #{selectedSite.rank}
                   </span>
                 )}
@@ -201,9 +201,9 @@ export default function DashboardPage() {
             {rightPanelMode === 'brief' && (
               <button
                 onClick={() => setRightPanelMode('leaderboard')}
-                className="text-xs text-slate-400 hover:text-slate-200 transition"
+                className="text-xs text-[#98A6B8] hover:text-[#E5EAF1] transition flex items-center gap-1"
               >
-                ← Back
+                ← List
               </button>
             )}
           </div>

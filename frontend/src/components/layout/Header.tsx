@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Compass, Database, CheckCircle2, SlidersHorizontal, MapPin } from 'lucide-react';
+import { Compass, Database, SlidersHorizontal, MapPin } from 'lucide-react';
 import { RetailCategory } from '@/lib/types';
 
 interface HeaderProps {
@@ -47,70 +47,63 @@ export function Header({
   };
 
   return (
-    <header className="h-16 border-b border-slate-800 bg-[#0B0F19]/95 backdrop-blur-md px-5 flex items-center justify-between z-20 sticky top-0">
-      {/* Brand & Platform Identity */}
-      <div className="flex items-center gap-3">
-        <div className="w-9 h-9 rounded-lg bg-blue-600/15 border border-blue-500/30 flex items-center justify-center text-blue-400 shadow-[0_0_15px_rgba(59,130,246,0.2)]">
-          <Compass className="w-5 h-5 animate-spin-slow" />
+    <header className="h-12 border-b border-[#263244] bg-[#111925] px-4 flex items-center justify-between z-30 sticky top-0 flex-shrink-0">
+      {/* Brand Identity */}
+      <div className="flex items-center gap-2.5">
+        <div className="w-6 h-6 rounded bg-[#151F2D] border border-[#263244] flex items-center justify-center text-[#4C8DFF]">
+          <Compass className="w-3.5 h-3.5" />
         </div>
-        <div>
-          <div className="flex items-center gap-2">
-            <span className="font-bold tracking-tight text-slate-100 text-lg">NextWhere</span>
-            <span className="text-[10px] uppercase tracking-wider font-semibold px-1.5 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20">
-              Intelligence v2.5
-            </span>
-          </div>
-          <p className="text-[11px] text-slate-400 font-medium">Retail Spatial Demand & Cannibalization Analysis</p>
+        <div className="flex items-center gap-1.5">
+          <span className="font-semibold tracking-tight text-[#E5EAF1] text-sm">NextWhere</span>
+          <span className="text-[10px] font-mono text-[#98A6B8] px-1.5 py-0.2 rounded bg-[#151F2D] border border-[#263244]">
+            v2.5
+          </span>
         </div>
       </div>
 
-      {/* Selectors Bar */}
-      <div className="hidden md:flex items-center gap-2.5 bg-slate-900/90 border border-slate-800/90 p-1.5 rounded-lg">
-        {/* City Selector */}
-        <div className="flex items-center gap-1.5 px-2 py-1 text-xs text-slate-300">
-          <MapPin className="w-3.5 h-3.5 text-blue-400" />
+      {/* Structured Filter Toolbar */}
+      <div className="hidden sm:flex items-center gap-2">
+        {/* City Filter */}
+        <div className="flex items-center gap-1 bg-[#151F2D] border border-[#263244] rounded px-2 py-1">
+          <MapPin className="w-3 h-3 text-[#4C8DFF]" />
           <select
             value={city}
             onChange={(e) => setCity(e.target.value)}
-            className="bg-transparent font-medium text-slate-200 outline-none cursor-pointer"
+            className="bg-transparent text-xs font-medium text-[#E5EAF1] outline-none cursor-pointer"
           >
-            <option value="Kolhapur" className="bg-slate-900 text-slate-200">Kolhapur (Primary)</option>
-            <option value="Pune" className="bg-slate-900 text-slate-200">Pune</option>
-            <option value="Bangalore" className="bg-slate-900 text-slate-200">Bangalore</option>
-            <option value="Mumbai" className="bg-slate-900 text-slate-200">Mumbai</option>
+            <option value="Kolhapur" className="bg-[#111925] text-[#E5EAF1]">Kolhapur (Primary)</option>
+            <option value="Pune" className="bg-[#111925] text-[#E5EAF1]">Pune</option>
+            <option value="Bangalore" className="bg-[#111925] text-[#E5EAF1]">Bangalore</option>
+            <option value="Mumbai" className="bg-[#111925] text-[#E5EAF1]">Mumbai</option>
           </select>
         </div>
 
-        <div className="w-px h-4 bg-slate-800" />
-
-        {/* Category Selector */}
-        <div className="flex items-center gap-1.5 px-2 py-1 text-xs text-slate-300">
-          <span className="text-slate-500 font-mono text-[11px]">CAT:</span>
+        {/* Category Filter */}
+        <div className="flex items-center gap-1 bg-[#151F2D] border border-[#263244] rounded px-2 py-1">
+          <span className="text-[#64748B] text-[10px] font-medium uppercase tracking-wider">Sector:</span>
           <select
             value={category}
             onChange={handleCategoryChange}
-            className="bg-transparent font-medium text-slate-200 outline-none cursor-pointer capitalize"
+            className="bg-transparent text-xs font-medium text-[#E5EAF1] outline-none cursor-pointer capitalize"
           >
-            <option value="cafe" className="bg-slate-900 text-slate-200">☕ Cafes & Coffee</option>
-            <option value="pharmacy" className="bg-slate-900 text-slate-200">💊 Pharmacies</option>
-            <option value="supermarket" className="bg-slate-900 text-slate-200">🛒 Supermarkets</option>
-            <option value="qsr" className="bg-slate-900 text-slate-200">🍔 QSR & Fast Food</option>
-            <option value="fashion" className="bg-slate-900 text-slate-200">👕 Fashion Retail</option>
+            <option value="cafe" className="bg-[#111925] text-[#E5EAF1]">Cafes & Specialty</option>
+            <option value="pharmacy" className="bg-[#111925] text-[#E5EAF1]">Pharmacies</option>
+            <option value="supermarket" className="bg-[#111925] text-[#E5EAF1]">Supermarkets</option>
+            <option value="qsr" className="bg-[#111925] text-[#E5EAF1]">QSR / Fast Food</option>
+            <option value="fashion" className="bg-[#111925] text-[#E5EAF1]">Fashion Retail</option>
           </select>
         </div>
 
-        <div className="w-px h-4 bg-slate-800" />
-
-        {/* Brand Selector */}
-        <div className="flex items-center gap-1.5 px-2 py-1 text-xs text-slate-300">
-          <span className="text-slate-500 font-mono text-[11px]">BRAND:</span>
+        {/* Brand Filter */}
+        <div className="flex items-center gap-1 bg-[#151F2D] border border-[#263244] rounded px-2 py-1">
+          <span className="text-[#64748B] text-[10px] font-medium uppercase tracking-wider">Target:</span>
           <select
             value={brand}
             onChange={(e) => setBrand(e.target.value)}
-            className="bg-transparent font-semibold text-emerald-400 outline-none cursor-pointer"
+            className="bg-transparent text-xs font-medium text-[#4C8DFF] outline-none cursor-pointer"
           >
             {CATEGORY_BRANDS[category]?.map((b) => (
-              <option key={b} value={b} className="bg-slate-900 text-slate-200">
+              <option key={b} value={b} className="bg-[#111925] text-[#E5EAF1]">
                 {b}
               </option>
             ))}
@@ -119,42 +112,35 @@ export function Header({
       </div>
 
       {/* Right Controls & Governance */}
-      <div className="flex items-center gap-3">
-        {/* Compare Trigger Button */}
+      <div className="flex items-center gap-2.5">
+        {/* Compare Trigger */}
         {compareCount > 0 && (
           <button
             onClick={onOpenCompare}
-            className="flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1.5 rounded-md bg-blue-600 hover:bg-blue-500 text-white transition shadow-sm animate-pulse"
+            className="flex items-center gap-1.5 text-xs font-medium px-2 py-1 rounded bg-[#4C8DFF]/15 text-[#4C8DFF] border border-[#4C8DFF]/30 hover:bg-[#4C8DFF]/25 transition"
           >
-            <SlidersHorizontal className="w-3.5 h-3.5" />
+            <SlidersHorizontal className="w-3 h-3" />
             <span>Compare ({compareCount}/2)</span>
           </button>
         )}
 
-        {/* Live / Mock Status Pill */}
+        {/* Real Status Indicator */}
         <div
-          className={`flex items-center gap-1.5 text-[11px] font-medium px-2.5 py-1 rounded-full border ${
-            isLive
-              ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20'
-              : 'bg-slate-800/60 text-slate-300 border-slate-700/50'
-          }`}
-          title={isLive ? 'Connected directly to live FastAPI backend' : 'Running on fast deterministic local cache'}
+          className="flex items-center gap-1.5 text-[11px] text-[#98A6B8] px-2 py-1 rounded bg-[#151F2D] border border-[#263244]"
+          title={isLive ? 'Live FastAPI Backend Connected' : 'Running on Deterministic Local Mock'}
         >
-          <span
-            className={`w-1.5 h-1.5 rounded-full ${
-              isLive ? 'bg-emerald-400 animate-ping' : 'bg-blue-400'
-            }`}
-          />
-          <span>{isLive ? 'FastAPI Connected' : 'Offline Cache Mode'}</span>
+          <span className={`w-1.5 h-1.5 rounded-full ${isLive ? 'bg-emerald-400' : 'bg-slate-400'}`} />
+          <span>{isLive ? 'Connected' : 'Offline Cache'}</span>
         </div>
 
-        {/* Data Card Button */}
+        {/* Data Governance Button */}
         <button
           onClick={onOpenDataCard}
-          className="flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-md bg-slate-800/80 hover:bg-slate-800 text-slate-200 border border-slate-700/80 transition"
+          className="flex items-center gap-1 text-xs font-medium px-2 py-1 rounded bg-[#151F2D] hover:bg-[#1C2A3D] text-[#E5EAF1] border border-[#263244] transition"
+          title="Data Card & Model Governance"
         >
-          <Database className="w-3.5 h-3.5 text-slate-400" />
-          <span>Data Governance</span>
+          <Database className="w-3 h-3 text-[#98A6B8]" />
+          <span className="hidden md:inline">Governance</span>
         </button>
       </div>
     </header>

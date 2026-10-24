@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { CandidateSite } from '@/lib/types';
-import { ArrowUpRight, AlertTriangle, TrendingUp, DollarSign } from 'lucide-react';
 
 interface CandidateCardProps {
   site: CandidateSite;
@@ -19,97 +18,85 @@ export function CandidateCard({
   isCompared,
   onToggleCompare,
 }: CandidateCardProps) {
-  const isHighRisk = site.cannibalization_pct > 30 || site.risk_level === 'HIGH';
-  const isModerate = site.eps_score >= 50 && site.eps_score < 75;
-
-  let badgeColor = 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20';
-  if (isHighRisk) {
-    badgeColor = 'bg-red-500/10 text-red-400 border-red-500/20';
-  } else if (isModerate) {
-    badgeColor = 'bg-amber-500/10 text-amber-400 border-amber-500/20';
-  }
+  const isHighRisk = site.cannibalization_pct > 25 || site.risk_level === 'HIGH';
+  const isOptimal = site.eps_score >= 75;
 
   return (
     <div
       onClick={onSelect}
-      className={`relative p-3.5 rounded-lg border transition-all cursor-pointer group ${
+      className={`group relative flex items-center justify-between px-3 py-2 border-b border-[#1E293B] cursor-pointer transition-colors ${
         isSelected
-          ? 'bg-slate-800/95 border-blue-500 shadow-[0_0_20px_rgba(59,130,246,0.15)] ring-1 ring-blue-500/50'
-          : 'bg-slate-900/70 hover:bg-slate-850 border-slate-800/80 hover:border-slate-700'
+          ? 'bg-[#151F2D] border-l-[3px] border-l-[#4C8DFF]'
+          : 'bg-[#111925] hover:bg-[#151F2D]/60 border-l-[3px] border-l-transparent'
       }`}
     >
-      {/* Top Header: Rank & Name */}
-      <div className="flex items-start justify-between gap-2 mb-2">
-        <div className="flex items-center gap-2">
-          <div className="w-6 h-6 rounded bg-slate-800 border border-slate-700/80 flex items-center justify-center text-xs font-mono font-bold text-slate-300">
-            #{site.rank}
-          </div>
-          <div>
-            <h4 className="text-sm font-semibold text-slate-100 group-hover:text-blue-400 transition leading-tight">
+      {/* Col 1: Rank & Zone Identifier */}
+      <div className="flex items-center gap-2 min-w-0 flex-1 mr-2">
+        <div
+          className={`w-5 h-5 rounded flex-shrink-0 flex items-center justify-center text-[10px] font-mono font-semibold ${
+            isSelected
+              ? 'bg-[#4C8DFF]/20 text-[#4C8DFF] border border-[#4C8DFF]/30'
+              : 'bg-[#1C2A3D] text-[#98A6B8] border border-[#263244]'
+          }`}
+        >
+          {site.rank}
+        </div>
+        <div className="min-w-0">
+          <div className="flex items-center gap-1.5">
+            <h4 className="text-xs font-medium text-[#E5EAF1] truncate group-hover:text-[#4C8DFF] transition">
               {site.zone_name}
             </h4>
-            <span className="text-[10px] font-mono text-slate-500">{site.h3_id.slice(0, 10)}...</span>
           </div>
-        </div>
-
-        {/* Master EPS Badge */}
-        <div className={`px-2 py-1 rounded border text-xs font-bold font-mono ${badgeColor}`}>
-          EPS {site.eps_score}
-        </div>
-      </div>
-
-      {/* Core Demand Arithmetic */}
-      <div className="grid grid-cols-2 gap-2 my-2 py-2 border-y border-slate-800/60 text-xs">
-        <div>
-          <span className="text-[10px] uppercase tracking-wider text-slate-400 block font-medium">Net Incremental Demand</span>
-          <div className="flex items-center gap-1 font-semibold text-slate-100 mt-0.5">
-            <TrendingUp className="w-3.5 h-3.5 text-emerald-400" />
-            <span>{site.net_incremental_demand.toLocaleString()} units</span>
-          </div>
-        </div>
-        <div>
-          <span className="text-[10px] uppercase tracking-wider text-slate-400 block font-medium">Cannibalization</span>
-          <div className="flex items-center gap-1 font-semibold text-slate-100 mt-0.5">
-            {site.cannibalization_pct > 20 && (
-              <AlertTriangle className="w-3.5 h-3.5 text-red-400" />
-            )}
-            <span className={site.cannibalization_pct > 25 ? 'text-red-400' : 'text-slate-300'}>
-              {site.cannibalization_pct}% ({site.cannibalization_units} u)
-            </span>
+          <div className="flex items-center gap-2 text-[10px] text-[#64748B] font-mono mt-0.5">
+            <span>{site.h3_id.slice(0, 9)}</span>
+            <span>•</span>
+            <span>Rent {site.rent_index}/10</span>
           </div>
         </div>
       </div>
 
-      {/* Footer Tags & Compare Button */}
-      <div className="flex items-center justify-between gap-2 mt-2.5">
-        <div className="flex flex-wrap gap-1">
-          {site.flags.slice(0, 2).map((flag) => (
-            <span
-              key={flag}
-              className="text-[10px] font-medium px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700/50"
-            >
-              {flag}
-            </span>
-          ))}
-          <span className="text-[10px] font-medium px-1.5 py-0.5 rounded bg-slate-800/60 text-slate-400 border border-slate-800 flex items-center gap-0.5">
-            <DollarSign className="w-2.5 h-2.5" />
-            Rent {site.rent_index}/10
-          </span>
+      {/* Col 2: Net Incremental Demand & Cannibalization */}
+      <div className="text-right flex-shrink-0 mr-3">
+        <div className="text-xs font-semibold tabular-nums text-[#22C55E]">
+          +{site.net_incremental_demand.toLocaleString()} u
+        </div>
+        <div
+          className={`text-[10px] tabular-nums font-mono mt-0.5 ${
+            isHighRisk ? 'text-[#EF4444]' : 'text-[#64748B]'
+          }`}
+        >
+          {site.cannibalization_pct}% cann.
+        </div>
+      </div>
+
+      {/* Col 3: EPS Metric & Compare Check */}
+      <div className="flex items-center gap-2 flex-shrink-0">
+        <div
+          className={`w-12 text-center py-1 rounded text-xs font-mono font-bold tabular-nums border ${
+            isOptimal
+              ? 'bg-[#22C55E]/10 text-[#22C55E] border-[#22C55E]/20'
+              : isHighRisk
+              ? 'bg-[#EF4444]/10 text-[#EF4444] border-[#EF4444]/20'
+              : 'bg-[#151F2D] text-[#E5EAF1] border-[#263244]'
+          }`}
+          title={`Expansion Priority Score: ${site.eps_score}`}
+        >
+          {site.eps_score}
         </div>
 
-        {/* Compare Checkbox */}
         <button
           onClick={onToggleCompare}
-          className={`text-[10px] font-semibold px-2 py-1 rounded transition border ${
+          className={`px-1.5 py-1 rounded text-[10px] font-mono transition border ${
             isCompared
-              ? 'bg-blue-600 text-white border-blue-500'
-              : 'bg-slate-800 hover:bg-slate-750 text-slate-300 border-slate-700/70'
+              ? 'bg-[#4C8DFF]/20 text-[#4C8DFF] border-[#4C8DFF]/40 font-semibold'
+              : 'bg-[#151F2D] text-[#64748B] hover:text-[#98A6B8] border-[#263244]'
           }`}
-          title="Select to compare side-by-side"
+          title={isCompared ? 'Remove from comparison' : 'Add to side-by-side comparison'}
         >
-          {isCompared ? '✓ Selected' : '+ Compare'}
+          {isCompared ? '✓' : '+'}
         </button>
       </div>
     </div>
   );
 }
+
