@@ -11,6 +11,8 @@ import { DataCardModal } from '@/components/modals/DataCardModal';
 import { fetchCandidates, fetchPOIs } from '@/lib/api';
 import { recalculateCandidates } from '@/lib/simulation';
 import { CandidateSite, POIStore, RetailCategory, SimulationWeights } from '@/lib/types';
+import defaultCandidates from '@/mock/candidates.json';
+import defaultPOIs from '@/mock/pois.json';
 
 const DEFAULT_WEIGHTS: SimulationWeights = {
   demand: 0.4,
@@ -18,17 +20,25 @@ const DEFAULT_WEIGHTS: SimulationWeights = {
   rent: 0.3,
 };
 
+// Initial state loaded synchronously from mock data so frame 1 has full content
+const initialCafeCandidates = (defaultCandidates as CandidateSite[]).filter(
+  (c) => c.category === 'cafe'
+);
+const initialCalculated = recalculateCandidates(initialCafeCandidates, DEFAULT_WEIGHTS);
+
 export default function DashboardPage() {
   const [city, setCity] = useState('Pune');
   const [category, setCategory] = useState<RetailCategory>('cafe');
   const [brand, setBrand] = useState('Starbucks');
 
-  const [rawCandidates, setRawCandidates] = useState<CandidateSite[]>([]);
-  const [candidates, setCandidates] = useState<CandidateSite[]>([]);
-  const [pois, setPois] = useState<POIStore[]>([]);
+  const [rawCandidates, setRawCandidates] = useState<CandidateSite[]>(initialCafeCandidates);
+  const [candidates, setCandidates] = useState<CandidateSite[]>(initialCalculated);
+  const [pois, setPois] = useState<POIStore[]>((defaultPOIs as POIStore[]).filter((p) => p.category === 'cafe'));
   const [isLive, setIsLive] = useState(false);
 
-  const [selectedSite, setSelectedSite] = useState<CandidateSite | null>(null);
+  const [selectedSite, setSelectedSite] = useState<CandidateSite | null>(
+    initialCalculated.length > 0 ? initialCalculated[0] : null
+  );
   const [comparedSites, setComparedSites] = useState<CandidateSite[]>([]);
   const [weights, setWeights] = useState<SimulationWeights>(DEFAULT_WEIGHTS);
 
@@ -49,11 +59,11 @@ export default function DashboardPage() {
       setRawCandidates(candidatesResult.data);
       setPois(poiData);
 
-      // Apply initial simulation weights
+      // Apply current simulation weights
       const calculated = recalculateCandidates(candidatesResult.data, weights);
       setCandidates(calculated);
 
-      // Auto-select rank #1 on initial load or category change
+      // Auto-select rank #1 on category change
       if (calculated.length > 0) {
         setSelectedSite(calculated[0]);
       } else {
@@ -121,9 +131,9 @@ export default function DashboardPage() {
       />
 
       {/* Main Workspace (Map + Leaderboard) */}
-      <main className="flex-1 flex relative overflow-hidden">
+      <main className="flex-1 flex relative overflow-hidden" style={{ height: 'calc(100vh - 64px)' }}>
         {/* Geospatial Interactive Map */}
-        <div className="flex-1 h-full relative">
+        <div className="flex-1 h-full relative" style={{ height: '100%', minHeight: '100%' }}>
           <HexMap
             candidates={candidates}
             pois={pois}

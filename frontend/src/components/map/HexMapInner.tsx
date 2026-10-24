@@ -66,7 +66,13 @@ export default function HexMapInner({
 
     mapInstanceRef.current = map;
 
+    // Force Leaflet to re-measure flex container dimensions
+    const resizeTimeout = setTimeout(() => {
+      map.invalidateSize();
+    }, 150);
+
     return () => {
+      clearTimeout(resizeTimeout);
       map.remove();
       mapInstanceRef.current = null;
     };
@@ -180,9 +186,9 @@ export default function HexMapInner({
   }, [pois, showOwnStores, showCompetitors]);
 
   return (
-    <div className="relative w-full h-full bg-[#080C14]">
+    <div className="relative w-full h-full min-h-[450px] bg-[#080C14]" style={{ height: '100%', minHeight: '100%' }}>
       {/* Map Canvas */}
-      <div ref={mapContainerRef} className="w-full h-full" />
+      <div ref={mapContainerRef} className="w-full h-full" style={{ height: '100%', minHeight: '100%', width: '100%' }} />
 
       {/* Layer Controls Floating Widget */}
       <div className="absolute top-4 left-4 z-[1000] bg-slate-900/90 backdrop-blur-md border border-slate-800 p-2.5 rounded-lg text-xs shadow-xl flex flex-col gap-2">
