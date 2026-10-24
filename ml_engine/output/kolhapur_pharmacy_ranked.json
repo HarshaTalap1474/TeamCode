@@ -1,0 +1,967 @@
+[
+  {
+    "h3_id": "8926kolhapur003ffff",
+    "zone_name": "Kolhapur Zone 4",
+    "lat": 16.66132820708461,
+    "lng": 74.22292733597563,
+    "rank": 1,
+    "eps_score": 76.429,
+    "demand_capture": 118.31,
+    "cannibalization_pct": 7.99,
+    "cannibalization_units": 9.46,
+    "net_incremental_demand": 108.85,
+    "pattern_score": 78.0,
+    "rent_index": 5.03,
+    "coverage_ratio": 0.343,
+    "risk_level": "MEDIUM",
+    "flags": [
+      "Synthetic Demo",
+      "Low Cannibalization"
+    ],
+    "shap_drivers": [],
+    "explain": {
+      "positive_factors": [
+        {
+          "feature": "Population proxy (800m)",
+          "impact": 3.4,
+          "rationale": "Larger catchment proxy"
+        },
+        {
+          "feature": "Distance to own chain",
+          "impact": 57.29,
+          "rationale": "Lower cannibalization risk (farther from own store)"
+        },
+        {
+          "feature": "No competitors within 1km",
+          "impact": 5.0,
+          "rationale": "Less direct competition"
+        }
+      ],
+      "negative_factors": [],
+      "assumptions": [
+        "Huff gravity model with haversine distance",
+        "Synthetic data - not real Kolhapur observations",
+        "Rent/costs are synthetic proxies",
+        "Pattern score from transparent baseline (no fake SHAP)"
+      ],
+      "data_provenance": {
+        "data_source": "synthetic",
+        "synthetic": true,
+        "notes": "DEMO ONLY - synthetic-demo results, not validated for real-world business decisions"
+      }
+    },
+    "component_scores": {
+      "demand_pct": 100.0,
+      "pattern_pct": 100.0,
+      "afford_pct": 21.429,
+      "demand_raw_net": 108.85
+    },
+    "affordability_score": 49.74,
+    "estimated_monthly_cost": 60313.5,
+    "nearby": {
+      "competitors_within_500m": 0,
+      "nearest_competitor_dist_m": 1444.862615903993,
+      "nearest_own_store_dist_m": 5728.98701352715
+    },
+    "demographics": {
+      "catchment_population_proxy": 3403
+    }
+  },
+  {
+    "h3_id": "8926kolhapur014ffff",
+    "zone_name": "Kolhapur Zone 15",
+    "lat": 16.710669428107504,
+    "lng": 74.2234984061586,
+    "rank": 2,
+    "eps_score": 75.714,
+    "demand_capture": 108.8,
+    "cannibalization_pct": 16.34,
+    "cannibalization_units": 17.78,
+    "net_incremental_demand": 91.03,
+    "pattern_score": 68.0,
+    "rent_index": 3.75,
+    "coverage_ratio": 0.315,
+    "risk_level": "MEDIUM",
+    "flags": [
+      "Synthetic Demo"
+    ],
+    "shap_drivers": [],
+    "explain": {
+      "positive_factors": [
+        {
+          "feature": "Distance to own chain",
+          "impact": 36.44,
+          "rationale": "Lower cannibalization risk (farther from own store)"
+        },
+        {
+          "feature": "No competitors within 1km",
+          "impact": 5.0,
+          "rationale": "Less direct competition"
+        },
+        {
+          "feature": "Estimated monthly cost (synthetic)",
+          "impact": 6.0,
+          "rationale": "More affordable (synthetic proxy)"
+        }
+      ],
+      "negative_factors": [],
+      "assumptions": [
+        "Huff gravity model with haversine distance",
+        "Synthetic data - not real Kolhapur observations",
+        "Rent/costs are synthetic proxies",
+        "Pattern score from transparent baseline (no fake SHAP)"
+      ],
+      "data_provenance": {
+        "data_source": "synthetic",
+        "synthetic": true,
+        "notes": "DEMO ONLY - synthetic-demo results, not validated for real-world business decisions"
+      }
+    },
+    "component_scores": {
+      "demand_pct": 71.429,
+      "pattern_pct": 57.143,
+      "afford_pct": 100.0,
+      "demand_raw_net": 91.03
+    },
+    "affordability_score": 62.5,
+    "estimated_monthly_cost": 45000.0,
+    "nearby": {
+      "competitors_within_500m": 0,
+      "nearest_competitor_dist_m": 1146.6867992839811,
+      "nearest_own_store_dist_m": 3644.004740937739
+    },
+    "demographics": {
+      "catchment_population_proxy": 0
+    }
+  },
+  {
+    "h3_id": "8926kolhapur001ffff",
+    "zone_name": "Kolhapur Zone 2",
+    "lat": 16.67261640673853,
+    "lng": 74.23059648304192,
+    "rank": 3,
+    "eps_score": 67.857,
+    "demand_capture": 105.4,
+    "cannibalization_pct": 9.46,
+    "cannibalization_units": 9.97,
+    "net_incremental_demand": 95.43,
+    "pattern_score": 78.0,
+    "rent_index": 4.91,
+    "coverage_ratio": 0.305,
+    "risk_level": "MEDIUM",
+    "flags": [
+      "Synthetic Demo",
+      "Low Cannibalization"
+    ],
+    "shap_drivers": [],
+    "explain": {
+      "positive_factors": [
+        {
+          "feature": "Population proxy (800m)",
+          "impact": 3.1,
+          "rationale": "Larger catchment proxy"
+        },
+        {
+          "feature": "Distance to own chain",
+          "impact": 42.4,
+          "rationale": "Lower cannibalization risk (farther from own store)"
+        },
+        {
+          "feature": "No competitors within 1km",
+          "impact": 5.0,
+          "rationale": "Less direct competition"
+        }
+      ],
+      "negative_factors": [],
+      "assumptions": [
+        "Huff gravity model with haversine distance",
+        "Synthetic data - not real Kolhapur observations",
+        "Rent/costs are synthetic proxies",
+        "Pattern score from transparent baseline (no fake SHAP)"
+      ],
+      "data_provenance": {
+        "data_source": "synthetic",
+        "synthetic": true,
+        "notes": "DEMO ONLY - synthetic-demo results, not validated for real-world business decisions"
+      }
+    },
+    "component_scores": {
+      "demand_pct": 78.571,
+      "pattern_pct": 92.857,
+      "afford_pct": 28.571,
+      "demand_raw_net": 95.43
+    },
+    "affordability_score": 50.88,
+    "estimated_monthly_cost": 58945.5,
+    "nearby": {
+      "competitors_within_500m": 0,
+      "nearest_competitor_dist_m": 1284.0697513133869,
+      "nearest_own_store_dist_m": 4240.4083629175275
+    },
+    "demographics": {
+      "catchment_population_proxy": 3099
+    }
+  },
+  {
+    "h3_id": "8926kolhapur012ffff",
+    "zone_name": "Kolhapur Zone 13",
+    "lat": 16.720275337729284,
+    "lng": 74.24170562833763,
+    "rank": 4,
+    "eps_score": 60.714,
+    "demand_capture": 126.33,
+    "cannibalization_pct": 22.69,
+    "cannibalization_units": 28.66,
+    "net_incremental_demand": 97.67,
+    "pattern_score": 71.0,
+    "rent_index": 6.54,
+    "coverage_ratio": 0.366,
+    "risk_level": "HIGH",
+    "flags": [
+      "Synthetic Demo"
+    ],
+    "shap_drivers": [],
+    "explain": {
+      "positive_factors": [
+        {
+          "feature": "Population proxy (800m)",
+          "impact": 6.62,
+          "rationale": "Larger catchment proxy"
+        },
+        {
+          "feature": "Distance to own chain",
+          "impact": 21.68,
+          "rationale": "Lower cannibalization risk (farther from own store)"
+        }
+      ],
+      "negative_factors": [],
+      "assumptions": [
+        "Huff gravity model with haversine distance",
+        "Synthetic data - not real Kolhapur observations",
+        "Rent/costs are synthetic proxies",
+        "Pattern score from transparent baseline (no fake SHAP)"
+      ],
+      "data_provenance": {
+        "data_source": "synthetic",
+        "synthetic": true,
+        "notes": "DEMO ONLY - synthetic-demo results, not validated for real-world business decisions"
+      }
+    },
+    "component_scores": {
+      "demand_pct": 92.857,
+      "pattern_pct": 78.571,
+      "afford_pct": 0.0,
+      "demand_raw_net": 97.67
+    },
+    "affordability_score": 34.55,
+    "estimated_monthly_cost": 78543.68,
+    "nearby": {
+      "competitors_within_500m": 1,
+      "nearest_competitor_dist_m": 360.9256386573009,
+      "nearest_own_store_dist_m": 2167.822910357879
+    },
+    "demographics": {
+      "catchment_population_proxy": 6623
+    }
+  },
+  {
+    "h3_id": "8926kolhapur007ffff",
+    "zone_name": "Kolhapur Zone 8",
+    "lat": 16.679593080857277,
+    "lng": 74.21997107982062,
+    "rank": 5,
+    "eps_score": 55.714,
+    "demand_capture": 108.03,
+    "cannibalization_pct": 10.67,
+    "cannibalization_units": 11.53,
+    "net_incremental_demand": 96.5,
+    "pattern_score": 71.0,
+    "rent_index": 5.16,
+    "coverage_ratio": 0.313,
+    "risk_level": "MEDIUM",
+    "flags": [
+      "Synthetic Demo",
+      "Low Cannibalization"
+    ],
+    "shap_drivers": [],
+    "explain": {
+      "positive_factors": [
+        {
+          "feature": "Population proxy (800m)",
+          "impact": 3.1,
+          "rationale": "Larger catchment proxy"
+        },
+        {
+          "feature": "Distance to own chain",
+          "impact": 45.9,
+          "rationale": "Lower cannibalization risk (farther from own store)"
+        }
+      ],
+      "negative_factors": [],
+      "assumptions": [
+        "Huff gravity model with haversine distance",
+        "Synthetic data - not real Kolhapur observations",
+        "Rent/costs are synthetic proxies",
+        "Pattern score from transparent baseline (no fake SHAP)"
+      ],
+      "data_provenance": {
+        "data_source": "synthetic",
+        "synthetic": true,
+        "notes": "DEMO ONLY - synthetic-demo results, not validated for real-world business decisions"
+      }
+    },
+    "component_scores": {
+      "demand_pct": 85.714,
+      "pattern_pct": 64.286,
+      "afford_pct": 7.143,
+      "demand_raw_net": 96.5
+    },
+    "affordability_score": 48.42,
+    "estimated_monthly_cost": 61892.78,
+    "nearby": {
+      "competitors_within_500m": 0,
+      "nearest_competitor_dist_m": 517.183803526529,
+      "nearest_own_store_dist_m": 4590.448962286895
+    },
+    "demographics": {
+      "catchment_population_proxy": 3099
+    }
+  },
+  {
+    "h3_id": "8926kolhapur011ffff",
+    "zone_name": "Kolhapur Zone 12",
+    "lat": 16.66737850649454,
+    "lng": 74.27087671898016,
+    "rank": 6,
+    "eps_score": 51.429,
+    "demand_capture": 87.24,
+    "cannibalization_pct": 12.17,
+    "cannibalization_units": 10.62,
+    "net_incremental_demand": 76.62,
+    "pattern_score": 71.0,
+    "rent_index": 5.14,
+    "coverage_ratio": 0.253,
+    "risk_level": "MEDIUM",
+    "flags": [
+      "Synthetic Demo",
+      "Low Cannibalization"
+    ],
+    "shap_drivers": [],
+    "explain": {
+      "positive_factors": [
+        {
+          "feature": "Population proxy (800m)",
+          "impact": 3.05,
+          "rationale": "Larger catchment proxy"
+        },
+        {
+          "feature": "Distance to own chain",
+          "impact": 41.12,
+          "rationale": "Lower cannibalization risk (farther from own store)"
+        }
+      ],
+      "negative_factors": [],
+      "assumptions": [
+        "Huff gravity model with haversine distance",
+        "Synthetic data - not real Kolhapur observations",
+        "Rent/costs are synthetic proxies",
+        "Pattern score from transparent baseline (no fake SHAP)"
+      ],
+      "data_provenance": {
+        "data_source": "synthetic",
+        "synthetic": true,
+        "notes": "DEMO ONLY - synthetic-demo results, not validated for real-world business decisions"
+      }
+    },
+    "component_scores": {
+      "demand_pct": 64.286,
+      "pattern_pct": 71.429,
+      "afford_pct": 14.286,
+      "demand_raw_net": 76.62
+    },
+    "affordability_score": 48.61,
+    "estimated_monthly_cost": 61665.97,
+    "nearby": {
+      "competitors_within_500m": 0,
+      "nearest_competitor_dist_m": 869.2259504380049,
+      "nearest_own_store_dist_m": 4112.208338643505
+    },
+    "demographics": {
+      "catchment_population_proxy": 3051
+    }
+  },
+  {
+    "h3_id": "8926kolhapur002ffff",
+    "zone_name": "Kolhapur Zone 3",
+    "lat": 16.732722002025852,
+    "lng": 74.28775718585982,
+    "rank": 7,
+    "eps_score": 50.714,
+    "demand_capture": 109.27,
+    "cannibalization_pct": 43.09,
+    "cannibalization_units": 47.08,
+    "net_incremental_demand": 62.19,
+    "pattern_score": 74.0,
+    "rent_index": 4.52,
+    "coverage_ratio": 0.317,
+    "risk_level": "HIGH",
+    "flags": [
+      "Synthetic Demo"
+    ],
+    "shap_drivers": [],
+    "explain": {
+      "positive_factors": [
+        {
+          "feature": "Population proxy (800m)",
+          "impact": 2.06,
+          "rationale": "Larger catchment proxy"
+        },
+        {
+          "feature": "No competitors within 1km",
+          "impact": 5.0,
+          "rationale": "Less direct competition"
+        }
+      ],
+      "negative_factors": [],
+      "assumptions": [
+        "Huff gravity model with haversine distance",
+        "Synthetic data - not real Kolhapur observations",
+        "Rent/costs are synthetic proxies",
+        "Pattern score from transparent baseline (no fake SHAP)"
+      ],
+      "data_provenance": {
+        "data_source": "synthetic",
+        "synthetic": true,
+        "notes": "DEMO ONLY - synthetic-demo results, not validated for real-world business decisions"
+      }
+    },
+    "component_scores": {
+      "demand_pct": 35.714,
+      "pattern_pct": 85.714,
+      "afford_pct": 35.714,
+      "demand_raw_net": 62.19
+    },
+    "affordability_score": 54.78,
+    "estimated_monthly_cost": 54265.5,
+    "nearby": {
+      "competitors_within_500m": 0,
+      "nearest_competitor_dist_m": 1819.4596955509824,
+      "nearest_own_store_dist_m": 1389.633672380643
+    },
+    "demographics": {
+      "catchment_population_proxy": 2059
+    }
+  },
+  {
+    "h3_id": "8926kolhapur010ffff",
+    "zone_name": "Kolhapur Zone 11",
+    "lat": 16.696339799618645,
+    "lng": 74.29503567081447,
+    "rank": 8,
+    "eps_score": 47.143,
+    "demand_capture": 55.45,
+    "cannibalization_pct": 22.13,
+    "cannibalization_units": 12.27,
+    "net_incremental_demand": 43.18,
+    "pattern_score": 68.0,
+    "rent_index": 3.75,
+    "coverage_ratio": 0.161,
+    "risk_level": "MEDIUM",
+    "flags": [
+      "Synthetic Demo"
+    ],
+    "shap_drivers": [],
+    "explain": {
+      "positive_factors": [
+        {
+          "feature": "Distance to own chain",
+          "impact": 40.63,
+          "rationale": "Lower cannibalization risk (farther from own store)"
+        },
+        {
+          "feature": "No competitors within 1km",
+          "impact": 5.0,
+          "rationale": "Less direct competition"
+        },
+        {
+          "feature": "Estimated monthly cost (synthetic)",
+          "impact": 6.0,
+          "rationale": "More affordable (synthetic proxy)"
+        }
+      ],
+      "negative_factors": [],
+      "assumptions": [
+        "Huff gravity model with haversine distance",
+        "Synthetic data - not real Kolhapur observations",
+        "Rent/costs are synthetic proxies",
+        "Pattern score from transparent baseline (no fake SHAP)"
+      ],
+      "data_provenance": {
+        "data_source": "synthetic",
+        "synthetic": true,
+        "notes": "DEMO ONLY - synthetic-demo results, not validated for real-world business decisions"
+      }
+    },
+    "component_scores": {
+      "demand_pct": 21.429,
+      "pattern_pct": 42.857,
+      "afford_pct": 85.714,
+      "demand_raw_net": 43.18
+    },
+    "affordability_score": 62.5,
+    "estimated_monthly_cost": 45000.0,
+    "nearby": {
+      "competitors_within_500m": 0,
+      "nearest_competitor_dist_m": 1566.4618835432454,
+      "nearest_own_store_dist_m": 4063.3390701616554
+    },
+    "demographics": {
+      "catchment_population_proxy": 0
+    }
+  },
+  {
+    "h3_id": "8926kolhapur013ffff",
+    "zone_name": "Kolhapur Zone 14",
+    "lat": 16.701150211531342,
+    "lng": 74.29396655819497,
+    "rank": 9,
+    "eps_score": 42.857,
+    "demand_capture": 53.01,
+    "cannibalization_pct": 25.2,
+    "cannibalization_units": 13.36,
+    "net_incremental_demand": 39.65,
+    "pattern_score": 68.0,
+    "rent_index": 3.75,
+    "coverage_ratio": 0.154,
+    "risk_level": "MEDIUM",
+    "flags": [
+      "Synthetic Demo"
+    ],
+    "shap_drivers": [],
+    "explain": {
+      "positive_factors": [
+        {
+          "feature": "Distance to own chain",
+          "impact": 35.49,
+          "rationale": "Lower cannibalization risk (farther from own store)"
+        },
+        {
+          "feature": "No competitors within 1km",
+          "impact": 5.0,
+          "rationale": "Less direct competition"
+        },
+        {
+          "feature": "Estimated monthly cost (synthetic)",
+          "impact": 6.0,
+          "rationale": "More affordable (synthetic proxy)"
+        }
+      ],
+      "negative_factors": [],
+      "assumptions": [
+        "Huff gravity model with haversine distance",
+        "Synthetic data - not real Kolhapur observations",
+        "Rent/costs are synthetic proxies",
+        "Pattern score from transparent baseline (no fake SHAP)"
+      ],
+      "data_provenance": {
+        "data_source": "synthetic",
+        "synthetic": true,
+        "notes": "DEMO ONLY - synthetic-demo results, not validated for real-world business decisions"
+      }
+    },
+    "component_scores": {
+      "demand_pct": 0.0,
+      "pattern_pct": 50.0,
+      "afford_pct": 92.857,
+      "demand_raw_net": 39.65
+    },
+    "affordability_score": 62.5,
+    "estimated_monthly_cost": 45000.0,
+    "nearby": {
+      "competitors_within_500m": 0,
+      "nearest_competitor_dist_m": 1790.2720331547907,
+      "nearest_own_store_dist_m": 3548.511981737989
+    },
+    "demographics": {
+      "catchment_population_proxy": 0
+    }
+  },
+  {
+    "h3_id": "8926kolhapur008ffff",
+    "zone_name": "Kolhapur Zone 9",
+    "lat": 16.664512810353756,
+    "lng": 74.25552702395426,
+    "rank": 10,
+    "eps_score": 42.143,
+    "demand_capture": 78.23,
+    "cannibalization_pct": 10.9,
+    "cannibalization_units": 8.53,
+    "net_incremental_demand": 69.7,
+    "pattern_score": 61.0,
+    "rent_index": 3.94,
+    "coverage_ratio": 0.227,
+    "risk_level": "LOW",
+    "flags": [
+      "Synthetic Demo",
+      "Low Cannibalization"
+    ],
+    "shap_drivers": [],
+    "explain": {
+      "positive_factors": [
+        {
+          "feature": "Distance to own chain",
+          "impact": 41.32,
+          "rationale": "Lower cannibalization risk (farther from own store)"
+        },
+        {
+          "feature": "Estimated monthly cost (synthetic)",
+          "impact": 6.0,
+          "rationale": "More affordable (synthetic proxy)"
+        }
+      ],
+      "negative_factors": [],
+      "assumptions": [
+        "Huff gravity model with haversine distance",
+        "Synthetic data - not real Kolhapur observations",
+        "Rent/costs are synthetic proxies",
+        "Pattern score from transparent baseline (no fake SHAP)"
+      ],
+      "data_provenance": {
+        "data_source": "synthetic",
+        "synthetic": true,
+        "notes": "DEMO ONLY - synthetic-demo results, not validated for real-world business decisions"
+      }
+    },
+    "component_scores": {
+      "demand_pct": 57.143,
+      "pattern_pct": 7.143,
+      "afford_pct": 57.143,
+      "demand_raw_net": 69.7
+    },
+    "affordability_score": 60.62,
+    "estimated_monthly_cost": 47250.0,
+    "nearby": {
+      "competitors_within_500m": 0,
+      "nearest_competitor_dist_m": 837.0385083038337,
+      "nearest_own_store_dist_m": 4131.662553088784
+    },
+    "demographics": {
+      "catchment_population_proxy": 0
+    }
+  },
+  {
+    "h3_id": "8926kolhapur005ffff",
+    "zone_name": "Kolhapur Zone 6",
+    "lat": 16.695137958182904,
+    "lng": 74.29375403625255,
+    "rank": 11,
+    "eps_score": 41.429,
+    "demand_capture": 57.99,
+    "cannibalization_pct": 21.36,
+    "cannibalization_units": 12.39,
+    "net_incremental_demand": 45.61,
+    "pattern_score": 68.0,
+    "rent_index": 3.75,
+    "coverage_ratio": 0.168,
+    "risk_level": "MEDIUM",
+    "flags": [
+      "Synthetic Demo"
+    ],
+    "shap_drivers": [],
+    "explain": {
+      "positive_factors": [
+        {
+          "feature": "Distance to own chain",
+          "impact": 40.44,
+          "rationale": "Lower cannibalization risk (farther from own store)"
+        },
+        {
+          "feature": "No competitors within 1km",
+          "impact": 5.0,
+          "rationale": "Less direct competition"
+        },
+        {
+          "feature": "Estimated monthly cost (synthetic)",
+          "impact": 6.0,
+          "rationale": "More affordable (synthetic proxy)"
+        }
+      ],
+      "negative_factors": [],
+      "assumptions": [
+        "Huff gravity model with haversine distance",
+        "Synthetic data - not real Kolhapur observations",
+        "Rent/costs are synthetic proxies",
+        "Pattern score from transparent baseline (no fake SHAP)"
+      ],
+      "data_provenance": {
+        "data_source": "synthetic",
+        "synthetic": true,
+        "notes": "DEMO ONLY - synthetic-demo results, not validated for real-world business decisions"
+      }
+    },
+    "component_scores": {
+      "demand_pct": 28.571,
+      "pattern_pct": 28.571,
+      "afford_pct": 71.429,
+      "demand_raw_net": 45.61
+    },
+    "affordability_score": 62.5,
+    "estimated_monthly_cost": 45000.0,
+    "nearby": {
+      "competitors_within_500m": 0,
+      "nearest_competitor_dist_m": 1384.9846173564008,
+      "nearest_own_store_dist_m": 4044.4499183680464
+    },
+    "demographics": {
+      "catchment_population_proxy": 0
+    }
+  },
+  {
+    "h3_id": "8926kolhapur009ffff",
+    "zone_name": "Kolhapur Zone 10",
+    "lat": 16.70570456472941,
+    "lng": 74.28736411635425,
+    "rank": 12,
+    "eps_score": 40.0,
+    "demand_capture": 57.67,
+    "cannibalization_pct": 28.56,
+    "cannibalization_units": 16.47,
+    "net_incremental_demand": 41.2,
+    "pattern_score": 68.0,
+    "rent_index": 3.75,
+    "coverage_ratio": 0.167,
+    "risk_level": "MEDIUM",
+    "flags": [
+      "Synthetic Demo"
+    ],
+    "shap_drivers": [],
+    "explain": {
+      "positive_factors": [
+        {
+          "feature": "Distance to own chain",
+          "impact": 27.58,
+          "rationale": "Lower cannibalization risk (farther from own store)"
+        },
+        {
+          "feature": "No competitors within 1km",
+          "impact": 5.0,
+          "rationale": "Less direct competition"
+        },
+        {
+          "feature": "Estimated monthly cost (synthetic)",
+          "impact": 6.0,
+          "rationale": "More affordable (synthetic proxy)"
+        }
+      ],
+      "negative_factors": [],
+      "assumptions": [
+        "Huff gravity model with haversine distance",
+        "Synthetic data - not real Kolhapur observations",
+        "Rent/costs are synthetic proxies",
+        "Pattern score from transparent baseline (no fake SHAP)"
+      ],
+      "data_provenance": {
+        "data_source": "synthetic",
+        "synthetic": true,
+        "notes": "DEMO ONLY - synthetic-demo results, not validated for real-world business decisions"
+      }
+    },
+    "component_scores": {
+      "demand_pct": 14.286,
+      "pattern_pct": 35.714,
+      "afford_pct": 78.571,
+      "demand_raw_net": 41.2
+    },
+    "affordability_score": 62.5,
+    "estimated_monthly_cost": 45000.0,
+    "nearby": {
+      "competitors_within_500m": 0,
+      "nearest_competitor_dist_m": 1532.87871945474,
+      "nearest_own_store_dist_m": 2757.5293600075975
+    },
+    "demographics": {
+      "catchment_population_proxy": 0
+    }
+  },
+  {
+    "h3_id": "8926kolhapur000ffff",
+    "zone_name": "Kolhapur Zone 1",
+    "lat": 16.725539222959707,
+    "lng": 74.28305036342324,
+    "rank": 13,
+    "eps_score": 37.143,
+    "demand_capture": 109.47,
+    "cannibalization_pct": 41.52,
+    "cannibalization_units": 45.45,
+    "net_incremental_demand": 64.02,
+    "pattern_score": 62.0,
+    "rent_index": 4.5,
+    "coverage_ratio": 0.317,
+    "risk_level": "HIGH",
+    "flags": [
+      "Synthetic Demo"
+    ],
+    "shap_drivers": [],
+    "explain": {
+      "positive_factors": [
+        {
+          "feature": "Population proxy (800m)",
+          "impact": 1.43,
+          "rationale": "Larger catchment proxy"
+        }
+      ],
+      "negative_factors": [],
+      "assumptions": [
+        "Huff gravity model with haversine distance",
+        "Synthetic data - not real Kolhapur observations",
+        "Rent/costs are synthetic proxies",
+        "Pattern score from transparent baseline (no fake SHAP)"
+      ],
+      "data_provenance": {
+        "data_source": "synthetic",
+        "synthetic": true,
+        "notes": "DEMO ONLY - synthetic-demo results, not validated for real-world business decisions"
+      }
+    },
+    "component_scores": {
+      "demand_pct": 50.0,
+      "pattern_pct": 14.286,
+      "afford_pct": 42.857,
+      "demand_raw_net": 64.02
+    },
+    "affordability_score": 55.01,
+    "estimated_monthly_cost": 53987.85,
+    "nearby": {
+      "competitors_within_500m": 0,
+      "nearest_competitor_dist_m": 892.2923979637671,
+      "nearest_own_store_dist_m": 820.7254070280428
+    },
+    "demographics": {
+      "catchment_population_proxy": 1426
+    }
+  },
+  {
+    "h3_id": "8926kolhapur006ffff",
+    "zone_name": "Kolhapur Zone 7",
+    "lat": 16.725745478567394,
+    "lng": 74.28158572992116,
+    "rank": 14,
+    "eps_score": 32.143,
+    "demand_capture": 109.14,
+    "cannibalization_pct": 42.07,
+    "cannibalization_units": 45.92,
+    "net_incremental_demand": 63.22,
+    "pattern_score": 58.0,
+    "rent_index": 4.5,
+    "coverage_ratio": 0.316,
+    "risk_level": "HIGH",
+    "flags": [
+      "Synthetic Demo"
+    ],
+    "shap_drivers": [],
+    "explain": {
+      "positive_factors": [
+        {
+          "feature": "Population proxy (800m)",
+          "impact": 1.43,
+          "rationale": "Larger catchment proxy"
+        }
+      ],
+      "negative_factors": [],
+      "assumptions": [
+        "Huff gravity model with haversine distance",
+        "Synthetic data - not real Kolhapur observations",
+        "Rent/costs are synthetic proxies",
+        "Pattern score from transparent baseline (no fake SHAP)"
+      ],
+      "data_provenance": {
+        "data_source": "synthetic",
+        "synthetic": true,
+        "notes": "DEMO ONLY - synthetic-demo results, not validated for real-world business decisions"
+      }
+    },
+    "component_scores": {
+      "demand_pct": 42.857,
+      "pattern_pct": 0.0,
+      "afford_pct": 50.0,
+      "demand_raw_net": 63.22
+    },
+    "affordability_score": 55.01,
+    "estimated_monthly_cost": 53987.85,
+    "nearby": {
+      "competitors_within_500m": 0,
+      "nearest_competitor_dist_m": 882.2997069973165,
+      "nearest_own_store_dist_m": 666.0223940970031
+    },
+    "demographics": {
+      "catchment_population_proxy": 1426
+    }
+  },
+  {
+    "h3_id": "8926kolhapur004ffff",
+    "zone_name": "Kolhapur Zone 5",
+    "lat": 16.703322257617394,
+    "lng": 74.28849528349257,
+    "rank": 15,
+    "eps_score": 28.571,
+    "demand_capture": 56.24,
+    "cannibalization_pct": 26.83,
+    "cannibalization_units": 15.09,
+    "net_incremental_demand": 41.15,
+    "pattern_score": 68.0,
+    "rent_index": 3.75,
+    "coverage_ratio": 0.163,
+    "risk_level": "MEDIUM",
+    "flags": [
+      "Synthetic Demo"
+    ],
+    "shap_drivers": [],
+    "explain": {
+      "positive_factors": [
+        {
+          "feature": "Distance to own chain",
+          "impact": 30.48,
+          "rationale": "Lower cannibalization risk (farther from own store)"
+        },
+        {
+          "feature": "No competitors within 1km",
+          "impact": 5.0,
+          "rationale": "Less direct competition"
+        },
+        {
+          "feature": "Estimated monthly cost (synthetic)",
+          "impact": 6.0,
+          "rationale": "More affordable (synthetic proxy)"
+        }
+      ],
+      "negative_factors": [],
+      "assumptions": [
+        "Huff gravity model with haversine distance",
+        "Synthetic data - not real Kolhapur observations",
+        "Rent/costs are synthetic proxies",
+        "Pattern score from transparent baseline (no fake SHAP)"
+      ],
+      "data_provenance": {
+        "data_source": "synthetic",
+        "synthetic": true,
+        "notes": "DEMO ONLY - synthetic-demo results, not validated for real-world business decisions"
+      }
+    },
+    "component_scores": {
+      "demand_pct": 7.143,
+      "pattern_pct": 21.429,
+      "afford_pct": 64.286,
+      "demand_raw_net": 41.15
+    },
+    "affordability_score": 62.5,
+    "estimated_monthly_cost": 45000.0,
+    "nearby": {
+      "competitors_within_500m": 0,
+      "nearest_competitor_dist_m": 1531.6438017348783,
+      "nearest_own_store_dist_m": 3048.338156428084
+    },
+    "demographics": {
+      "catchment_population_proxy": 0
+    }
+  }
+]
